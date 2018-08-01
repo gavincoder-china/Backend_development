@@ -45,4 +45,8 @@ String b=scan.next(); // 输入字符串
             
 ##CamelCase     
  >将不是驼峰格式的名称，快速转成驼峰格式，  
- 安装好后，选中要修改的名称，按快捷键shift+alt+u。            
+ 安装好后，选中要修改的名称，按快捷键shift+alt+u。      
+ ##iBATIS/MyBatis plugin      
+ >轻松通过快捷键找到MyBatis中对应的Mapper和XML，CTRL+ALT+B  
+ ##alibaba 插件
+ >alt+enter

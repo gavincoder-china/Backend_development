@@ -1,4 +1,6 @@
-/*
+/**
+ * @author Administrator
+ */ /*
         _                         _             
                                         (_)                       | |            
                      __ _   __ _ __   __ _  _ __    ___  ___    __| |  ___  _ __ 
@@ -15,7 +17,12 @@
 最后打印出每个年龄段的占比
 for(int i=4;i<=60;i==){
 }*/
-public class ghest {
+public class ghent {
+
+
+
+
+
 
     public static void main(String[] args) {
 
