@@ -39,18 +39,17 @@ public class Selection {
         for (int i = 1; i < a.length; i++) {
             if (less(a[i], a[i - 1]))
                 return false;
-            else
+            else {
                 return true;
-
+            }
         }
         return true;
     }
 
 
     public static void main(String[] args) {
-//        String[] a = new In("tiny.txt").readAllStrings();
-//        System.out.println(a);
-        String[] a = {"abc","1231516","sbxhjasbxh","rruuioo","aaaaaaa"};
+
+        String[] a = {"22222", "11111", "00000", "33333", "99999"};
         sort(a);
         assert isSorted(a);
         show(a);
@@ -62,8 +61,8 @@ public class Selection {
         int N = a.length;
         for (int i = 0; i < N; i++) {
             //将a[i]跟后面最小的交换
-            int min = i;    //设置最小的索引
-
+               /*设置最小的索引*/
+            int min = i;
             for (int j = i + 1; j < N; j++) {
 
                 if (less(a[j], a[min])) {

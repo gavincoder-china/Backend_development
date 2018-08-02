@@ -20,10 +20,6 @@ for(int i=4;i<=60;i==){
 public class ghent {
 
 
-
-
-
-
     public static void main(String[] args) {
 
         int[] ager = {4, 5, 6, 7, 8, 12, 26, 18, 21, 56, 65, 10, 55, 35, 36, 29, 54, 36, 33, 45};
@@ -31,7 +27,7 @@ public class ghent {
         double count_teen = 0;
         double count_young = 0;
         double count_middle = 0;
-        double count_elder = 0;
+        double countElder = 0;
         int age;
 
         for (int i = 0; i < 20; i++) {
@@ -51,17 +47,16 @@ public class ghent {
 
                 count_middle = count_middle + 1;
             } else if (age >= 51) {
-                count_elder = count_elder + 1;
+                countElder = countElder + 1;
             }
         }
 
-        System.out.println("儿童顾客人数有" + ((int) count_child) + "位，占比为" + ((int) (count_child / 20 * 100))+"%");
-        System.out.println("少年顾客人数有" + ((int) count_teen) + "位，占比为" + ((int) (count_teen / 20 * 100))+"%");
-        System.out.println("青年顾客人数有" + ((int) count_young) + "位，占比为" + ((int) (count_young / 20 * 100))+"%");
-        System.out.println("中年顾客人数有" + ((int) count_middle) + "位，占比为" + ((int) (count_middle / 20 * 100))+"%");
-        System.out.println("老年顾客人数有" + ((int) count_elder) + "位，占比为" + ((int) (count_elder / 20 * 100))+"%");
+        System.out.println("儿童顾客人数有" + ((int) count_child) + "位，占比为" + ((int) (count_child / 20 * 100)) + "%");
+        System.out.println("少年顾客人数有" + ((int) count_teen) + "位，占比为" + ((int) (count_teen / 20 * 100)) + "%");
+        System.out.println("青年顾客人数有" + ((int) count_young) + "位，占比为" + ((int) (count_young / 20 * 100)) + "%");
+        System.out.println("中年顾客人数有" + ((int) count_middle) + "位，占比为" + ((int) (count_middle / 20 * 100)) + "%");
+        System.out.println("老年顾客人数有" + ((int) countElder) + "位，占比为" + ((int) (countElder / 20 * 100)) + "%");
 
 
-
-
-}}
+    }
+}
