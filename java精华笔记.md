@@ -12,7 +12,8 @@ String b=scan.next(); // 输入字符串
 ##随机数  
 >Math.random()  
 如果Math.random*8，就是取0-7之间的数，再加上一，取1-8之间的数  
-同理可得其余取值范围  
+同理可得其余取值范围 
+ 
 
 -----------------------
 ##idea快捷代码生成  
@@ -50,3 +51,12 @@ String b=scan.next(); // 输入字符串
  >轻松通过快捷键找到MyBatis中对应的Mapper和XML，CTRL+ALT+B  
  ##alibaba 插件
  >alt+enter
+ ##用mybatis-plus插件一键生成代码
+ >  从实体类到comtroller全部生成/alt  + insert
+ ##java八种基本数据类型  
+ >java四类八种基本数据类型
+  第一类：整型 byte(8位) short（16位） int（32位） long（64位）     
+  第二类：浮点型 float（32位，全部字符只有8，小数点最后一位进一法） double（64位）         
+  第三类：逻辑型 boolean(它只有两个值可取true false)（1位，1/8字节）      
+  第四类：字符型 char（16位）（2字节）      
+  BigDecimal //不会丢失任何精度    

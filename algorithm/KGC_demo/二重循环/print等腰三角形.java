@@ -35,7 +35,7 @@ public class print等腰三角形 {
             {
                 System.out.print("*");
             }
-
+                    
 
             System.out.println();
 

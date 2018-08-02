@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5eef57-73d6-4c6e-984c-d00e4a1326d4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/algorithm/KGC_demo/ghest.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/KGC_demo/ghest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print等腰三角形.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print等腰三角形.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java精华笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/java精华笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/Selection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/Selection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/demo_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/demo_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/ghest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,32 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="java精华笔记.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java精华笔记.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="559">
-                <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithm/排序/Selection.java">
+      <file leaf-file-name="print直角三角形.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print直角三角形.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ghest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="52">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -57,6 +41,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>el</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -64,12 +53,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Backend_development.iml" />
-        <option value="$PROJECT_DIR$/algorithm/KGC_demo/demo_01.java" />
         <option value="$PROJECT_DIR$/algorithm/KGC_demo/闰年计算.java" />
         <option value="$PROJECT_DIR$/algorithm/排序/选择排序.java" />
-        <option value="$PROJECT_DIR$/algorithm/排序/Selection.java" />
-        <option value="$PROJECT_DIR$/java精华笔记.md" />
         <option value="$PROJECT_DIR$/algorithm/KGC_demo/ghest.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/ghent.java" />
+        <option value="$PROJECT_DIR$/java精华笔记.md" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/demo_01.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/数组/倒序排序.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/数组/数组插入新值.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/九九乘法表.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/冒泡排序.java" />
+        <option value="$PROJECT_DIR$/algorithm/排序/Selection.java" />
+        <option value="$PROJECT_DIR$/algorithm/排序/冒泡排序.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print等腰三角形.java" />
+        <option value="$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print直角三角形.java" />
       </list>
     </option>
   </component>
@@ -108,6 +105,24 @@
               <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
               <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="KGC_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="KGC_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="二重循环" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -125,7 +140,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,9 +159,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ghent">
-    <configuration name="闰年计算" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="闰年计算" />
+  <component name="RunManager" selected="Application.冒泡排序">
+    <configuration name="冒泡排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="冒泡排序" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -150,16 +170,21 @@
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="demo_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo_01" />
+    <configuration name="九九乘法表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="九九乘法表" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ghent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ghent" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="print直角三角形" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="print直角三角形" />
+      <module name="algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="print等腰三角形" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="print等腰三角形" />
       <module name="algorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -202,17 +227,15 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.demo_01" />
-      <item itemvalue="Application.闰年计算" />
+      <item itemvalue="Application.print直角三角形" />
       <item itemvalue="Application.Selection" />
-      <item itemvalue="Application.ghent" />
+      <item itemvalue="Application.冒泡排序" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ghent" />
+        <item itemvalue="Application.冒泡排序" />
         <item itemvalue="Application.Selection" />
-        <item itemvalue="Application.闰年计算" />
-        <item itemvalue="Application.demo_01" />
+        <item itemvalue="Application.print直角三角形" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +259,20 @@
       <workItem from="1533125326191" duration="11000" />
       <workItem from="1533125358127" duration="2511000" />
       <workItem from="1533127896327" duration="751000" />
-      <workItem from="1533128669819" duration="657000" />
+      <workItem from="1533128669819" duration="1600000" />
+      <workItem from="1533130295202" duration="4075000" />
+      <workItem from="1533134413428" duration="397000" />
+      <workItem from="1533134832099" duration="55000" />
+      <workItem from="1533170444389" duration="1900000" />
+      <workItem from="1533172369625" duration="158000" />
+      <workItem from="1533172549567" duration="11453000" />
+      <workItem from="1533188372004" duration="388000" />
+      <workItem from="1533188783004" duration="29000" />
+      <workItem from="1533188835087" duration="11255000" />
+      <workItem from="1533205658959" duration="323000" />
+      <workItem from="1533206044915" duration="120000" />
+      <workItem from="1533206185597" duration="377000" />
+      <workItem from="1533212451765" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1532997963280</created>
@@ -252,45 +288,53 @@
       <option name="project" value="LOCAL" />
       <updated>1533128791975</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="..">
+      <created>1533202231375</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533202231375</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35392000" />
+    <option name="totallyTimeSpent" value="67051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info anchor="right" id="Key Promoter X" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32882273" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3295302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2632293" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32971507" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25915876" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32968536" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10134228" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="8" visible="true" weight="0.32971507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20490928" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40434194" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28765264" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32971507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32971507" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="8" visible="true" weight="0.32971507" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,10 +350,48 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/algorithm/排序/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java精华笔记.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="901">
+            <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/排序/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java精华笔记.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -327,7 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
@@ -351,7 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
@@ -375,7 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="78" lean-forward="true" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
@@ -399,7 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
@@ -423,7 +505,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
@@ -447,7 +529,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
@@ -471,7 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
@@ -495,7 +577,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
@@ -536,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/demo_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-729">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/排序/选择排序.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -573,27 +648,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java精华笔记.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="559">
-            <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/tessst.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="884" selection-start-line="884" selection-end-line="884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/数组/数组插入新值.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/二重循环/九九乘法表.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="71" lean-forward="true" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/demo_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="47" column="68" lean-forward="true" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/数组/倒序排序.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/排序/冒泡排序.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/排序/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="-435">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/ghest.java">
+    <entry file="file://$PROJECT_DIR$/java精华笔记.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print等腰三角形.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="510">
+          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/KGC_demo/二重循环/print直角三角形.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -614,7 +746,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
