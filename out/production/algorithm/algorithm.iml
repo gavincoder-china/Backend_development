@@ -9,8 +9,18 @@
       <sourceFolder url="file://$MODULE_DIR$/排序" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/KGC_demo/二重循环" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/KGC_demo/数组" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KGC_demo/小试牛刀" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/redist/annotations-java8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

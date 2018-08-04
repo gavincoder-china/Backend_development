@@ -21,7 +21,7 @@ import java.math.*;
 import java.util.Scanner;
 import java.util.concurrent.ForkJoinPool;
 
-public class demo_01 {
+public class 摇号 {
 
 
     public static void main(String[] args) {

@@ -11,20 +11,20 @@
 
 */
 
-public class 九九乘法表 {
+public class 三维数组遍历 {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 9; i++) {
+        int[][][] array = {{{1}, {32}}, {{1}}};
+        for (int i = 0; i < array.length; i++) {
 
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + "*" + i + "=" + j * i+"\t");
-                  /*\t制表符很厉害*/
+            for (int j = 0; j < array[i].length; j++) {
 
+                for (int k = 0; k < array[i][j].length; k++) {
+                    System.out.println(array[i][j][k]);
+                }
 
             }
-
-            System.out.println();
 
 
         }

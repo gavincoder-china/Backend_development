@@ -17,7 +17,7 @@
 最后打印出每个年龄段的占比
 for(int i=4;i<=60;i==){
 }*/
-public class ghent {
+public class guest {
 
 
     public static void main(String[] args) {

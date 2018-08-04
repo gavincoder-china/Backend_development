@@ -11,18 +11,23 @@
 
 */
 
+import java.util.Arrays;
+
 public class 冒泡排序 {
+    /*字符串冒泡排序*/
 
     public static void main(String[] args) {
 
         String[] array = {"bbb", "aaa", "eee", "ddd", "ccc"};
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length-1; i++) {
+            /*由于不需要比较自身，所以只要比较length-1次*/
 
 
             for (int j = i + 1; j < array.length; j++) {
 
-                if (((array[j]).compareTo((array[i])) >0)) {      //字符串的比较是真的坑
+                if (((array[j]).compareTo((array[i])) >0)) {
+                    //字符串的比较是真的坑
                     String temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;
@@ -30,11 +35,9 @@ public class 冒泡排序 {
             }
         }
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
 
-
+        System.out.println(Arrays.toString(array));
+        /*输出字符串*/
     }
 
 
