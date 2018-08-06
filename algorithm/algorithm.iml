@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/KGC_demo/二重循环" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/KGC_demo/数组" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/KGC_demo/小试牛刀" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/KGC_demo/数组/面向对戏" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
