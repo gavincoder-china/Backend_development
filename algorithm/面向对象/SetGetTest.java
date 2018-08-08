@@ -10,17 +10,21 @@
 
 
 */
-
 package 面向对象;
 
-public class Car {
-   public String brand;
-   public String price;
+import java.util.Scanner;
 
-    public void run() {
-        System.out.println("i can fly");
+public class SetGetTest {
+    public static void main(String[] args) {
+        SetGet setGet = new SetGet();
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        setGet.setName(name);
+        setGet.setAge(18);
+        setGet.setSex("man");
+        System.out.println(setGet.getName());
+        System.out.println(setGet.getAge());
+        System.out.println(setGet.getSex());
+
     }
-
-
-
 }

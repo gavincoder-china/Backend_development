@@ -60,3 +60,27 @@ String b=scan.next(); // 输入字符串
   第三类：逻辑型 boolean(它只有两个值可取true false)（1位，1/8字节）      
   第四类：字符型 char（16位）（2字节）      
   BigDecimal //不会丢失任何精度    
+  ##api查找插件   
+  >这个东西是插件配合软件使用  
+  插件dash               
+  软件zeal             
+  快捷键 ctrl+shift+d      
+  ##There is no default constructor available in '面向对象.Pet
+  >前提：继承ArrayAdapter的时候，子类出现该错误。创建构造函数依旧出错。   
+   ==》原因：ArrayAdapter没有无参构造函数，所以子类继承时，  
+   构造函数中必须显式调用父类构造方法，并且传递对应所需要的参数。   
+   构造函数，当写了有参构造函数的时候，一定要加上再次无参构造函数。  
+   ##protected
+  >在不同包，但是具有继承关系的类中可以访问  
+  ##在方法里不能定义static常量  
+  ##JAVA子类继承父类，一定要在构造方法中继承有SUPER？
+  >如果父类中有无参的构造方法，可以不继承，默认继承无参构造方法！  
+   如果父类中都是有参构造方法就需要，super去继承了     
+    Fulei(int a) {    
+   this.a = a;      
+   }        
+   子类      
+   Zilei(int a) {     
+   super(a);     
+   }         
+  

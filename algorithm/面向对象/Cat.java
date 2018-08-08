@@ -13,14 +13,23 @@
 
 package 面向对象;
 
-public class Car {
-   public String brand;
-   public String price;
+public class Cat extends Pet {
 
-    public void run() {
-        System.out.println("i can fly");
+
+    @Override
+    public void eat() {
+        System.out.println("我吃鱼");
+    }
+    public  void test(){
+        super.eat();
+        this.eat();
+
+
     }
 
-
+    public static void main(String[] args) {
+       Cat cat=new Cat();
+       cat.test();
+    }
 
 }

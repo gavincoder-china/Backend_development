@@ -14,23 +14,11 @@
 package 面向对象;
 
 public class demo1 {
-    public String PrintString(String a){
-
-        System.out.println(a);
-
-      return a;
-    }
-
-    public void mmm(){
-
-        System.out.println("good" );
-
-    }
     public static void main(String[] args) {
-         String a="hello world";
-         demo1 demo=new demo1();
-         demo.PrintString(a);
-         demo.mmm();
+        Car car=new Car();
+        car.run();
     }
+
+
 
 }
