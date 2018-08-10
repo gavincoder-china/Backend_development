@@ -11,20 +11,12 @@
 
 */
 
-package 面向对象;
+package 面向对象.宠物继承案例;
 
-/**
- * 编写宠物狗类，里面的属性有：名称、性别、种类，
- * 里面的方法有：吃、喝、睡、跑，每个方法里面打印出一句话即可，
- * 例如在吃的方法中，打印出“我喜欢吃骨头”。最后会用main方法进行测试。
- */
-public class Dog extends Pet {
+public class Dog  extends Pet{
 
-    @Override
+     public  void run(){
+         System.out.println("我是狗，我喜欢奔跑！");
+     }
 
-    public void eat(){
-        System.out.println("我吃骨头 ");
-
-    }
-   
 }

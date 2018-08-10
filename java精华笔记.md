@@ -40,11 +40,8 @@ String b=scan.next(); // 输入字符串
      　　 min=b;   
   三目运算符   
   min=(a<b)?a:b; 
-##辅助函数  
->less() //对元素进行比较  
- exch()  //将元素交换位置  
-            
-##CamelCase     
+           
+##CamelCase Idea插件    
  >将不是驼峰格式的名称，快速转成驼峰格式，  
  安装好后，选中要修改的名称，按快捷键shift+alt+u。      
  ##iBATIS/MyBatis plugin      
@@ -60,7 +57,7 @@ String b=scan.next(); // 输入字符串
   第三类：逻辑型 boolean(它只有两个值可取true false)（1位，1/8字节）      
   第四类：字符型 char（16位）（2字节）      
   BigDecimal //不会丢失任何精度    
-  ##api查找插件   
+  ##api文档查找插件   
   >这个东西是插件配合软件使用  
   插件dash               
   软件zeal             
@@ -83,4 +80,15 @@ String b=scan.next(); // 输入字符串
    Zilei(int a) {     
    super(a);     
    }         
-  
+   ##继承抽象类的子类，必须重写抽象方法  
+   >抽象方法没有方法体。就是没有花括号  
+   抽象类和普通类一样，有构造函数。抽象类中有一些属性，可以利用构造方法对属性进行初始化。
+   子类对象实例化的时候先执行抽象类的构造，再执行子类构造。            
+   抽象类不能用final声明。因为抽象类必须有子类继承，所以抽象类不能使用final定义。   
+   抽象类不能用static进行声明，但是抽象类中的内部类可以使用static声明。    
+   ##toSTring()返回对象的有关信息
+   >Object 类提供的toString方法总是返回该对象实现类的类名 + @ +hashCode值。    
+   ##判断对象是否为某对象  
+   >if(pet instanceof Dog)  
+   用instanceof运算符  
+   对象  instanceof  类或接口	

@@ -19,9 +19,11 @@ public class Pet {
     protected String health;
     protected int love;
     protected String strain;
-    public  Pet(){
+
+    public Pet() {
 
     }
+
     public Pet(String sex, String strain, String health, int love, String name) {
 
         this.sex = sex;
@@ -31,7 +33,14 @@ public class Pet {
         this.name = name;
 
     }
-
+     /**
+     * @Description： 
+     
+     * @Param: []
+     * @Return: java.lang.String
+     * @Auther: Gavincoder
+     * @Date: 2018/8/9
+     */
     public String getName() {
         return name;
     }
@@ -83,13 +92,27 @@ public class Pet {
     public void run() {
         System.out.println("我会奔跑");
     }
-
     public void drink() {
         System.out.println("我会喝水");
     }
 
 
+}
+class  Dog1 extends Pet{
+    int iii;
+    Dog1(){
+        super();
+    }
 
+    Dog1(String sex, String strain, String health, int love, String name,int iii ){
+        
+        this.sex = sex;
+        this.health = health;
+        this.love = love;
+        this.strain = strain;
+        this.name = name;
+        this.iii=iii;
+    }
 
 
 

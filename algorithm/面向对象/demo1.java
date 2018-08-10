@@ -15,10 +15,9 @@ package 面向对象;
 
 public class demo1 {
     public static void main(String[] args) {
-        Car car=new Car();
-        car.run();
+        Person wxc=new Person();
+        wxc.BD();
     }
-
 
 
 }

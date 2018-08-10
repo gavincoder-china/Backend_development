@@ -13,18 +13,16 @@
 
 package 面向对象;
 
-/**
- * 编写宠物狗类，里面的属性有：名称、性别、种类，
- * 里面的方法有：吃、喝、睡、跑，每个方法里面打印出一句话即可，
- * 例如在吃的方法中，打印出“我喜欢吃骨头”。最后会用main方法进行测试。
- */
-public class Dog extends Pet {
+public abstract class Abstract {
+    
+    public abstract void print();
 
+
+}
+class test extends Abstract{
     @Override
-
-    public void eat(){
-        System.out.println("我吃骨头 ");
-
+    public void print(){
+        System.out.println("good");
     }
-   
+
 }
