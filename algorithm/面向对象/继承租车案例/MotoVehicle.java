@@ -23,9 +23,6 @@ public   class MotoVehicle {
 
 
 
-
-
-
      //计算租金
     public  int CalcRent(int type,int days){
         int rent=0;
