@@ -62,7 +62,7 @@ String b=scan.next(); // 输入字符串
   插件dash               
   软件zeal             
   快捷键 ctrl+shift+d      
-  ##There is no default constructor available in '面向对象.Pet
+  ##There is no default constructor available in 'Pet
   >前提：继承ArrayAdapter的时候，子类出现该错误。创建构造函数依旧出错。   
    ==》原因：ArrayAdapter没有无参构造函数，所以子类继承时，  
    构造函数中必须显式调用父类构造方法，并且传递对应所需要的参数。   
@@ -92,3 +92,21 @@ String b=scan.next(); // 输入字符串
    >if(pet instanceof Dog)  
    用instanceof运算符  
    对象  instanceof  类或接口	
+   ##基本数据类型及其封装类  
+   >八种基本数据类型分别是：int、short、float、double、long、boolean、byte、char；    
+  它们的封装类分别是：Integer、Short、Float、Double、Long、Boolean、Byte、Character。
+   ##equals的源码分析  
+   > public boolean equals(Object anObject) {     
+            if (this == anObject) {     
+                return true;       
+            }         
+            if (anObject instanceof String) {       
+                String aString = (String)anObject;    
+                if (coder() == aString.coder()) {    
+                    return isLatin1() ? StringLatin1.equals(value, aString.value)   
+                                      : StringUTF16.equals(value, aString.value);   
+                }          
+            }          
+            return false;      
+        }        
+        
