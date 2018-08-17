@@ -23,20 +23,14 @@ public class BufferReaderDemo {
 
     public static void main(String[] args) throws Exception {
         FileReader fileReader = null;
-
-
         try {
             fileReader = new FileReader("d:\\test.txt");
-
-
             BufferedReader br = new BufferedReader(fileReader);
             String length = br.readLine();
             while (length != null) {
                 System.out.println(length);
                 length = br.readLine();
-
             }
-
         } catch (Exception e) {
 
         }

@@ -4,10 +4,9 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5eef57-73d6-4c6e-984c-d00e4a1326d4" name="Default" comment="整理了下文件目录">
-      <change afterPath="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/ReaderDemo.java" afterDir="false" />
+    <list default="true" id="0a5eef57-73d6-4c6e-984c-d00e4a1326d4" name="Default" comment="IO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +45,7 @@
           <entry key="java" value="17375" />
           <entry key="md" value="607" />
           <entry key="properties" value="11" />
-          <entry key="txt" value="28" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -82,7 +81,7 @@
         <counts>
           <entry key="JAVA" value="17375" />
           <entry key="Markdown" value="607" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="34" />
           <entry key="Properties" value="11" />
           <entry key="VTL" value="49" />
         </counts>
@@ -156,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="185">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,8 +278,8 @@
         <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/FileDemo.java" />
         <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/FileInputStreamDemo.java" />
         <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/ReaderDemo.java" />
-        <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" />
         <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/test.txt" />
+        <option value="$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" />
       </list>
     </option>
   </component>
@@ -296,7 +295,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="286" />
     <option name="y" value="15" />
     <option name="width" value="980" />
@@ -426,41 +425,6 @@
               <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
               <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Backend_development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backend_development" type="462c0819:PsiDirectoryNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="File_IO" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -470,7 +434,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534478302766" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534479090573" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/log4j-1.2.11.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -671,7 +635,7 @@
       <workItem from="1534207449129" duration="15765000" />
       <workItem from="1534291679480" duration="23235000" />
       <workItem from="1534378019047" duration="20093000" />
-      <workItem from="1534465761547" duration="8836000" />
+      <workItem from="1534465761547" duration="9649000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1532997963280</created>
@@ -729,17 +693,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534321146652</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="IO">
+      <created>1534478342605</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534478342605</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276027000" />
+    <option name="totallyTimeSpent" value="276840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -748,7 +719,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32971507" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26865673" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26865673" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40434194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -813,7 +784,8 @@
     <MESSAGE value="..." />
     <MESSAGE value=".." />
     <MESSAGE value="整理了下文件目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="整理了下文件目录" />
+    <MESSAGE value="IO" />
+    <option name="LAST_COMMIT_MESSAGE" value="IO" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1186,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JAVA/src/com/learn/File_IO/BufferReaderDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="185">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
