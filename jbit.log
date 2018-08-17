@@ -1,0 +1,12 @@
+2018-08-15 14:03:04log4j.main(log4j.java:19) log4j.java INFO 信息
+2018-08-15 14:03:04log4j.main(log4j.java:20) log4j.java ERROR 错误
+2018-08-15 14:03:04log4j.main(log4j.java:21) log4j.java DEBUG 调试
+2018-08-15 14:03:04log4j.main(log4j.java:22) log4j.java WARN 警告
+2018-08-15 14:26:54八月十五号.ExceptionTest.main(ExceptionTest.java:60) ExceptionTest.java ERROR 被除数和除数必须是整数，除数不能为0
+2018-08-15 14:42:57八月十五号.ExceptionTest.main(ExceptionTest.java:60) ExceptionTest.java ERROR 被除数和除数必须是整数，除数不能为0
+2018-08-15 14:56:51八月十五号.ExceptionTest.main(ExceptionTest.java:58) ExceptionTest.java INFO 被除数是:0
+2018-08-15 14:56:54八月十五号.ExceptionTest.main(ExceptionTest.java:61) ExceptionTest.java INFO 除数是:1
+2018-08-15 16:11:23log4j.main(log4j.java:19) log4j.java INFO 信息
+2018-08-15 16:11:23log4j.main(log4j.java:20) log4j.java ERROR 错误
+2018-08-15 16:11:23log4j.main(log4j.java:21) log4j.java DEBUG 调试
+2018-08-15 16:11:23log4j.main(log4j.java:22) log4j.java WARN 警告

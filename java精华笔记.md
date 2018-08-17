@@ -109,4 +109,39 @@ String b=scan.next(); // 输入字符串
             }          
             return false;      
         }        
-        
+    ##封装数据类型的作用
+    >封装类型就是java面向对象引入的数据类型，里面定义了一些常用的方法，是用new分配到堆内存上的。引入封装类型的主要目的是因为类能够提供必要的方法，    
+    用于实现基本数据类型的数值与可打印字符串之间的转换，以及一些其他的实用程序方法。Java为每个原始类型提供了封装类。     
+     1 、Boolean VS boolean    
+     public final class Boolean extends Object implementsSerializable,Comparable      
+     Boolean 类将基本类型为boolean的值包装在一个对象中。一个Boolean类型的对象只包含一个类型为boolean的字段。  
+     此外，此类还为boolean和String的相互转换提供了许多方法，并提供了处理 boolean时非常有用的其他一些常量和方法。   
+     2、 Byte VS byte  
+     public final class Byte extends Number implements Comparable Byte类将基本类型      
+     byte的值包装在一个对象中。一个Byte类型的对象只包含一个类型为 byte的字段。此外，该类还为 byte和 String的相互转换提供了几种方法，并提供了处理 byte时非常有用的其他一些常量和方法。    
+     3、 Character VS char      
+     public final class Character extends Object implements Serializable, Comparable   
+     Character类在对象中包装一个基本类型char的值。    
+     Character类型的对象包含类型为char的单个字段。此外，该类提供了几种方法，以确定字符的类别（小写字母，数字，等等），并将字符从大写转换成小写，反之亦然。    
+     4 、Double VS double      
+     public final class Double extends Number implements Comparable Double类在对象中包装了一个基本类型double的值。   
+     每个Double类型的对象都包含一个double类型的字段。此外，该类还提供了多个方法，可以将double转换为String，将String转换为double，还提供了其他一些处理double时有用的常量和方法。   
+     5、 Float VS float        
+     public final class Float extends Number implements Comparable      
+     Float类在对象中包装了一个float基本类型的值。Float类型的对象包含一个float类型的字段。     
+     此外，此类提供了几种方法，可在float类型和String类型之间互相转换，并且还提供了处理float类型时非常有用的其他一些常量和方法。  
+     6、 Integer VS int      
+     public final class Integer extends Number implements Comparable      
+     Integer类在对象中包装了一个基本类型int的值。Integer类型的对象包含一个int类型的字段。    
+     此外，该类提供了多个方法，能在int类型和String类型之间互相转换，还提供了处理int类型时非常有用的其他一些常量和方法。    
+     7 Long VS long               
+     public final class Long extends Number implements Comparable      
+     Long类在对象中封装了基本类型long的值。每个Long类型的对象都包含一个long类型的字段。      
+     此外，该类提供了多个方法，可以将long转换为String，将String转换为long，除此之外，还提供了其他一些处理long时有用的常量和方法。    
+     8、 Short VS short         
+     public final class Short extends Number implements Comparable           
+     Short类在对象中包装基本类型short的值。一个Short类型的对象只包含一个short类型的字段。     
+     另外，该类提供了多个方法，可以将short转换为String，将String转换为short，同时还提供了其他一些处理short时有用的常量和方法。  
+     9、public final class Voidextends Object       
+     Void 类是一个不可实例化的占位符类，它保持一个对代表 Java 关键字 void 的 Class 对象的引用。      
+     类的对象才能为null，不能把null赋值给一个变量不能，如int m=null;但可以String s=null;因为String是个类。      

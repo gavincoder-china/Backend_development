@@ -18,6 +18,15 @@ public class Person {
     private int age = 11;
     private String sex = "man";
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -44,14 +53,6 @@ public class Person {
 
     public void BD() {
         System.out.println("我会蹦迪");
-    }
-
-    @Override
-    public String toString() {
-        String printString = "name=" + this.getName() + "\t" + "sex=" + this.getSex() + "\t" + "age=" + this.getAge();
-        return printString;
-
-
     }
 
 

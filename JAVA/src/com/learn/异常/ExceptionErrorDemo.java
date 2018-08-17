@@ -77,6 +77,7 @@ public class ExceptionErrorDemo {
             exceptionErrorDemo.setage(15);
         } catch (MyException e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
         } finally {
 
             
