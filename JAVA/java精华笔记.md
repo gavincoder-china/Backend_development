@@ -145,4 +145,10 @@ String b=scan.next(); // 输入字符串
      9、public final class Voidextends Object       
      Void 类是一个不可实例化的占位符类，它保持一个对代表 Java 关键字 void 的 Class 对象的引用。      
      类的对象才能为null，不能把null赋值给一个变量不能，如int m=null;但可以String s=null;因为String是个类。    
-     Math.round() 函数返回一个数字四舍五入后最接近的整数。  
+     Math.round() 函数返回一个数字四舍五入后最接近的整数。最难掌握的是round方法，他表示“四舍五入”，算法为Math.floor(x+0.5),即将原来的数字加上0.5后再向下取整，所以，Math.round(11.5)的结果是12，Math.round(-11.5)的结果为-11.    
+#堆栈等  
+>堆区：只存放类对象，线程共享；  
+方法区：又叫静态存储区，存放class文件和静态数据，线程共享;  
+栈区：存放方法局部变量，基本类型变量区、执行环境上下文、操作指令区，线程不共享;  
+
+
