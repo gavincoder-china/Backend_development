@@ -144,4 +144,5 @@ String b=scan.next(); // 输入字符串
      另外，该类提供了多个方法，可以将short转换为String，将String转换为short，同时还提供了其他一些处理short时有用的常量和方法。  
      9、public final class Voidextends Object       
      Void 类是一个不可实例化的占位符类，它保持一个对代表 Java 关键字 void 的 Class 对象的引用。      
-     类的对象才能为null，不能把null赋值给一个变量不能，如int m=null;但可以String s=null;因为String是个类。      
+     类的对象才能为null，不能把null赋值给一个变量不能，如int m=null;但可以String s=null;因为String是个类。    
+     Math.round() 函数返回一个数字四舍五入后最接近的整数。  
