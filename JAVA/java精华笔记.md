@@ -145,10 +145,30 @@ String b=scan.next(); // 输入字符串
      9、public final class Voidextends Object       
      Void 类是一个不可实例化的占位符类，它保持一个对代表 Java 关键字 void 的 Class 对象的引用。      
      类的对象才能为null，不能把null赋值给一个变量不能，如int m=null;但可以String s=null;因为String是个类。    
-     Math.round() 函数返回一个数字四舍五入后最接近的整数。最难掌握的是round方法，他表示“四舍五入”，算法为Math.floor(x+0.5),即将原来的数字加上0.5后再向下取整，所以，Math.round(11.5)的结果是12，Math.round(-11.5)的结果为-11.    
+
+#Math方法
+ > Math.round() 函数返回一个数字四舍五入后最接近的整数。最难掌握的是round方法，他表示“四舍五入”，算法为Math.floor(x+0.5),即将原来的数字加上0.5后再向下取整，所以，Math.round(11.5)的结果是12，Math.round(-11.5)的结果为-11.    
+ > floor 返回不大于的最大整数   
+round 则是4舍5入的计算，入的时候是到大于它的整数  
+round方法，它表示“四舍五入”，算法为Math.floor(x+0.5)，即将原来的数字加上0.5后再向下取整，所以，Math.round(11.5)的结果为12，Math.round(-11.5)的结果为-11。  
+ceil 则是不小于他的最小整数  
 #堆栈等  
 >堆区：只存放类对象，线程共享；  
 方法区：又叫静态存储区，存放class文件和静态数据，线程共享;  
 栈区：存放方法局部变量，基本类型变量区、执行环境上下文、操作指令区，线程不共享;  
+![](https://raw.githubusercontent.com/xunyegege/picgo_repo/master/G%3A%5Cgithub%5Cpicgo_repo20180909170628.png)  
 
 
+#idea中抽取代码，按快捷键Ctrl + Alt + M  
+
+
+
+#Java容器
+>ArrayList 数组实现，查询速度很快，但是加东西，速度很慢。线程不安全，效率高。  
+>LinkedList 链表是吸纳，增减速度很快，但是查询速度很慢。线程不安全，效率高。   
+>vertor 向量，数组实现，线程安全，效率低。  
+>
+
+
+#java 进程&线程  
+![](https://raw.githubusercontent.com/xunyegege/picgo_repo/master/G%3A%5Cgithub%5Cpicgo_repo20180919195048.png)
