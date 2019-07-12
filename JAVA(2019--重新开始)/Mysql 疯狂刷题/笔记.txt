@@ -1,0 +1,161 @@
+mysql运行机制：
+	如select * from tablename
+	从支持接口进来后，进入连接池做权限、验证等环节，然后判断是否有缓存，有则直接放回结果，否则进入SQL接口。
+	在查询之前查询优化器进行优化，最后进行解析，查询。并通过存储引擎与文件交互。
+
+安装后自带的库：
+	information_schema:主要存储系统中的一些数据库对象信息，如用户表信息、字段信息、权限信息、字符集信息和分区信息等。
+	performance_schema:主要存储数据库服务器性能参数
+	mysql:主要存储系统的用户权限信息
+	test:MySQL数据库管理系统自动创建的测试数据库，任何用户都可以使用
+
+启动关闭mysql服务：
+	1、可以在开始中输入“服务”进入服务窗口，找到mysql手动开启或关闭。
+	2、在DOS窗口中输入：net start mysql开启  net stop mysql关闭
+
+连接数据库：
+	1、MySQL Command Line Client窗口，直接输入密码连接
+	2、在DOS窗口中进入mysql安装目录下的bin目录，然后输入命令：mysql -u root -proot
+
+创建数据库：create database 数据库名;
+
+查看数据库：show databases;
+
+选择/使用数据库：use 数据库名;
+
+删除数据库：drop database 数据库名;
+
+创建表：create table [if not exists] 表名(字段名 类型,字段名 类型...);
+
+主键：primary key
+外键：foreign key
+备注：comment '备注名'
+设置字符集：charset = 'utf8'
+
+查看表：show tables;
+查看表定义：desc 表名; 或者 describe 表名;
+删除表：drop table 表名;
+
+修改乱码：set names gbk;
+
+修改表：
+	改表名：alter table 旧表名 rename 新表名;
+	增加字段：alter table 表名 add 字段名 类型;
+	修改字段：alter table 表名 change 旧字段 新字段 类型;
+	删除字段：alter table 表名 drop 字段名;
+
+添加主键：alter table 表名 add constraint 主键名 primary key 表名(字段名);
+添加外键：alter table 表名 add constraint 外键名 foreign key(外键字段) references 关联表名(字段名);
+删除主键：alter table 表名 drop primary key; //所有主键全部删除
+删除外键：alter table 表名 drop foreign key 外键名字;
+
+帮助：help 关键字;  或者 ? 关键字;
+
+
+
+
+增：insert into 表名 (字段1,字段2...) values (值1,值2....);
+    insert into 表名 (字段1,字段2...) values (值1,值2....),(值1,值2....),(值1,值2....)...;
+
+    从一张表里查询出需要的数据构成一个新的表
+    create table clazz (select cname, tid from class);
+
+
+改：update 表名 set 字段名1=值1,字段名2=值2...[where 条件];
+
+删：
+	drop:删除表 --> drop table 表名;
+	delete from 表名 [where 条件];
+	truncate 表名; --删除表内的全部内容
+	区分delete：delete删除不删除自增长，truncate删除整张表后重新建一张一模一样的表，会删除自增长
+
+查：select 字段1,字段2... from 表名 [where 条件];
+
+起别名：as 把查出来的列设一个别名，也可以省略不写
+	select 字段1 as 别名1，字段2 as 别名2....from 表名
+去重复：distinct
+	select distinct 字段1，字段2....from 表名
+
+查询条件：
+	where 条件;
+	逻辑运算 > < >= <= <>
+	and	select * from user where age = 20 and sex = '男';
+	or	select * from user where age = 20 or sex = '男';
+	not	单独用很少，一般配合其他条件，如：not null, not like, not in
+	between .. and ..  select * from user where age between 20 and 30;
+	is null		select * from user where address is null;
+	is not null	select * from user where address is not null;
+	like	select * from user where address like '%南京%';
+	in	select * from user where age in (20,30,40);
+		select * from user where age = 20 or age =30 or age = 40;
+
+连接查询：
+	inner join: select * from 表1 a inner join 表2 b on a.字段 = b.字段 [where条件]
+		查询出两张表的交集
+	left join: select * from 表1 a left join 表2 b on a.字段 = b.字段 [where条件]
+		查询出左表的全部数据+右表的相关数据
+	right join: select * from 表1 a right join 表2 b on a.字段 = b.字段 [where条件]
+		查询出右表的全部数据+左表的相关数据
+
+	等值/不等值： select * from 表1 a, 表2 b ... where a.字段 = b.字段 [and .....]
+
+自连接：
+	select c1.categoryName '父节点', c2.categoryName '子节点' from category c1, category c2
+		where c1.categoryId = c2.pid ORDER BY c1.categoryId;
+
+排序：order by
+取指定条数数据：limit
+
+数学函数：
+	count() 计数
+	sum()	求和
+	avg()	求平均数
+	max()	最大值
+	min()	最小值
+字符串函数：
+	concat() 把参数连接成字符串。如：select concat('My','s','q','l'); 返回：Mysql
+	insert() 替换。如:select insert('Mysql',3,2,'S'); 返回：MySl
+	substr()/substring() 截取。如：select substr('Mysql',2,2); 返回：ys
+时间函数：
+	SELECT CURDATE(); -- 获取当前日期
+	select CURTIME(); -- 获取当前时间
+	select now();	-- 获取当前日期和时间
+	select week('2018-07-06'); -- 获取日期为一年中的第几周
+	select YEAR('2018-07-06'); -- 获取日期的年份
+	select HOUR('19:19:26'); -- 获取时间的小时数
+	select MINUTE('19:19:26'); -- 获取时间的分钟数
+	select DATEDIFF(now(),'2018-07-05') as '天数'; -- 获取两个日期这间相隔的天数，前面日期为大的日期
+	select ADDDATE('2018-07-05',1); -- 获取指定日期加上天数后的日期和时间
+
+取值：
+	select CEIL(2.3); -- 向上取整
+	select FLOOR(2.9); -- 向下取整
+	select CEIL(RAND()*8); --取1-8之间的随机数
+
+排序：
+	order by
+		asc 从小到大，默认值，可以省略
+		desc 从大到小
+
+取指定条数数据：
+	limit 0,5
+
+分组：
+	group by ... having ...
+	select a.SubjectName,MAX(b.StudentResult),MIN(b.StudentResult),AVG(b.StudentResult)
+		from subject a,result b where a.SubjectNo=b.SubjectNo GROUP BY b.SubjectNo HAVING AVG(b.StudentResult) > 80;
+
+
+数据库设计三大范式：
+	1.原子性：表字段要拆分成最小单位
+	2.一张表只做一件事
+	3.表于表之间数据不能存在传递关系
+
+
+
+
+
+
+
+
+
