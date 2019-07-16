@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b88b8c30-5a87-4b27-88d3-5e52e87a1c56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Backend_development.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Collections.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/Backend_development.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/Backend_development-.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/JAVA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Collection/SetArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Enum/EnumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Enum/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/File_IO/BufferReaderDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/File_IO/FileDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/File_IO/FileInputStreamDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/File_IO/ReaderDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/CardPersonInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/ConsumInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/cardpackage/CardNetBug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/cardpackage/CardPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/cardpackage/CardSuper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/cardpackage/CardTalk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Moblie/teststs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/A3Paper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/A4Paper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/ColorInk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/Ink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/Inkinterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/NormalInk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/Paper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/PaperInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/Printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/宠物继承案例/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/宠物继承案例/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/宠物继承案例/Master.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/宠物继承案例/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/小试牛刀/guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/小试牛刀/摇号.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/小试牛刀/闰年计算.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/CalendarDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/DataDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/IntegerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/MathDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/StringBufferDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/StringDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/java常用类" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/八月14号/Calendar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/八月14号/CalendarEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/八月14号/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/常用类/八月14号/去除字符串内所有空格.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/异常/ExceptionErrorDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/异常/MyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/异常/八月十五号/ExceptionDEMO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/异常/八月十五号/ExceptionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/循环/print直角三角形.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/循环/print等腰三角形.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/循环/九九乘法表.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/排序/Selection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/排序/冒泡排序.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Disk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Displayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/GPU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Mouth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/NetCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/PCI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/Sound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/电脑/TurnOnOff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/防盗门/DoorInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/防盗门/LingInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/防盗门/LockInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/接口/防盗门/SafeDoor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/数组/三维数组遍历.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/数组/倒序排序.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/数组/多重排序方法设计.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/数组/数组插入新值.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/继承租车案例/Bus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/继承租车案例/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/继承租车案例/MotoVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/继承租车案例/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/继承租车案例/租车/MotoVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/HashMapDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/LinkedListDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/ListDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/List遍历.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/Map遍历.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/集合/pengList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Abstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/SetGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/SetGetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/TestArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/初始化_构造函数.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/com/learn/面向对象/重载.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/log4j.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/JAVA/src/resource/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/java精华笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/jbit.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/lib/log4j-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Enum/EnumTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Enum/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/File_IO/BufferReaderDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/File_IO/FileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/File_IO/FileInputStreamDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/File_IO/ReaderDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/A3Paper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/A4Paper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/ColorInk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/Ink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/Inkinterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/NormalInk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/Paper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/PaperInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/Printer/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/宠物继承案例/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/宠物继承案例/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/宠物继承案例/Master.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/宠物继承案例/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/小试牛刀/guest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/小试牛刀/摇号.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/小试牛刀/闰年计算.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/CalendarDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/DataDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/IntegerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/MathDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/StringBufferDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/StringDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/java常用类" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/八月14号/Calendar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/八月14号/CalendarEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/八月14号/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/常用类/八月14号/去除字符串内所有空格.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/异常/ExceptionErrorDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/异常/MyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/异常/八月十五号/ExceptionDEMO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/异常/八月十五号/ExceptionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/循环/print直角三角形.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/循环/print等腰三角形.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/循环/九九乘法表.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/排序/Selection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/排序/冒泡排序.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Disk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Displayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/GPU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Mouth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/NetCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/PCI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/Sound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/电脑/TurnOnOff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/防盗门/DoorInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/防盗门/LingInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/防盗门/LockInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/接口/防盗门/SafeDoor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/数组/三维数组遍历.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/数组/倒序排序.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/数组/多重排序方法设计.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/数组/数组插入新值.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/继承租车案例/Bus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/继承租车案例/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/继承租车案例/MotoVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/继承租车案例/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/继承租车案例/租车/MotoVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/HashMapDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/LinkedListDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/ListDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/List遍历.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/Map遍历.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/集合/pengList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Abstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Dog1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/SetGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/SetGetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/TestArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/demo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/初始化_构造函数.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/com/learn/面向对象/重载.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/log4j.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2018)/out/production/JAVA/resource/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/DouDiZhu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/DouDiZhu02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericInterfaceTest01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/GenericInterfaceTest02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/Generic_泛型上下限定.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Generic/Generic_通配符.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/HashCodeFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/HashSetFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/HashSet_存储自定义类型元素.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/LinkedHashSetFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/LinkedListFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/ListFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/CountTimes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/EntrySetFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/HashMap_存储自定义类型.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/HashTableFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/KeySetFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/LinkedHashMapFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/MapFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Map/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Of_jdk9新方法.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/collectionFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/iteratorFunc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Collections/点点点表达式_可变参数.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Mysql 疯狂刷题/疯狂刷题.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/Mysql 疯狂刷题/笔记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/DouDiZhu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/DouDiZhu02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericInterfaceTest01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/GenericInterfaceTest02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/Generic_泛型上下限定.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Generic/Generic_通配符.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/HashCodeFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/HashSetFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/HashSet_存储自定义类型元素.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/LinkedHashSetFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/LinkedListFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/ListFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/CountTimes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/EntrySetFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/HashMap_存储自定义类型.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/HashTableFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/KeySetFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/LinkedHashMapFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/MapFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Map/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Of_jdk9新方法.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/collectionFunc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/collectionFunc$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/collectionFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/iteratorFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/production/Backend_development/note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA(2019--重新开始)/production/Backend_development/点点点表达式_可变参数.class" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="true" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="true" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1NhygFnaeIPbzsWmsx4GZgWZnPQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_MANAGE_IGNORE_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MANAGE_IGNORE_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JAVA(2019--重新开始)/Mysql 疯狂刷题" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.DouDiZhu02">
+    <configuration name="CountTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.CountTimes" />
+      <module name="Backend_development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DouDiZhu02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DouDiZhu02" />
+      <module name="Backend_development" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMap_存储自定义类型" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.HashMap_存储自定义类型" />
+      <module name="Backend_development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedHashMapFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.LinkedHashMapFunc" />
+      <module name="Backend_development" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Of_jdk9新方法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Of_jdk9新方法" />
+      <module name="Backend_development" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DouDiZhu02" />
+        <item itemvalue="Application.Of_jdk9新方法" />
+        <item itemvalue="Application.CountTimes" />
+        <item itemvalue="Application.LinkedHashMapFunc" />
+        <item itemvalue="Application.HashMap_存储自定义类型" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.16176471" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7acfb685" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7acfb685" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@74d0dc1e" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b88b8c30-5a87-4b27-88d3-5e52e87a1c56" name="Default Changelist" comment="" />
+      <created>1562547733074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562547733074</updated>
+      <workItem from="1562547735931" duration="1044000" />
+      <workItem from="1562572005334" duration="13381000" />
+      <workItem from="1562639897189" duration="11562000" />
+      <workItem from="1562718234763" duration="270000" />
+      <workItem from="1562718543871" duration="3674000" />
+      <workItem from="1562723474327" duration="7309000" />
+      <workItem from="1562747217811" duration="3314000" />
+      <workItem from="1562755954137" duration="4967000" />
+      <workItem from="1562801664812" duration="2610000" />
+      <workItem from="1562833216169" duration="910000" />
+      <workItem from="1562847207033" duration="539000" />
+      <workItem from="1562905176596" duration="1671000" />
+      <workItem from="1563072395729" duration="967000" />
+      <workItem from="1563149016510" duration="1191000" />
+      <workItem from="1563155327225" duration="486000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
