@@ -43,7 +43,7 @@ public class Transaction {
             pstat1.executeUpdate();
 
             //手动增加异常事件
-            int i=3/0;
+           int i=3/0;
 
             pstat2.executeUpdate();
 
