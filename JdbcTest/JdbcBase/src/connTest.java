@@ -11,6 +11,7 @@ public class connTest {
         ResultSet resultSet = null;
         //1.注册驱动
         //mysql 5 之后可以省略注册步骤,因为已经在jar 包中写好了注册代码
+
         //Class.forName("com.mysql.jdbc.Driver");
 
 

@@ -47,6 +47,7 @@ public class login2 {
 
             //字符串占位
             String sql = "select * from account where user=? and password=? ";
+
             pstat = conn.prepareStatement(sql);
             //占位从1开始算,给其赋值
             pstat.setString(1, user);
