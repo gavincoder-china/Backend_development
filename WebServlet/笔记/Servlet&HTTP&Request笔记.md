@@ -160,6 +160,9 @@
 
 				* 中文乱码问题：
 					* get方式：tomcat 8 已经将get方式乱码问题解决了
+					  旧版处理方法 1. 先获取数据  
+					   username=new string(username.getBytes("iso-8859-1"),"utf-8");
+					     2.修改tomcat的配置文件
 					* post方式：会乱码
 						* 解决：在获取参数前，设置request的编码request.setCharacterEncoding("utf-8");
 			
