@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Enumeration;
 
 @WebServlet("/requestdemo02")
 public class requestdemo02 extends HttpServlet {
@@ -26,9 +25,9 @@ public class requestdemo02 extends HttpServlet {
 //判断浏览器
         String header = request.getHeader("user-agent");
         //Chrome 首字母要大写
-        if (header.contains("Chrome")){
+        if (header.contains("Chrome")) {
             System.out.println("chrome");
-        }else  if (header.contains("Firefox")){
+        } else if (header.contains("Firefox")) {
             System.out.println("Firefox");
         }
 
