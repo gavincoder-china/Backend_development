@@ -19,14 +19,34 @@ import utils.JDBCUtils;
 public class UserDAOImpl implements UserDAO {
 
 private static int count=0;
+
+
     @Override
     public int insert(User user) {
+
         JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
+
+
+
         String sql = "insert into users(name,age) values(?,?)";
+
+
         count=template.update(sql, user.getName(), user.getAge());
+
 
         return count;
     }
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public int delete(User user) {
