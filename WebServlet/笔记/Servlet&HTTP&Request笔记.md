@@ -453,6 +453,26 @@
 			* 虚拟目录+Servlet的资源路径
 
 		9. BeanUtils工具类，简化数据封装
+		
+		        //使用BeanUtils工具类
+                          //1.获取map集合
+                      Map<String, String[]> map = req.getParameterMap();
+                          //2.创建user对象
+                      LoginUser user = new LoginUser();
+          
+          
+                      try {
+          
+                          //确保实体类中的属性名与获取到的属性名一致
+                          BeanUtils.populate(user,map);
+                      }
+                      catch (IllegalAccessException e) {
+                          e.printStackTrace();
+                      }
+                      catch (InvocationTargetException e) {
+                          e.printStackTrace();
+                      }
+                      
 			* 用于封装JavaBean的
 			1. JavaBean：标准的Java类
 				1. 要求：
@@ -460,6 +480,8 @@
 					2. 必须提供空参的构造器
 					3. 成员变量必须使用private修饰
 					4. 提供公共setter和getter方法
+					
+					
 				2. 功能：封装数据
 
 

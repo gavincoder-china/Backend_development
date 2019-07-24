@@ -12,8 +12,10 @@ import java.io.IOException;
 public class ServletContextDemo01 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //获取servletContext对象
+
         //通过request获取对象
         ServletContext servletContext01 = request.getServletContext();
+
         //通过httpServlet获取对象
         // ServletContext servletContext02 = this.getServletContext();
 
@@ -23,6 +25,7 @@ public class ServletContextDemo01 extends HttpServlet {
         //获取MIME类型
         String mimeType = servletContext01.getMimeType(filename);
         System.out.println(mimeType);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

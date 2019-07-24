@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+
+    <script>
+        /*
+            分析：
+                点击超链接或者图片，需要换一张
+                1.给超链接和图片绑定单击事件
+
+                2.重新设置图片的src属性值
+
+         */
+        window.onload = function(){
+            //1.获取点击事件对象
+            var img = document.getElementById("checkCode");
+            var a=document.getElementById("change");
+
+            //2.绑定单击事件
+
+            var changeImg=function(){
+                //加时间戳
+                var date = new Date().getTime();
+
+                img.src = "/checkcode?"+date;
+            }
+
+
+            img.onclick = function(){
+               changeImg();
+            }
+
+
+            a.onclick=function (ev) {
+
+                changeImg();
+
+            }
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+<img id="checkCode" src="/checkcode" />
+
+<a id="change" >看不清换一张？</a>
+
+</body>
+</html>

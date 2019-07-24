@@ -93,6 +93,8 @@
 				2. 重定向可以访问其他站点(服务器)的资源
 				3. 重定向是两次请求。不能使用request对象来共享数据
 			* 转发的特点：forward
+			 request.getRequestDispatcher("/successServlet").forward(req, resp);
+			
 				1. 转发地址栏路径不变
 				2. 转发只能访问当前服务器下的资源
 				3. 转发是一次请求，可以使用request对象来共享数据
