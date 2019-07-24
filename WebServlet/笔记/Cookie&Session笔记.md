@@ -234,14 +234,15 @@
 		1. 当客户端关闭后，服务器不关闭，两次获取session是否为同一个？
 			* 默认情况下。不是。
 			* 如果需要相同，则可以创建Cookie,键为JSESSIONID，设置最大存活时间，让cookie持久化保存。
+			
 				 Cookie c = new Cookie("JSESSIONID",session.getId());
-		         c.setMaxAge(60*60);
+		         c.setMaxAge(60*60); //一个小时
 		         response.addCookie(c);
 	
 		2. 客户端不关闭，服务器关闭后，两次获取的session是同一个吗？
-			* 不是同一个，但是要确保数据不丢失。tomcat自动完成以下工作
+			* 不是同一个，但是要确保数据不丢失。tomcat已经自动完成了以下工作
 				* session的钝化：
-					* 在服务器正常关闭之前，将session对象系列化到硬盘上
+					* 在服务器正常关闭之前，将session对象序列化到硬盘上
 				* session的活化：
 					* 在服务器启动后，将session文件转化为内存中的session对象即可。
 				

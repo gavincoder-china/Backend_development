@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -48,15 +49,21 @@ public class CheckCode extends HttpServlet {
         String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789";
         //生成随机角标
         Random ran = new Random();
-
+        HttpSession session = req.getSession();
+       StringBuilder code=new StringBuilder();
         for (int i = 1; i <= 4; i++) {
             int index = ran.nextInt(str.length());
             //获取字符
             char ch = str.charAt(index);//随机字符
+
+            //存验证码
+            code.append(ch);
             //2.3写验证码
             g.drawString(ch+"",width/5*i,height/2);
         }
-
+        //将存储的验证码传到session
+        String s = code.toString();
+        req.getSession().setAttribute("code",s);
 
         //2.4画干扰线
         g.setColor(Color.GREEN);
