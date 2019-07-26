@@ -38,7 +38,6 @@ public class JDBCUtils {
             e.printStackTrace();
         }
 
-
     }
 
 
@@ -46,6 +45,7 @@ public class JDBCUtils {
     public static DataSource getDataSource(){
 
         return ds;
+
     }
 
 

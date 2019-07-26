@@ -7,15 +7,21 @@ import java.util.List;
 
 
 /**
- * @description  用户操作的DAO
  * @author Gavin
+ * @description 用户操作的DAO
  * @date 2019-07-25 10:52
-
  * @return
  * @throws
  * @since
-*/
+ */
 public interface UserDao {
 
-    public List<User> findAll();
+    List<User> findAll();
+
+    Integer add(User user);
+
+    Integer del(Integer id);
+
+    User findOne(Integer id);
+    Integer update(User user);
 }
