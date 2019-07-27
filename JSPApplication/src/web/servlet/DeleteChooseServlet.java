@@ -25,7 +25,7 @@ public class DeleteChooseServlet extends HttpServlet {
           Integer del = userService.del(Integer.parseInt(item));
 
       }
-      //删完了之后,再返回到userListServlet
+      //删完了之后, 再返回到userListServlet
 
         response.sendRedirect("/userListServlet");
 
