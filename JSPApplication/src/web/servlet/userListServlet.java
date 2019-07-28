@@ -23,7 +23,8 @@ public class userListServlet extends HttpServlet {
 
         //3.转发到list.jsp页面
 
-        request.getRequestDispatcher("/list.jsp").forward(request,response);
+        //request.getRequestDispatcher("/list.jsp").forward(request,response);
+        response.sendRedirect("/findUserByPageServlet");
 
     }
 

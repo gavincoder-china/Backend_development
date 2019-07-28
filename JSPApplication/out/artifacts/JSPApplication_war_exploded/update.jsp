@@ -127,7 +127,7 @@
     var ReturnList = document.getElementById("ReturnList");
     ReturnList.onclick = function () {
         console.log("返回");
-        location.href = "${pageContext.request.contextPath}/userListServlet";
+        location.href = "${pageContext.request.contextPath}/findUserByPageServlet";
 
     }
 

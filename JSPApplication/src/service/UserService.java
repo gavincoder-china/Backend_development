@@ -1,9 +1,11 @@
 package service;
 
 
+import domain.PageBean;
 import domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Gavin
@@ -32,5 +34,7 @@ public interface UserService {
      //findOne  回显查询
     User findOne(Integer id);
     Integer update(User user);
+    //分页查询&条件查询
+    PageBean<User> findUserByPage(String currentPage, String rows, Map<String, String[]> condition);
 
 }

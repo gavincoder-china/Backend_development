@@ -35,10 +35,10 @@ public class DeleteServlet extends HttpServlet {
 
         if(del!=null){
 
-            resp.sendRedirect(req.getContextPath()+"/userListServlet");
+            resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
         }else{
             System.out.println("删除失败");
-            resp.sendRedirect(req.getContextPath()+"/userListServlet");
+            resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
         }
 
     }

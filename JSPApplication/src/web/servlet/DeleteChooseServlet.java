@@ -22,12 +22,15 @@ public class DeleteChooseServlet extends HttpServlet {
         UserService userService=new UserServiceImpl();
       for(String item :chooseItems){
 
+
+
           Integer del = userService.del(Integer.parseInt(item));
 
       }
       //删完了之后, 再返回到userListServlet
 
-        response.sendRedirect("/userListServlet");
+        response.sendRedirect("/findUserByPageServlet");
+
 
 
 

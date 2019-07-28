@@ -50,7 +50,7 @@ public class AddServlet  extends HttpServlet {
         Integer addResult = userService.add(user);
         if (addResult!=0){
             //添加成功,跳转到列表页面
-            resp.sendRedirect(req.getContextPath()+"/userListServlet");
+            resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
         }else {
             System.out.println("添加失败");
 

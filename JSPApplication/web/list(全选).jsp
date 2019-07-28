@@ -33,19 +33,19 @@
 
     <div style="float: left;">
 
-        <form class="form-inline" action="${pageContext.request.contextPath}/findUserByPageServlet">
+        <form class="form-inline">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
-                <input type="text" name="name" class="form-control" id="exampleInputName2" value="${condition.name[0]}">
+                <input type="text" class="form-control" id="exampleInputName2">
             </div>
             <div class="form-group">
                 <label for="exampleInputName3">籍贯</label>
-                <input type="text" name="address" class="form-control" id="exampleInputName3" value="${condition.address[0]}" >
+                <input type="text" class="form-control" id="exampleInputName3">
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail2">邮箱</label>
-                <input type="text" name="email" class="form-control" id="exampleInputEmail2" value="${condition.email[0]}">
+                <input type="email" class="form-control" id="exampleInputEmail2">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -55,12 +55,12 @@
     <div style="float: right;margin: 5px;">
 
         <a class="btn btn-primary" href="add.jsp">添加联系人</a>
-        <a class="btn btn-primary" onclick="delChoose()">删除选中</a>
+        <a class="btn btn-primary" onclick="delChoose()" >删除选中</a>
 
     </div>
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
-            <th><input onclick="chooseAll()" type="checkbox"></th>
+            <th><input  onclick="chooseAll()" type="checkbox"></th>
             <th>编号</th>
             <th>姓名</th>
             <th>性别</th>
@@ -70,12 +70,12 @@
             <th>邮箱</th>
             <th>操作</th>
         </tr>
-        <c:forEach items="${pb.list}" var="user" varStatus="s">
+        <c:forEach items="${users}" var="user" varStatus="s">
 
             <tr>
-                    <%--                //这边的name item 是为了在勾选删除时判断其是否为真实内容,并非标题栏--%>
+<%--                //这边的name item 是为了在勾选删除时判断其是否为真实内容,并非标题栏--%>
                 <th><input name="item" class="_checkbox" data_id="${user.id}" type="checkbox"></th>
-                <td>${user.id}</td>
+                <td>${s.count}</td>
                 <td>${user.name}</td>
                 <td>${user.gender}</td>
                 <td>${user.age}</td>
@@ -94,63 +94,23 @@
     <div>
         <nav aria-label="Page navigation">
             <ul class="pagination">
-
-                <c:if test="${pb.currentPage==1}">
-
-                    <li style="pointer-events: none">
-
-
-
-                </c:if>
-
-                <c:if test="${pb.currentPage>1}">
-
-                    <li>
-
-
-
-                </c:if>
-
-                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage-1}
-                    &rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
-                       aria-label="Previous">
+                <li>
+                    <a href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <c:forEach begin="1" end="${pb.totalPage}" var="i">
-                    <c:if test="${i==pb.currentPage}">
-                        <li class="active"><a
-                                href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
-                        </li>
-
-                    </c:if>
-
-                    <c:if test="${i!=pb.currentPage}">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
-                        </li>
-
-                    </c:if>
-                </c:forEach>
-
-                <c:if test="${pb.currentPage==pb.totalPage}">
-                    <li style="pointer-events: none">
-
-
-                </c:if>
-
-                <c:if test="${pb.currentPage<pb.totalPage}">
-                    <li>
-
-
-                </c:if>
-                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage+1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
-                       aria-label="Next">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
-                    </li>
+                </li>
                 <span style="font-size: 25px;margin-left: 5px;">
-        共${pb.totalCount}条记录，共${pb.totalPage}页
+        共16条记录，共4页
     </span>
 
             </ul>
@@ -204,26 +164,27 @@
         //获取name为item的选择框对象
         let items = document.getElementsByName("item");
 
-        for (let item of items) {
+         for (let item of items){
 
-            if (item.checked == true) {
-                chooseIDArr.push(item.getAttribute("data_id"));
-            }
-            console.log("成功");
+             if (item.checked==true){
+                 chooseIDArr.push(item.getAttribute("data_id"));
+             }
+             console.log("成功");
 
-        }
+         }
 
         console.log(chooseIDArr);
 
-        if (chooseIDArr.length > 0) {
+         if (chooseIDArr.length>0){
 
-            if (confirm("您确定要全部删除嘛?")) {
+             if (confirm("您确定要全部删除嘛?")) {
 
-                window.location.href = "${pageContext.request.contextPath}/deleteChooseServlet?chooseIDArr=" + chooseIDArr;
+               window.location.href = "${pageContext.request.contextPath}/deleteChooseServlet?chooseIDArr="+chooseIDArr;
 
-            }
+             }
 
-        }
+         }
+
 
 
     }
