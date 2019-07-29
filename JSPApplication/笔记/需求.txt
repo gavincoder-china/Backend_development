@@ -3,7 +3,7 @@
 ## 案例：用户信息列表展示
 	1. 需求：用户信息的增删改查操作
 	2. 设计：
-		1. 技术选型：Servlet+JSP+MySQL+JDBCTempleat+Duird+BeanUtilS+tomcat
+		1. 技术选型：Servlet+JSP+MySQL+JDBCTemplate+Druid+BeanUtilS+tomcat
 		2. 数据库设计：
 			create database UserInfo; -- 创建数据库
 			use UserInfo; 			   -- 使用数据库

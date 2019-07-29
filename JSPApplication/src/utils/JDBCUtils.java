@@ -29,7 +29,6 @@ public class JDBCUtils {
         try {
             props.load(JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties"));
             ds= DruidDataSourceFactory.createDataSource(props);
-
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -37,7 +36,6 @@ public class JDBCUtils {
         catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
 

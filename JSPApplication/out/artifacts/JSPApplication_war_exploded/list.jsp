@@ -45,7 +45,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail2">邮箱</label>
-                <input type="email" name="email" class="form-control" id="exampleInputEmail2" value="${condition.email[0]}">
+                <input type="text" name="email" class="form-control" id="exampleInputEmail2" value="${condition.email[0]}">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
