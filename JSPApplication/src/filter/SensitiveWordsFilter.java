@@ -67,8 +67,6 @@ public class SensitiveWordsFilter implements Filter {
 
                             if (value.contains(item)) {
                                 value = value.replace(item, "***");
-
-
                             }
                         }
 

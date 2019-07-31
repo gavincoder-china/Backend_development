@@ -47,7 +47,9 @@ public class UserDaoImpl implements UserDao {
     public Integer del(Integer id) {
 
         String sql = "delete from user where id=?";
+
         Integer result = (Integer) template.update(sql, id);
+
         return result;
     }
 
