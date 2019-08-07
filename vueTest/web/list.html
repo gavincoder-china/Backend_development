@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+</head>
+<style type="text/css">
+    td,
+    th {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+<div id="app" class="container" style="margin-top: 50px">
+    <h3 style="text-align: center">图书信息列表</h3>
+    <table border="1" class="table table-bordered table-hover">
+        <tr class="success">
+            <th>图书编号</th>
+            <th>图书分类</th>
+            <th>图书名称</th>
+            <th>作者</th>
+            <th>出版社</th>
+            <th>操作</th>
+        </tr>
+
+
+            <tr v-for="book in books">
+                <td>{{ book.bookCode }}</td>
+                <td>{{ book.bookType }}</td>
+                <td>{{ book.bookName }}</td>
+                <td>{{ book.bookAuthor }}</td>
+                <td>{{ book.publishPress }}</td>
+
+                <td>
+                    <button class="btn btn-primary btn-sm " href="update.html">修改</button>&nbsp;
+                    <button class="btn btn-danger btn-sm" href="">删除</button>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+    </table>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script>
+
+    var vm = new Vue({
+        el: "#app",
+        data:{
+
+                books: "",
+
+
+        },
+        methods: {
+            showData: function () {
+                console.log("在传");
+
+
+
+            }
+        },
+        created: function () {
+            $.ajax({
+                type: 'Get',
+                url: "/listAllServlet01",
+                dataType: "json",
+                success: function (data) {
+                    vm.books = data;
+                    console.log(data);
+                }
+            })
+        }
+
+
+    });
+
+</script>
+
+</body>
+
+</html>
