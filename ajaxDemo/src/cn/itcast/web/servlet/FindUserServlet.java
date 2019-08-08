@@ -14,6 +14,9 @@ import java.util.Map;
 @WebServlet("/findUserServlet")
 public class FindUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(
+                "haha"
+                          );
         //1.获取用户名
         String username = request.getParameter("username");
 

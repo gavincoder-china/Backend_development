@@ -1,0 +1,13 @@
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/util/UuidUtil.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/util/JedisUtil.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/Favorite.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/util/MailUtils.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/User.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/Seller.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/RouteImg.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/web/servlet/CheckCodeServlet.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/util/Md5Util.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/Route.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/ResultInfo.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/util/JDBCUtils.java
+/Users/gavincoder/mycode/github/Backend_development/travel/src/main/java/cn/itcast/travel/domain/Category.java

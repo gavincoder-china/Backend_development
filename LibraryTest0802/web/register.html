@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="width: 400px;margin-top: 100px">
+        <h3 style="text-align: center;">注册</h3>
+        <form action="login" method="post">
+            <div class="form-group">
+                <label for="user">用户名：</label>
+                <input type="text" name="user" class="form-control" id="user" placeholder="请输入用户名" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码：</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码" />
+            </div>
+            <div class="form-group">
+                <label for="password">确认密码：</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码" />
+                <span id="check" style="display: none"> 两次密码不一致 </span>
+            </div>
+
+
+            <div class="form-group">
+                <label>性别: </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender"  value="1"> 男
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender"  value="0"> 女
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <label for="email">电子邮箱: </label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="请输入电子邮箱" />
+            </div>
+
+
+            <hr />
+            <div class="form-group" style="text-align: center;">
+
+                <input class="btn btn btn-primary btn-lg" style="width: 45%" type="submit" value="注册">
+                <input class="btn btn btn-success btn-lg" style="width: 45%" type="submit" value="返回">
+
+            </div>
+        </form>
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

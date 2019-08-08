@@ -47,8 +47,7 @@
 </div>
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 
 
 
@@ -64,31 +63,41 @@
             var name = this.value;
 
 
-            $.get("findUserServlet",{username:name},function (data) {
+            // $.get("findUserServlet",{username:name},function (data) {
+            //
+            //
+            //
+            // });
 
 
-
-            });
-
-
-
-            
           //   //发送axios  ajax请求
-          // console.log(name);
-          // console.log(this.value);
-          //
+          console.log(name);
+          console.log(this.value);
+
           // var props=new URLSearchParams();
-          // props.append("name",name);
-          //
-          // console.log(s);
-          //
-          //   axios.post('http:/localhost:8080/findUserServlet', props)
-          //       .then(function (response) {
-          //           console.log(response);
-          //       })
-          //       .catch(function (error) {
-          //           console.log(error);
-          //       });
+            // props.append("name",name);
+
+
+
+            axios({
+                method: 'get',
+                url: 'findUserServlet',
+                data: {
+                    username: name
+
+                },
+                headers: {'Content-Type':
+                'application/x-www-form-urlencoded'}
+            })
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+
+
 
 
 

@@ -11,8 +11,21 @@ import java.util.Map;
 public class findUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println("哈哈哈哈");
 
         String name = request.getParameter("username");
+
+        if ("gavin".equals(name)){
+
+            response.getWriter().write("true");
+
+            System.out.println("登陆成功");
+
+        }else {
+
+            response.getWriter().write("false");
+
+        }
         System.out.println(name);
 
 

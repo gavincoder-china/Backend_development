@@ -1,0 +1,8 @@
+1.将WEB-INF下的lib包导入后再运行
+2.Tomcat版本需7.0版本以上
+3.MySQL的版本需5.0以上
+4.数据库连接池使用的是Alibaba的Druid
+5.数据库配置放在druid.properties文件中,使用前将其中的数据库配置改成自己的
+6.CRUD使用的是Spring的JDBCTemplate
+7.前端BootStrap框架,使用的是CDN链接,需要联网
+
