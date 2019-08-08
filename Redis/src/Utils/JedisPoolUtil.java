@@ -6,6 +6,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 /**
  * **********************************************************
@@ -25,20 +26,20 @@ public class JedisPoolUtil {
 
     static {
         Properties props = new Properties();
-        try {
-            props.load(JedisPoolUtil.class.getClassLoader().getResourceAsStream("jedis.properties"));
+        //  props.load(JedisPoolUtil.class.getClassLoader().getResourceAsStream("jedis.properties"));
 
-            //获取数据,加载到jedisPoolConfig下
-            JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
-            jedisPoolConfig.setMaxTotal(Integer.parseInt(props.getProperty("maxTotal")));
-            jedisPoolConfig.setMaxIdle(Integer.parseInt(props.getProperty("maxIdle")));
+        ResourceBundle bundle = ResourceBundle.getBundle("jedis");
 
-            //初始化 jedisPool
-            jedisPool=  new JedisPool(jedisPoolConfig, props.getProperty("host"), Integer.parseInt(props.getProperty("port")));
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        //获取数据,加载到jedisPoolConfig下
+        JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
+        //   jedisPoolConfig.setMaxTotal(Integer.parseInt(props.getProperty("maxTotal")));
+        jedisPoolConfig.setMaxTotal(Integer.parseInt(bundle.getString("maxTotal")));
+        // jedisPoolConfig.setMaxIdle(Integer.parseInt(props.getProperty("maxIdle")));
+        jedisPoolConfig.setMaxIdle(Integer.parseInt(bundle.getString("maxIdle")));
+
+        //初始化 jedisPool
+      //  jedisPool=  new JedisPool(jedisPoolConfig, props.getProperty("host"), Integer.parseInt(props.getProperty("port")));
+        jedisPool=  new JedisPool(jedisPoolConfig, bundle.getString("host"), Integer.parseInt(bundle.getString("port")));
 
 
     }
