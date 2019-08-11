@@ -1,7 +1,7 @@
 package Controller.Servlet;
 
 import Entity.User;
-import Entity.Users;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.ServletException;

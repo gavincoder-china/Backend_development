@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- mybatis 主配置文件
+     1.配置数据库环境
+     2.配置dao接口对应的mapper映射文件-->
+    <!--    <properties resource="db.properties"/>-->
+    <properties>
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/login"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </properties>
+
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"></transactionManager>
+            <!--        pooled mybatis自带的数据源  JNID:基于tomcat的数据源-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <mappers>
+
+        <!--        方法1:写xml文件名-->
+        <!--        <mapper resource="Mapper/UserMapper.xml"/>-->
+        <!--        方法2:写接口类名-->
+        <!--        <mapper class="Mapper.UserMapper"></mapper>-->
+        <!--        方法3:写包名-->
+        <package name="Mapper"/>
+
+
+    </mappers>
+</configuration>
