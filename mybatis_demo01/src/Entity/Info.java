@@ -1,4 +1,4 @@
-package Mapper;
+package Entity;
 
 public class Info {
     private Integer id;
@@ -19,5 +19,13 @@ public class Info {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "Info{" +
+               "id=" + id +
+               ", content='" + content + '\'' +
+               '}';
     }
 }

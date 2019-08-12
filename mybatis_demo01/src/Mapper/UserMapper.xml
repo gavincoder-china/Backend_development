@@ -4,7 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="Mapper.UserMapper">
-    <!--    只要是查询 就要加上resultType或者resultMap-->
     <sql id="Base_Column_List">
 	id,
 	username,
@@ -14,13 +13,34 @@
         <result column="id" property="id"/>
         <result column="username" property="username"/>
         <result column="password" property="password"/>
+        <association property="info" javaType="Entity.Info">
+            <id property="id" column="rid" />
+            <result property="content" column="content"/>
+
+        </association>
     </resultMap>
+
+
+<!--    <resultMap id="testmap" type="Entity.User">-->
+<!--&lt;!&ndash;        主键&ndash;&gt;-->
+<!--        <id property="id" column="id"></id>-->
+<!--        <result property="username" column="username" />-->
+<!--        <result property="password" column="password" />-->
+
+<!--&lt;!&ndash;       多对1的关系&ndash;&gt;-->
+<!--        <association property="info" javaType="Entity.Info">-->
+<!--            <id property="id" column="rid" />-->
+<!--            <result property="content" column="content"/>-->
+
+<!--        </association>-->
+
+<!--    </resultMap>-->
+
+    <!--    只要是查询 就要加上resultType或者resultMap-->
+
     <select id="queryAll" resultType="Entity.User">
 
-
         select  * from person
-
-
 
     </select>
 

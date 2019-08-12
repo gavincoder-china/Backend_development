@@ -1,10 +1,13 @@
 package Mapper;
 
-import Mapper.Info;
+import Entity.Info;
 
 public interface InfoMapper {
     int insert(Info record);
 
     int insertSelective(Info record);
+
+
+
 
 }

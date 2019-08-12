@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.RoleMapper">
+    <resultMap id="BaseResultMap" type="Entity.Role">
+        <!--@mbg.generated-->
+        <id column="rid" jdbcType="INTEGER" property="rid"/>
+        <result column="content" jdbcType="VARCHAR" property="content"/>
+        <collection property="list" ofType="Entity.Users">
+            <id property="id" column="id"/>
+            <result property="username" column="username"/>
+            <result property="rid" column="urid"/>
+
+
+        </collection>
+    </resultMap>
+
+
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        rid, content
+    </sql>
+
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from role
+        where rid = #{rid,jdbcType=INTEGER}
+    </select>
+
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from role
+        where rid = #{rid,jdbcType=INTEGER}
+    </delete>
+
+
+    <insert id="insert" keyColumn="rid" keyProperty="rid" parameterType="Entity.Role" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into role (content)
+        values (#{content,jdbcType=VARCHAR})
+    </insert>
+
+
+    <insert id="insertSelective" keyColumn="rid" keyProperty="rid" parameterType="Entity.Role" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into role
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="content != null">
+                content,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="content != null">
+                #{content,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+
+    <update id="updateByPrimaryKeySelective" parameterType="Entity.Role">
+        <!--@mbg.generated-->
+        update role
+        <set>
+            <if test="content != null">
+                content = #{content,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where rid = #{rid,jdbcType=INTEGER}
+    </update>
+
+
+    <update id="updateByPrimaryKey" parameterType="Entity.Role">
+        <!--@mbg.generated-->
+        update role
+        set content = #{content,jdbcType=VARCHAR}
+        where rid = #{rid,jdbcType=INTEGER}
+    </update>
+    <select id="get" resultMap="BaseResultMap">
+
+    select  r.rid,r.content,u.rid urid ,u.username from role r,users u where r.rid=u.rid
+
+    </select>
+
+
+</mapper>

@@ -4,22 +4,22 @@
     <option name="projectProfile">
       <ProjectProfile>
         <option name="javaMapperPackage" value="Mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
         <option name="javaModelPackage" value="Entity" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/src" />
-        <option name="lastDatabaseCrudChooseModuleName" value="mybatis_demo01" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="mybatis_demo" />
         <option name="modelAddToString" value="true" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
-            <entry key="mybatis_demo01">
+            <entry key="mybatis_demo">
               <value>
                 <UserPackageAndPathInfoByModule>
                   <option name="javaMapperPackage" value="Mapper" />
-                  <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="javaModelPacakge" value="Entity" />
-                  <option name="javaModelPath" value="$PROJECT_DIR$/src" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="xmlPackage" value="Mapper" />
-                  <option name="xmlPath" value="$PROJECT_DIR$/src" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -27,22 +27,12 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
-            <entry key="login:info">
-              <value>
-                <TableGenerateConfig>
-                  <option name="generatedKey" value="" />
-                  <option name="javaModelName" value="Info" />
-                  <option name="moduleName" value="mybatis_demo01" />
-                  <option name="useActualColumnName" value="false" />
-                </TableGenerateConfig>
-              </value>
-            </entry>
             <entry key="login:role">
               <value>
                 <TableGenerateConfig>
                   <option name="generatedKey" value="rid" />
                   <option name="javaModelName" value="Role" />
-                  <option name="moduleName" value="mybatis_demo01" />
+                  <option name="moduleName" value="mybatis_demo" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -52,7 +42,7 @@
                 <TableGenerateConfig>
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="Users" />
-                  <option name="moduleName" value="mybatis_demo01" />
+                  <option name="moduleName" value="mybatis_demo" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -60,7 +50,7 @@
           </map>
         </option>
         <option name="xmlMapperPackage" value="Mapper" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/src" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
       </ProjectProfile>
     </option>
   </component>

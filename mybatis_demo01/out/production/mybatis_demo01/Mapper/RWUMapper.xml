@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.RWUMapper">
+  <resultMap id="test" type="Entity.RWU">
+      <id property="rid" column="rid" />
+      <result property="content" column="content"/>
+      <collection property="users" ofType="Entity.Users">
+
+          <id property="id" column="id"/>
+          <result property="rid" column="urid"/>
+          <result property="username" column="username"/>
+
+      </collection>
+
+  </resultMap>
+
+    <select id="gett" resultMap="test">
+select  r.rid,r.content,u.username,u.rid urid from role r,users u where r.rid=u.rid
+
+
+    </select>
+</mapper>
