@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="MyBatisCodeHelperDatasource">
+    <option name="lastUsedTestConfiguration">
+      <TestConfiguration>
+        <option name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+        <option name="from" value="history" />
+        <option name="intellij" value="false" />
+        <option name="order" value="-1" />
+        <option name="password" value="123456" />
+        <option name="url" value="jdbc:mysql://localhost:3306/login" />
+        <option name="userName" value="root" />
+      </TestConfiguration>
+    </option>
     <option name="projectProfile">
       <ProjectProfile>
+        <option name="genSqlFilePath" value="$PROJECT_DIR$/src/main/java/Entity" />
         <option name="javaMapperPackage" value="Mapper" />
         <option name="javaMapperPath" value="$PROJECT_DIR$/src/main/java" />
         <option name="javaModelPackage" value="Entity" />
@@ -27,6 +39,16 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="login:book">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Book" />
+                  <option name="moduleName" value="mybatis_demo" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="login:role">
               <value>
                 <TableGenerateConfig>
@@ -52,6 +74,19 @@
         <option name="xmlMapperPackage" value="Mapper" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
       </ProjectProfile>
+    </option>
+    <option name="testConfigurations">
+      <list>
+        <TestConfiguration>
+          <option name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+          <option name="from" value="history" />
+          <option name="intellij" value="false" />
+          <option name="order" value="-1" />
+          <option name="password" value="123456" />
+          <option name="url" value="jdbc:mysql://localhost:3306/login" />
+          <option name="userName" value="root" />
+        </TestConfiguration>
+      </list>
     </option>
   </component>
 </project>
