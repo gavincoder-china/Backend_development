@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="javaMapperPackage" value="DAO" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+        <option name="javaModelPackage" value="Entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/src" />
+        <option name="lastDatabaseCrudChooseModuleName" value="Spring_demo" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="Spring_demo">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="DAO" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
+                  <option name="javaModelPacakge" value="Entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/src" />
+                  <option name="xmlPackage" value="DAO" />
+                  <option name="xmlPath" value="src" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="login:person">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Person" />
+                  <option name="moduleName" value="Spring_demo" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="DAO" />
+        <option name="xmlMapperPath" value="src" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
