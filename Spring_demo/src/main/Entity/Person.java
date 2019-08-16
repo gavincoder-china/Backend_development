@@ -1,4 +1,4 @@
-package Entity;
+package main.Entity;
 
 public class Person {
    private String name;

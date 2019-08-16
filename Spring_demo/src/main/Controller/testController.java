@@ -1,6 +1,6 @@
-package Controller;
+package main.Controller;
 
-import Service.testService;
+import main.Service.testService;
 
 /**
  * **********************************************************

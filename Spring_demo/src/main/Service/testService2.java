@@ -1,4 +1,4 @@
-package Service;
+package main.Service;
 
 public interface testService2 {
 

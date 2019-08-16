@@ -1,6 +1,4 @@
-package Service;
-
-import DAO.testDao;
+package main.Service;
 
 public interface testService {
 

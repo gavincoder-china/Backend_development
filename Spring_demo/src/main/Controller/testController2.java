@@ -1,6 +1,6 @@
-package Controller;
+package main.Controller;
 
-import Service.testService2;
+import main.Service.testService2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Controller;
  * @Date : 2019-08-15 10:04
  * @description:
  ************************************************************/
-@Controller
+@Controller("aa")
 public class testController2 {
 
 

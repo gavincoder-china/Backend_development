@@ -1,6 +1,6 @@
-package DAO;
+package main.DAO;
 
-import Entity.Book;
+import main.Entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

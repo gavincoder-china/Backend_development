@@ -1,7 +1,6 @@
-package Service;
+package main.Service;
 
-import DAO.testDao;
-import DAO.testDao2;
+import main.DAO.testDao2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

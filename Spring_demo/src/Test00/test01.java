@@ -1,8 +1,10 @@
-package Test;
 
-import org.springframework.context.ApplicationContext;
+
+
+import main.Controller.testController;
+import main.Controller.testController2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.context.TestExecutionListeners;
+
 
 /**
  * **********************************************************
@@ -22,9 +24,11 @@ public class test01 {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 
-        Object person = classPathXmlApplicationContext.getBean("person");
-        System.out.println(person);
+       // testController controller = (testController) classPathXmlApplicationContext.getBean("controller");
+        testController2 controller = (testController2) classPathXmlApplicationContext.getBean("aa");
+        controller.findController();
 
     }
+
 
 }

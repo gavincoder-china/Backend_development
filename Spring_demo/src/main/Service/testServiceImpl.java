@@ -1,8 +1,6 @@
-package Service;
+package main.Service;
 
-import DAO.testDao;
-
-import javax.swing.*;
+import main.DAO.testDao;
 
 /**
  * **********************************************************
