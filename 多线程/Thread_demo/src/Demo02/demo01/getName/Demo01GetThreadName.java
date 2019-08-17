@@ -14,7 +14,7 @@ public class Demo01GetThreadName {
         new MyThread().start();
         new MyThread().start();
 
-        //链式编程
+        // 链式编程
         System.out.println(Thread.currentThread().getName());
     }
 }
