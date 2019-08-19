@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+
+          http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--开启注解-->
+    <context:component-scan base-package="main"></context:component-scan>
+
+
+    <!--开启AOP注解扫描-->
+    <!--    <aop:aspectj-autoproxy/>-->
+
+    <!--   视图解析器-->
+    <!-- 4.配置资源视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"></property>
+        <!--        <property name="prefix" value="/"></property>-->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+    <!--    json转换-->
+
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+</beans>
