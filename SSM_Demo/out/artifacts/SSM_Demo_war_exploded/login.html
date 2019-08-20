@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>管理员登录</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <!--	  导入vue-->
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+
+
+    <style>
+        #app {
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container" style="width: 400px;">
+            <h3 style="text-align: center;">管理员登录</h3>
+
+            <div class="form-group">
+                <label for="user">用户名：</label>
+                <input type="text" class="form-control" id="user" placeholder="请输入用户名" v-model="user.name" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码：</label>
+                <input type="password" class="form-control" id="password" placeholder="请输入密码" v-model="user.password" />
+            </div>
+
+            <!-- <div class="form-inline">
+           <label for="vcode">验证码：</label>
+           <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="width: 120px;"/>
+           <a href="javascript:refreshCode()"><img src="vcode" title="看不清点击刷新" id="vcode"/></a>
+         </div>-->
+            <hr />
+            <div class="form-group" style="text-align: center;">
+                <input class="btn btn btn-primary" @click="login" value="登录">
+            </div>
+
+
+            <!-- 出错显示的信息框 -->
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span></button>
+                <strong>登录失败!</strong>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                user: {
+                    name: "",
+                    password: ""
+                }
+            }
+        },
+        methods: {
+            login: function () {
+                var login = JSON.stringify(this.user);
+                console.log(login);
+                console.log(this.user);
+                axios({
+                    method: 'post',
+                    url: "user/login.do",
+                    headers: {
+                        "Content-Type": "application/json"
+                       // "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    data: login
+                }).then((result) => {
+
+                    console.log(
+                        result.data
+                    )
+
+                }).catch((err) => {
+
+                });
+
+            }
+        }
+
+
+    })
+
+</script>
+
+</html>
