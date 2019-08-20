@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/day05/code/05_ExceptionAndThread/05_ExceptionAndThread.iml" filepath="$PROJECT_DIR$/day05/code/05_ExceptionAndThread/05_ExceptionAndThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Thread&amp;Exception.iml" filepath="$PROJECT_DIR$/.idea/Thread&amp;Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread_demo/Thread_demo.iml" filepath="$PROJECT_DIR$/Thread_demo/Thread_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/多线程.iml" filepath="$PROJECT_DIR$/.idea/多线程.iml" />
     </modules>
   </component>
 </project>
