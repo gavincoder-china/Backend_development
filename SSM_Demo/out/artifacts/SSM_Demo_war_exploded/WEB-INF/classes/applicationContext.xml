@@ -34,7 +34,7 @@
     <!--配置Druid数据库连接池，这个是最基本的连接数据库配置-->
     <bean id="dataSource" destroy-method="close" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql:///SSM_LIbrary?characterEncoding=utf8"></property>
+        <property name="url" value="jdbc:mysql:///SSM?characterEncoding=utf8"></property>
         <property name="username" value="root"></property>
         <property name="password" value="123456"></property>
         <property name="initialSize" value="5"/>
@@ -81,4 +81,6 @@
     <!--静态资源放行-->
     <!--    把dispatcherservlet中央处理器处理不了的资源交给tomcat服务器执行-->
     <mvc:default-servlet-handler/>
+
+    <mvc:resources location="static/" mapping="static/**"/>
 </beans>

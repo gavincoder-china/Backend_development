@@ -11,11 +11,11 @@ public class Users {
 
     private Integer sex;
 
-    private String nickname;
-
     private Integer usertype;
 
     private Integer roleid;
+
+    private String email;
 
     public Integer getId() {
         return id;
@@ -57,14 +57,6 @@ public class Users {
         this.sex = sex;
     }
 
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
     public Integer getUsertype() {
         return usertype;
     }
@@ -81,6 +73,14 @@ public class Users {
         this.roleid = roleid;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -92,9 +92,9 @@ public class Users {
         sb.append(", password=").append(password);
         sb.append(", age=").append(age);
         sb.append(", sex=").append(sex);
-        sb.append(", nickname=").append(nickname);
         sb.append(", usertype=").append(usertype);
         sb.append(", roleid=").append(roleid);
+        sb.append(", email=").append(email);
         sb.append("]");
         return sb.toString();
     }

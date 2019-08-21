@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * **********************************************************
  *
@@ -29,16 +32,36 @@ public class UserController {
     @RequestMapping("login")
     @ResponseBody
     public Users login(@RequestBody Users user) {
-        System.out.println(user.getName()+user.getPassword());
-        Users gavin = service.login("aa", "654321");
+        // System.out.println(user.getName()+user.getPassword());
+        Users gavin = service.login(user.getName(), user.getPassword());
+
         System.out.println(gavin);
 
         return gavin;
     }
-    @RequestMapping("test")
+
+    @RequestMapping("register")
     @ResponseBody
-    public boolean test(){
-        return true;
+    public boolean register(@RequestBody Users user) {
+
+        Integer register = service.register(user);
+
+        if (register == 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
+
+    @RequestMapping("selectAll")
+    @ResponseBody
+    public List<Users> selectAll() {
+
+        List<Users> list = service.selectAll();
+        System.out.println("controller");
+        System.out.println(list);
+        return list;
+    }
+
 
 }

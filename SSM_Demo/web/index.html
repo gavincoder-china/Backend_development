@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <!-- metatags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- Meta tag Keywords -->
+    <!-- Custom-Style-Sheet -->
+    <link href="static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--style_sheet-->
+    <link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="screen" property="" />
+    <link rel="stylesheet" href="static/css/font-awesome.css"> <!-- Font-Awesome_Icons-CSS -->
+    <!--//Custom-Style-Sheet -->
+    <!--online_fonts-->
+    <link href="http://maxcdn.bootstrapcdn.com/css?family=Audiowide" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <!--//online_fonts-->
+
+    <!--	vue相关-->
+    <!--	  导入vue-->
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+
+<style>
+
+ 
+body{
+   
+       background:url("https://img01.sogoucdn.com/app/a/100520146/20D7A1179916EF48EC5B629FF96CFDF1") no-repeat;
+       background-position: left top;
+       background-size:100% 100%;
+       margin:0px; 
+       padding:0px;
+       background-attachment: fixed;
+
+    }
+
+.bg{
+margin-top: 50px
+}
+</style>
+</head>
+
+<body>
+    <div id="app" class="bg">
+        <div class="w3l-head">
+            <h1>江宁区市民图书馆智能管理平台</h1>
+        </div>
+        <div class="w3l-main">
+            <div class="w3l-left-side" style="border: seashell">
+
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="static/images/g5.jpg" alt="image" />
+                        </li>
+                        <li>
+                            <img src="static/images/g2.jpg" alt="image" />
+                        </li>
+                        <li>
+                            <img src="static/images/g3.jpg" alt="image" />
+                        </li>
+                        <li>
+                            <img src="static/images/g4.jpg" alt="image" />
+                        </li>
+                        <li>
+                            <img src="static/images/g1.jpg" alt="image" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w3l-rigt-side" style="background-color: rgba(151, 204, 188,0.8)">
+                <form action="#" method="post">
+                    <div class="w3l-signin">
+                        <a class="w3_play_icon1" href="#small-dialog1">登录</a>
+                    </div>
+                    <div class="w3l-signup">
+                        <a class="w3_play_icon1" href="#small-dialog2">注册</a>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!--登录表单-->
+        <div id="small-dialog1" class="mfp-hide">
+            <div class="wthree-container">
+                <div class="wthree-form">
+                    <div class="agileits-2">
+                        <h2>登录</h2>
+                    </div>
+                    
+                        <div class="w3-user">
+                            <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" name="name" placeholder="用户名" required v-model="login.name">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="w3-psw">
+                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="password" name="password" placeholder="密码" required v-model="login.password">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="w3l-check">
+                            <input type="checkbox" class="checkbox">
+                            <span><a href="#">忘记密码?</a></span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="signin">
+                            <button class="w3l-signin" style="background-color: rgba(78, 168, 62, 0.8);
+                            color:seashell;
+                            font-weight:bold
+                            " @click="Clogin" >登录</button>
+                        </div>
+                        <div class="clear"></div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--sign in form -->
+        <!-- for register popup -->
+
+        <!--注册表单-->
+        <div id="small-dialog2" class="mfp-hide">
+            <div class="wthree-container">
+                <div class="wthree-form bg">
+                    <div class="agileits-2">
+                        <h2>注册</h2>
+                    </div>
+                    
+                        <div class="w3-user">
+                            <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                            <input type="text" name="Username" placeholder="用户名" required v-model="register.name">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="w3-email">
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="email" name="email" placeholder="电子邮箱" required v-model="register.email" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="w3-psw">
+                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="password" name="password" placeholder="密码" required
+                                v-model="register.password">
+                        </div>
+                        <div class="w3-cpsw">
+                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="password" name="password" placeholder="确认密码" required
+                                >
+                        </div>
+                        <div class="clear"></div>
+                        <div class="w3l-check">
+                            <input type="checkbox" class="checkbox" required>
+                            <span><a href="#">我同意江宁区市民图书馆相关规定</a></span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="signin">
+                            <button  class="w3l-signin" style="background-color: rgba(78, 168, 62, 0.8);  color:seashell;
+                            font-weight:bold" @click="Cregister" >注册</button>
+                        </div>
+                        <div class="clear"></div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sign in form -->
+    <!-- //for register popup -->
+    <footer>Copyright &copy; 2019 Gavincoder.<a target="_blank" href="https://www.github.com/xunyegege">Github</a>
+    </footer>
+
+
+    <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+
+    <!-- pop-up-box-js-file -->
+    <script src="static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <!--//pop-up-box-js-file -->
+    <script>
+        $(document).ready(function () {
+            $('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+        });
+    </script>
+    <!-- flexSlider -->
+    <script defer src="static/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- //flexSlider -->
+    <!-- vue -->
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    login: {
+                        name: '',
+                        password: ''
+
+
+                    },
+                    register: {
+                        name: '',
+                        password: '',
+
+                        email: ''
+                    }
+                }
+            },
+            methods: {
+                Clogin: function () {
+                 var login=JSON.stringify(this.login);
+                 axios({
+                     method:'post',
+                     url: 'user/login',
+                     data:login,
+                     headers: {
+                        "Content-Type": "application/json"
+                       // "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                 }).then((result)=>{
+                     console.log(result)
+                 }).then((error)=>{
+                     console.log(error)
+                 })
+
+                },
+                Cregister: function () {
+                    var register=JSON.stringify(this.register);
+                 axios({
+                     method:'post',
+                     url: 'user/register',
+                     data:register,
+                     headers: {
+                        "Content-Type": "application/json"
+                       // "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                 }).then((result)=>{
+                     console.log(result)
+                 }).then((error)=>{
+                     console.log(error)
+                 })
+                }
+            },
+        })
+
+    </script>
+</body>
+
+</html>

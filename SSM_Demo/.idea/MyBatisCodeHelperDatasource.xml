@@ -18,7 +18,7 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/src" />
                   <option name="javaModelPacakge" value="main.Entity" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/src" />
-                  <option name="xmlPackage" value="main" />
+                  <option name="xmlPackage" value="main.Mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/src" />
                 </UserPackageAndPathInfoByModule>
               </value>
@@ -27,6 +27,16 @@
         </option>
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="SSM:book">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Book" />
+                  <option name="moduleName" value="SSM_Demo" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="SSM:users">
               <value>
                 <TableGenerateConfig>
@@ -39,7 +49,7 @@
             </entry>
           </map>
         </option>
-        <option name="xmlMapperPackage" value="main" />
+        <option name="xmlMapperPackage" value="main.Mapper" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/src" />
       </ProjectProfile>
     </option>

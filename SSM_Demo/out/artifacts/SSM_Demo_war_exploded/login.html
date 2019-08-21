@@ -52,7 +52,7 @@
          </div>-->
             <hr />
             <div class="form-group" style="text-align: center;">
-                <input class="btn btn btn-primary" @click="login" value="登录">
+                <button class="btn btn btn-primary" @click="login" value="登录">登录</button>
             </div>
 
 
@@ -85,7 +85,7 @@
                 console.log(this.user);
                 axios({
                     method: 'post',
-                    url: "user/login.do",
+                    url: "user/login",
                     headers: {
                         "Content-Type": "application/json"
                        // "Content-Type": "application/x-www-form-urlencoded"

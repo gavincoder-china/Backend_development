@@ -31,4 +31,18 @@ public class UserServiceImpl implements UserService {
 
         return users;
     }
+
+    @Override
+    public Integer register(Users user) {
+        int insert = mapper.insert(user);
+        return insert;
+    }
+
+    @Override
+    public List<Users> selectAll() {
+        List<Users> list = mapper.selectall();
+
+        return list;
+    }
+
 }
