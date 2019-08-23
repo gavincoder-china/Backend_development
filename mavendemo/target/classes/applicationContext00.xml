@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <!--spring 的配置文件，这里主要配置和业务逻辑有关的-->
+    <!--扫描配置的包，除了控制器不扫描其他都扫描-->
+    <context:component-scan base-package="app">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--配置Druid数据库连接池，这个是最基本的连接数据库配置-->
+    <bean id="dataSource" destroy-method="close" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/SSM?characterEncoding=utf8"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="10"/>
+        <property name="maxWait" value="3000"/>
+    </bean>
+
+
+    <!--2.配置和mybatis的整合-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指定mybatis的全局配置文件的位置-->
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:Mapper/*.xml"/>
+        <!-- 配置包名的别名 -->
+        <!-- <property name="typeAliasesPackage" value="com.kgc.exam"></property> -->
+    </bean>
+    <!--3.配置扫描器，将mybatis接口实现加入到ioc容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--扫描所有mapper接口，加入到ioc容器中-->
+        <property name="basePackage" value="app.mapper"/>
+    </bean>
+
+    <!--4.事务控制的配置-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+ <!--   &lt;!&ndash;5.开启基于注解的事务，使用xml配置形式的事务（主要的都是使用配置式）&ndash;&gt;
+    <aop:config>
+        &lt;!&ndash;切入点表达式&ndash;&gt;
+        <aop:pointcut id="txPoint" expression="execution(* app.service..*(..) )"/>
+        &lt;!&ndash;配置事务增强&ndash;&gt;
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
+    </aop:config>
+
+    &lt;!&ndash;配置事务增强，事务如何切入&ndash;&gt;
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            &lt;!&ndash;所有方法都是事务方法&ndash;&gt;
+            <tx:method name="*"/>
+            &lt;!&ndash;以查询开始的所有方法,不开启事务管理(无所谓)&ndash;&gt;
+&lt;!&ndash;            <tx:method name="query*" read-only="true"/>&ndash;&gt;
+        </tx:attributes>
+    </tx:advice>-->
+    <!-- 开启事务注解 @Trasactional -->
+
+    <tx:annotation-driven/>
+
+
+</beans>

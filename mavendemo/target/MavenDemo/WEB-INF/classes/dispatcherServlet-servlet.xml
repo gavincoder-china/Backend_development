@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+
+    <!--1.springMVC的配置文件，包含网站跳转逻辑控制的配置-->
+    <context:component-scan base-package="app" use-default-filters="false">
+        <!--这个是springmvc的配置，假设值扫描带有@Controller的类-->
+        <!--use-default-filters="false"取消默认配置-->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--2.配置视图解析器-->
+
+
+
+    <!--3.两个标准配置-->
+    <!--将springmvc不能处理的请求交给tomcat-->
+    <mvc:default-servlet-handler/>
+    <!--能支持springmvc更高级的功能，JSR303，快捷的ajax等,隐射动态请求-->
+    <mvc:annotation-driven/>
+
+
+<!--    <mvc:resources location="static/" mapping="static/**"/>-->
+
+</beans>
