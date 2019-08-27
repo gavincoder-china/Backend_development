@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+
+          http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+    <!-- 开启IOC扫描 -->
+    <context:component-scan base-package="app"></context:component-scan>
+
+    <!-- 配置连接数据库 -->
+    <!-- <context:property-placeholder location="classpath:database.properties" />
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="${user}"></property>
+        <property name="password" value="${password}"></property>
+        <property name="driverClass" value="${driverClass}"></property>
+        <property name="jdbcUrl" value="${jdbcUrl}"></property>
+    </bean> -->
+    <!--	c3p0连接池-->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="root"></property>
+        <property name="password" value="123456"></property>
+        <property name="jdbcUrl" value="jdbc:mysql:///home?characterEncoding=utf8"></property>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+    </bean>-->
+
+
+    <!--配置Druid数据库连接池，这个是最基本的连接数据库配置-->
+    <bean id="dataSource" destroy-method="close" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql:///SSM?characterEncoding=utf8"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="123456"></property>
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="10"/>
+        <property name="maxWait" value="3000"/>
+    </bean>
+
+    <!--2.配置和mybatis的整合-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指定mybatis的全局配置文件的位置-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:Mapper/*.xml"/>
+        <!-- 配置包名的别名 -->
+        <!-- <property name="typeAliasesPackage" value="com.kgc.exam"></property> -->
+    </bean>
+
+    <!--3.配置扫描器，将mybatis接口实现加入到ioc容器中-->
+    <!-- 自动扫描 将Mapper接口生成代理注入到Spring -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--扫描所有mapper接口，加入到ioc容器中-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+
+        <property name="basePackage" value="app.mapper"/>
+    </bean>
+
+
+
+    <!-- 事务管理 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 开启事务注解 @Trasactional -->
+    <tx:annotation-driven/>
+
+
+
+    <!--设置 @Controller 配置方案 -->
+    <mvc:annotation-driven/>
+
+
+
+    <!--静态资源放行-->
+    <!--    把dispatcherservlet中央处理器处理不了的资源交给tomcat服务器执行-->
+    <mvc:default-servlet-handler/>
+
+    <mvc:resources location="static/" mapping="static/**"/>
+</beans>
