@@ -42,20 +42,26 @@
         <property name="maxWait" value="3000"/>
     </bean>
 
-    <!-- 整合MyBatis -->
-    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <!-- 连接数据库的数据源 -->
-        <property name="dataSource" ref="dataSource"></property>
+    <!--2.配置和mybatis的整合-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指定mybatis的全局配置文件的位置-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:Mapper/*.xml"/>
         <!-- 配置包名的别名 -->
         <!-- <property name="typeAliasesPackage" value="com.kgc.exam"></property> -->
     </bean>
 
+    <!--3.配置扫描器，将mybatis接口实现加入到ioc容器中-->
     <!-- 自动扫描 将Mapper接口生成代理注入到Spring -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="sessionFactory"></property>
-        <property name="basePackage" value="app.mapper"></property>
+        <!--扫描所有mapper接口，加入到ioc容器中-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 
+        <property name="basePackage" value="app.mapper"/>
     </bean>
+
+   
 
     <!-- 事务管理 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
@@ -70,15 +76,7 @@
     <!--设置 @Controller 配置方案 -->
     <mvc:annotation-driven/>
 
-    <!--
-        配置视图解析器：如何把controller方法返回值解析为实际的物理视图
-        当controller里直接返回路径时，视图解析器就不用配置
-     -->
-    <!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"></property>
-        <property name="prefix" value="/"></property>
-        <property name="suffix" value=".jsp"></property>
-    </bean> -->
+
 
     <!--静态资源放行-->
     <!--    把dispatcherservlet中央处理器处理不了的资源交给tomcat服务器执行-->

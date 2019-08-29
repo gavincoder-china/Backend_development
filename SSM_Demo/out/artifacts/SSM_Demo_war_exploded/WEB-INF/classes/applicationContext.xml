@@ -65,6 +65,8 @@
     <!-- 开启事务注解 @Trasactional -->
     <tx:annotation-driven/>
 
+
+
     <!--设置 @Controller 配置方案 -->
     <mvc:annotation-driven/>
 

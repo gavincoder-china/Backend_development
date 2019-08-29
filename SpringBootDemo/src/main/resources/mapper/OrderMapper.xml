@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gavin.code.mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="gavin.code.entity.Order">
+    <!--@mbg.generated-->
+    <id column="oid" jdbcType="INTEGER" property="oid" />
+    <result column="otime" jdbcType="TIMESTAMP" property="otime" />
+    <result column="total_price" jdbcType="DECIMAL" property="totalPrice" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    oid, otime, total_price, user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from order
+    where oid = #{oid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from order
+    where oid = #{oid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.entity.Order" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into order (otime, total_price, user_id
+      )
+    values (#{otime,jdbcType=TIMESTAMP}, #{totalPrice,jdbcType=DECIMAL}, #{userId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.entity.Order" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="otime != null">
+        otime,
+      </if>
+      <if test="totalPrice != null">
+        total_price,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="otime != null">
+        #{otime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="totalPrice != null">
+        #{totalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.entity.Order">
+    <!--@mbg.generated-->
+    update order
+    <set>
+      <if test="otime != null">
+        otime = #{otime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="totalPrice != null">
+        total_price = #{totalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where oid = #{oid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="gavin.code.entity.Order">
+    <!--@mbg.generated-->
+    update order
+    set otime = #{otime,jdbcType=TIMESTAMP},
+      total_price = #{totalPrice,jdbcType=DECIMAL},
+      user_id = #{userId,jdbcType=INTEGER}
+    where oid = #{oid,jdbcType=INTEGER}
+  </update>
+</mapper>

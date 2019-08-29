@@ -6,7 +6,7 @@
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <display-name></display-name>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
     <!--1.配置spring容器-->
@@ -22,11 +22,11 @@
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-         <init-param>
-             <param-name>contextConfigLocation</param-name>
-             <param-value>classpath:applicationContext.xml</param-value>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:applicationContext.xml</param-value>
 
-         </init-param>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>

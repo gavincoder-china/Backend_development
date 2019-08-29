@@ -47,7 +47,7 @@
         <!--指定mybatis的全局配置文件的位置-->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="dataSource" ref="dataSource"/>
-        <property name="mapperLocations" value="classpath:Mapper/*.xml"/>
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
         <!-- 配置包名的别名 -->
         <!-- <property name="typeAliasesPackage" value="com.kgc.exam"></property> -->
     </bean>
@@ -82,5 +82,5 @@
     <!--    把dispatcherservlet中央处理器处理不了的资源交给tomcat服务器执行-->
     <mvc:default-servlet-handler/>
 
-    <mvc:resources location="static/" mapping="static/**"/>
+<!--    <mvc:resources location="static/" mapping="static/**"/>-->
 </beans>

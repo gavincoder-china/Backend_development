@@ -29,7 +29,7 @@
     <!--2.配置和mybatis的整合-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--指定mybatis的全局配置文件的位置-->
-        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+       <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:Mapper/*.xml"/>
         <!-- 配置包名的别名 -->
@@ -47,23 +47,7 @@
     </bean>
 
 
- <!--   &lt;!&ndash;5.开启基于注解的事务，使用xml配置形式的事务（主要的都是使用配置式）&ndash;&gt;
-    <aop:config>
-        &lt;!&ndash;切入点表达式&ndash;&gt;
-        <aop:pointcut id="txPoint" expression="execution(* app.service..*(..) )"/>
-        &lt;!&ndash;配置事务增强&ndash;&gt;
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
-    </aop:config>
 
-    &lt;!&ndash;配置事务增强，事务如何切入&ndash;&gt;
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-            &lt;!&ndash;所有方法都是事务方法&ndash;&gt;
-            <tx:method name="*"/>
-            &lt;!&ndash;以查询开始的所有方法,不开启事务管理(无所谓)&ndash;&gt;
-&lt;!&ndash;            <tx:method name="query*" read-only="true"/>&ndash;&gt;
-        </tx:attributes>
-    </tx:advice>-->
     <!-- 开启事务注解 @Trasactional -->
 
     <tx:annotation-driven/>

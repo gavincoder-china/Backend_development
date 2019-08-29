@@ -26,8 +26,9 @@
     </bean>
 
 
-    <!--    json转换-->
+    <!--   -->
 
     <mvc:annotation-driven/>
+  <!--  静态资源放行 -->
     <mvc:default-servlet-handler/>
 </beans>
