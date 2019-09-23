@@ -53,12 +53,7 @@
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.3.5</version>
                 <dependencies>
-<!--                    <dependency>-->
-<!--                        <groupId>mysql</groupId>-->
-<!--                        <artifactId>mysql-connector-java</artifactId>-->
-<!--                        <version>5.1.47</version>-->
-<!--                    </dependency>-->
-
+<!--                 //这边的版本号看自己的数据库版本-->
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
