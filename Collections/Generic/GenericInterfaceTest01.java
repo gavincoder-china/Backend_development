@@ -1,6 +1,6 @@
 package Generic;
 
-public class GenericInterfaceTest01 implements GenericInterface<String>{
+public class GenericInterfaceTest01 implements Generic.GenericInterface<String> {
 
     //泛型接口  实现方式 01
 

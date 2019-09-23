@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1315fce3-b83d-45ef-8404-7d6181374099" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Favourite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Orderitem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/PayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Shipping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/CartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/FavouriteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/OrderitemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/PayInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/ShippingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/ov/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/ov/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/FavouriteMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/OrderitemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/PayInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/ShippingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/test/java/gavin/code/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/GenericInterfaceTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/GenericInterfaceTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/GenericInterfaceTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/GenericInterfaceTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/Generic_通配符.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/Generic_通配符.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis/笔记/redis笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis/笔记/redis笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM_Demo/out/production/SSM_Demo/META-INF/SSM_Demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Orderitems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/Products.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/OrderitemsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/ProductsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/OrderitemsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/ProductsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../alipay/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../alipay/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1R5mxwyR70HM945Klccn6Hif8f0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1315fce3-b83d-45ef-8404-7d6181374099" name="Default Changelist" comment="" />
+      <created>1568965580850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568965580850</updated>
+      <workItem from="1568965582012" duration="1373000" />
+      <workItem from="1568971876677" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

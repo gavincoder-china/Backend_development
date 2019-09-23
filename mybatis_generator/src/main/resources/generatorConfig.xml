@@ -18,38 +18,38 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test?=true"
-                        userId="root" password="root">
+                        connectionURL="jdbc:mysql://localhost:32771/YouGuMall"
+                        userId="root" password="123456">
         </jdbcConnection>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.kgc.cn.dto"
+        <javaModelGenerator targetPackage="com.gavin.mybatis_generator.dto"
                             targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="false"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.kgc.cn.mapper"
+        <sqlMapGenerator targetPackage="com.gavin.mybatis_generator.mapper"
                          targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.kgc.cn.mapper"
+                             targetPackage="com.gavin.mybatis_generator.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table schema="" tableName="goods" domainObjectName="Goods" enableCountByExample="false"
+        <table schema="" tableName="user" domainObjectName="User" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="false"/>
-            <columnOverride column="id" jdbcType="BIGINT" javaType="java.lang.Long"></columnOverride>
+            <columnOverride column="uid" jdbcType="INTEGER" javaType="java.lang.Integer"></columnOverride>
         </table>
 
         <!--<table schema="" tableName="store_info" domainObjectName="StoreInfo">-->

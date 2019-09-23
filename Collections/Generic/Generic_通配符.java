@@ -19,7 +19,6 @@ public class Generic_通配符 {
         list01.add("java");
         list01.add("go");
         list01.add("python");
-        list01.add("js");
         Generic_通配符.printArr(list01);
 
         ArrayList<Integer> list02=new ArrayList<>();
