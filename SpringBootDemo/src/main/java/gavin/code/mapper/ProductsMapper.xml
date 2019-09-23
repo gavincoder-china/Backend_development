@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gavin.code.mapper.ProductsMapper">
-  <resultMap id="BaseResultMap" type="gavin.code.entity.Products">
+  <resultMap id="BaseResultMap" type="gavin.code.dto.Products">
     <!--@mbg.generated-->
+    <!--@Table products-->
     <id column="pid" jdbcType="INTEGER" property="pid" />
     <result column="pname" jdbcType="VARCHAR" property="pname" />
     <result column="price" jdbcType="DECIMAL" property="price" />
@@ -24,14 +25,14 @@
     delete from products
     where pid = #{pid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="pid" keyProperty="pid" parameterType="gavin.code.entity.Products" useGeneratedKeys="true">
+  <insert id="insert" keyColumn="pid" keyProperty="pid" parameterType="gavin.code.dto.Products" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into products (pname, price, description
       )
     values (#{pname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, #{description,jdbcType=LONGVARCHAR}
       )
   </insert>
-  <insert id="insertSelective" keyColumn="pid" keyProperty="pid" parameterType="gavin.code.entity.Products" useGeneratedKeys="true">
+  <insert id="insertSelective" keyColumn="pid" keyProperty="pid" parameterType="gavin.code.dto.Products" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into products
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -57,7 +58,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.entity.Products">
+  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.dto.Products">
     <!--@mbg.generated-->
     update products
     <set>
@@ -73,7 +74,7 @@
     </set>
     where pid = #{pid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="gavin.code.entity.Products">
+  <update id="updateByPrimaryKey" parameterType="gavin.code.dto.Products">
     <!--@mbg.generated-->
     update products
     set pname = #{pname,jdbcType=VARCHAR},

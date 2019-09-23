@@ -1,8 +1,6 @@
-package gavin.code.entity;
+package gavin.code.dto;
 
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class User {
@@ -13,9 +11,4 @@ public class User {
     private String password;
 
     private Integer gender;
-
-    private List<Order> order;
-
-
-
 }

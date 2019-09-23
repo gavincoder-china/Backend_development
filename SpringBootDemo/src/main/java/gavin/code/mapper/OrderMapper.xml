@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gavin.code.mapper.OrderMapper">
-  <resultMap id="BaseResultMap" type="gavin.code.entity.Order">
+  <resultMap id="BaseResultMap" type="gavin.code.dto.Order">
     <!--@mbg.generated-->
+    <!--@Table order-->
     <id column="oid" jdbcType="INTEGER" property="oid" />
     <result column="otime" jdbcType="TIMESTAMP" property="otime" />
     <result column="total_price" jdbcType="DECIMAL" property="totalPrice" />
@@ -24,14 +25,14 @@
     delete from order
     where oid = #{oid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.entity.Order" useGeneratedKeys="true">
+  <insert id="insert" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.dto.Order" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into order (otime, total_price, user_id
       )
     values (#{otime,jdbcType=TIMESTAMP}, #{totalPrice,jdbcType=DECIMAL}, #{userId,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.entity.Order" useGeneratedKeys="true">
+  <insert id="insertSelective" keyColumn="oid" keyProperty="oid" parameterType="gavin.code.dto.Order" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into order
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -57,7 +58,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.entity.Order">
+  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.dto.Order">
     <!--@mbg.generated-->
     update order
     <set>
@@ -73,7 +74,7 @@
     </set>
     where oid = #{oid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="gavin.code.entity.Order">
+  <update id="updateByPrimaryKey" parameterType="gavin.code.dto.Order">
     <!--@mbg.generated-->
     update order
     set otime = #{otime,jdbcType=TIMESTAMP},

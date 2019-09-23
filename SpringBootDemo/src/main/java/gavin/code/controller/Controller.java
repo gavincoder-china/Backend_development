@@ -1,14 +1,14 @@
 package gavin.code.controller;
 
-
-import gavin.code.entity.User;
-import gavin.code.service.UserService;
+import gavin.code.dto.User;
+import gavin.code.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
 
 /**
  * **********************************************************
@@ -21,23 +21,19 @@ import java.util.List;
  * @Date : 2019-08-28 19:17
  * @description:
  ************************************************************/
+
 @RestController
-@RequestMapping("v1")
+@RequestMapping(value = "/v1")
 public class Controller {
 
+
     @Autowired
-    private UserService service;
+    private UsersService usersService;
 
-    @GetMapping("user")
-    public List<User> user(){
-
-        return service.selectuser(1);
-
+    @GetMapping(value = "/show")
+    public List<User> select() {
+        return usersService.select();
     }
-
-
-
-
 
 
 }

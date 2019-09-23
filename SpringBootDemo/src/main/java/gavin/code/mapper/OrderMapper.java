@@ -1,6 +1,6 @@
 package gavin.code.mapper;
 
-import gavin.code.entity.Order;
+import gavin.code.dto.Order;
 
 public interface OrderMapper {
     int deleteByPrimaryKey(Integer oid);

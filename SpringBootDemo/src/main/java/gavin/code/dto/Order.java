@@ -1,11 +1,8 @@
-package gavin.code.entity;
+package gavin.code.dto;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
-
 import lombok.Data;
-import org.hibernate.validator.constraints.URL;
 
 @Data
 public class Order {
@@ -16,6 +13,4 @@ public class Order {
     private BigDecimal totalPrice;
 
     private Integer userId;
-
-    private List<Orderitems> item;
 }

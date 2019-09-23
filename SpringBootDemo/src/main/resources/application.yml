@@ -1,0 +1,11 @@
+student:
+  name: gavin
+  age: 18
+  gender: man
+  list:
+    - name: coder
+    - age: fullstack
+  map: {薪资: many,address: 杭州}
+
+teacher:
+  name: betty

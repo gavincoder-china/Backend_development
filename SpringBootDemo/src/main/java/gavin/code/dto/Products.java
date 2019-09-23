@@ -1,11 +1,10 @@
-package gavin.code.entity;
+package gavin.code.dto;
 
 import java.math.BigDecimal;
 import lombok.Data;
 
 @Data
 public class Products {
-
     private Integer pid;
 
     private String pname;
@@ -13,5 +12,4 @@ public class Products {
     private BigDecimal price;
 
     private String description;
-
 }

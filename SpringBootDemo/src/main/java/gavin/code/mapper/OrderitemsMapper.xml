@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gavin.code.mapper.OrderitemsMapper">
-  <resultMap id="BaseResultMap" type="gavin.code.entity.Orderitems">
+  <resultMap id="BaseResultMap" type="gavin.code.dto.Orderitems">
     <!--@mbg.generated-->
+    <!--@Table orderitems-->
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="oid" jdbcType="INTEGER" property="oid" />
     <result column="pid" jdbcType="INTEGER" property="pid" />
@@ -24,14 +25,14 @@
     delete from orderitems
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="gavin.code.entity.Orderitems" useGeneratedKeys="true">
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="gavin.code.dto.Orderitems" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into orderitems (oid, pid, amount
       )
     values (#{oid,jdbcType=INTEGER}, #{pid,jdbcType=INTEGER}, #{amount,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="gavin.code.entity.Orderitems" useGeneratedKeys="true">
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="gavin.code.dto.Orderitems" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into orderitems
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -57,7 +58,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.entity.Orderitems">
+  <update id="updateByPrimaryKeySelective" parameterType="gavin.code.dto.Orderitems">
     <!--@mbg.generated-->
     update orderitems
     <set>
@@ -73,7 +74,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="gavin.code.entity.Orderitems">
+  <update id="updateByPrimaryKey" parameterType="gavin.code.dto.Orderitems">
     <!--@mbg.generated-->
     update orderitems
     set oid = #{oid,jdbcType=INTEGER},

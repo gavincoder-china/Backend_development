@@ -1,6 +1,6 @@
 package gavin.code.mapper;
 
-import gavin.code.entity.Products;
+import gavin.code.dto.Products;
 
 public interface ProductsMapper {
     int deleteByPrimaryKey(Integer pid);
