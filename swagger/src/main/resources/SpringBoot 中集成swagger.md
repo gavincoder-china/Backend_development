@@ -62,7 +62,7 @@ public class SwaggerConfiguration {
 > 在类上加注解
 >
 > > ```java
-> > @Api(tags = "xx", produces = "xx")
+> > @Api(tags = "xx", produces = "xx")  //tags是分类标签,可以作为版本号区别
 > > ```
 
 > 在方法上加注解
@@ -124,3 +124,36 @@ bootstrap-ui路径
 > 3.打开collections可以看到api的接口了
 >
 > ![image-20190923192529778](https://tva1.sinaimg.cn/large/006y8mN6gy1g79oaj7o13j31830ay406.jpg)
+
+### 7.swagger注解详解
+
+```java
+swagger，指定swagger spec版本，2.0
+info，提供API的元数据
+tags，补充的元数据，在swagger ui中，用于作为api的分组标签
+host，主机，如果没有提供，则使用文档所在的host
+basePath，相对于host的路径
+schemes，API的传输协议，http，https，ws，wss
+consumes，API可以消费的MIME类型列表
+produces，API产生的MIME类型列表
+paths，API的路径，以及每个路径的HTTP方法，一个路径加上一个HTTP方法构成了一个操作。每个操作都有以下内容：
+tags，操作的标签
+summary，短摘要
+description，描述
+externalDocs，外部文档
+operationId，标识操作的唯一字符串
+consumes，MIME类型列表
+produces，MIME类型列表
+parameters，参数列表
+responses，应答状态码和对于的消息的Schema
+schemes，传输协议
+deprecated，不推荐使用
+security，安全
+definitions，定义API消费或生产的数据类型，使用json-schema描述，操作的parameter和response部分可以通过引用的方式使用definitions部分定义的schema
+parameters，多个操作共用的参数
+responses，多个操作共用的响应
+securityDefinitions，安全scheme定义
+security，安全声明
+externalDocs，附加的外部文档
+```
+

@@ -4,9 +4,10 @@ import com.example.swagger.dto.User;
 import com.example.swagger.service.UsersService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
@@ -21,10 +22,10 @@ import javax.validation.Valid;
  * @Date : 2019-09-23 15:57
  * @description:
  ************************************************************/
-@Api(tags = "tags", produces = "text/html;charset=UTF-8")
+@Api(tags = "tags2", produces = "text/html;charset=UTF-8")
 @RestController
-@RequestMapping(value = "/v1")
-public class UsersController {
+@RequestMapping(value = "/v2")
+public class UsersController2 {
 
     @Autowired
     private UsersService usersService;
@@ -35,17 +36,4 @@ public class UsersController {
 
         return usersService.select();
     }
-    @ApiOperation("展示二号选手")
-    @PostMapping(value = "/show2")
-    public User select2(@RequestBody User user){
-
-        return usersService.select();
-    }@ApiOperation("展示三号选手")
-    @PostMapping(value = "/show3")
-    public User select3(@ApiParam(value = "name",required = true) String name){
-
-        return usersService.select();
-    }
-
-
 }
