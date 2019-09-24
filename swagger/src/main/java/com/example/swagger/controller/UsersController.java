@@ -29,18 +29,18 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
-    @ApiOperation("展示一号选手")
+    @ApiOperation("展示一号选手valid")
     @PostMapping(value = "/show")
     public User select(@Valid User user){
 
         return usersService.select();
     }
-    @ApiOperation("展示二号选手")
+    @ApiOperation("展示二号选手requestbody")
     @PostMapping(value = "/show2")
     public User select2(@RequestBody User user){
 
         return usersService.select();
-    }@ApiOperation("展示三号选手")
+    }@ApiOperation("展示三号选手apiparam")
     @PostMapping(value = "/show3")
     public User select3(@ApiParam(value = "name",required = true) String name){
 

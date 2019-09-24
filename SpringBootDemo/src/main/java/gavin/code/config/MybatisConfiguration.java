@@ -1,4 +1,4 @@
-package gavin.code;
+package gavin.code.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
