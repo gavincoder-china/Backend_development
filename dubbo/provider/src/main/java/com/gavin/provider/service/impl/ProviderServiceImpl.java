@@ -1,6 +1,9 @@
 package com.gavin.provider.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import com.gavin.provider.service.ProviderService;
+import org.springframework.stereotype.Component;
 
 /**
  * **********************************************************
@@ -13,9 +16,12 @@ import com.gavin.provider.service.ProviderService;
  * @Date : 2019-09-25 15:23
  * @description:
  ************************************************************/
+
+@Service(interfaceClass = ProviderService.class)
+@Component
 public class ProviderServiceImpl implements ProviderService {
     @Override
     public String sayHello() {
-        return null;
+        return "hello dubbo";
     }
 }

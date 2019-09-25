@@ -1,5 +1,8 @@
 package com.gavin.provider.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.gavin.webapi.service.ApiTest;
+
 /**
  * **********************************************************
  *
@@ -11,5 +14,10 @@ package com.gavin.provider.service.impl;
  * @Date : 2019-09-25 11:05
  * @description:
  ************************************************************/
-public class ApiTestImpl {
+@Service(version = "1.0.0")
+public class ApiTestImpl implements ApiTest {
+    @Override
+    public String sayHello() {
+        return "hello-dubbo";
+    }
 }

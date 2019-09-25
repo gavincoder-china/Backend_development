@@ -1,0 +1,23 @@
+# Enables Dubbo All Endpoints
+management:
+  endpoint:
+    dubbo:
+      enabled: true
+    dubbo-shutdown:
+      enabled: true
+    dubbo-configs:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-references:
+      enabled: true
+    dubbo-properties:
+      enabled: true
+  # Dubbo Health
+  health:
+    dubbo:
+      status:
+        ## StatusChecker Name defaults (default : "memory", "load" )
+        defaults: memory
+        ## StatusChecker Name extras (default : empty )
+        extras: load,threadpool

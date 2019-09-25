@@ -1,6 +1,7 @@
-package com.gavin.provider.config;
+package com.gavin.consumer.config;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 
 /**
  * **********************************************************
@@ -13,7 +14,8 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
  * @Date : 2019-09-25 11:00
  * @description:
  ************************************************************/
-@EnableDubbo
+
+@EnableDubboConfiguration
 public class DubboConfiguration {
 
 

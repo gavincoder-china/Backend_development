@@ -1,5 +1,8 @@
 package com.gavin.provider.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.gavin.api.service.UserService;
+
 /**
  * **********************************************************
  *
@@ -11,5 +14,11 @@ package com.gavin.provider.service.impl;
  * @Date : 2019-09-25 16:59
  * @description:
  ************************************************************/
-public class UserServiceImpl {
+@Service(version = "1.0.0")
+public class UserServiceImpl implements UserService {
+
+    @Override
+    public String sayHello() {
+        return "hello dubbo";
+    }
 }

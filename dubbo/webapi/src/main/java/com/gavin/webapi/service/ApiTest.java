@@ -1,4 +1,6 @@
-package com.gavin.webapi;
+package com.gavin.webapi.service;
 
-public interface apiTest {
+public interface ApiTest {
+
+    String sayHello();
 }
