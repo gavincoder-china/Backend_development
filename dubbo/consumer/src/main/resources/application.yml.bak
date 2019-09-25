@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: com.gavin.consumer
+
+server:
+  port: 8081
+
+
+
+dubbo:
+  application:
+    id: com.gavin.consumer
+    name: com.gavin.consumer
