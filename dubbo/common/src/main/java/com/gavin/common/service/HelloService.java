@@ -1,7 +1,6 @@
-package com.gavin.consumer.config;
+package com.gavin.common.service;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
-import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
+import com.gavin.common.model.HelloModel;
 
 /**
  * **********************************************************
@@ -11,13 +10,10 @@ import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
  * @Mail : xunyegege@gmail.com
  * @Github : https://github.com/xunyegege
  * @ver : version 1.0
- * @Date : 2019-09-25 11:00
+ * @Date : 2019-09-26 14:23
  * @description:
  ************************************************************/
+public interface HelloService {
 
-@EnableDubboConfiguration
-public class DubboConfiguration {
-
-
-
+    HelloModel sayHello();
 }

@@ -7,17 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
+        <module name="common" />
         <module name="provider" />
         <module name="dubbo" />
-        <module name="webapi" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="consumer" options="-parameters" />
+      <module name="common" options="" />
+      <module name="consumer" options="" />
       <module name="provider" options="" />
-      <module name="webapi" options="-parameters" />
     </option>
   </component>
 </project>
