@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0451cb2-25b9-419f-abd3-9710fc074b99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../dubbo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/consumer/src/main/java/com/gavin/consumer/util/getAccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/src/main/java/com/gavin/provider/Provider1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/src/main/java/com/gavin/provider/service/HelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo/provider1/src/test/java/com/gavin/provider/Provider1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_actuator_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_starter_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_swagger_bootstrap_ui_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/util/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/gavin/consumer/ConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/ProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/config/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/dto/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/model/HelloModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/service/impl/HelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/test/java/com/gavin/provider/ProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/dubbo_token.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/src/main/java/com/gavin/api/ApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/src/main/java/com/gavin/api/model/HelloModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/src/main/java/com/gavin/api/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/api/src/test/java/com/gavin/api/ApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/src/main/java/com/gavin/common/CommonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/common/src/test/java/com/gavin/common/CommonApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/src/main/java/com/gavin/consumer/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/src/main/java/com/gavin/consumer/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/src/main/java/com/gavin/consumer/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/consumer/src/test/java/com/gavin/consumer/ConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/ProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/config/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/config/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/model/HelloModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/service/impl/HelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/java/com/gavin/provider/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo_token/provider/src/test/java/com/gavin/provider/ProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/TokenApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/config/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/config/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/test/java/com/gavin/token/Creat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/test/java/com/gavin/token/TokenApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis/redis/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/config/MybatisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/gavin/code/config/MybatisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/common/src/main/java/com/gavin/common/model/HelloModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/common/src/main/java/com/gavin/common/model/HelloModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/consumer/src/main/java/com/gavin/consumer/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/consumer/src/main/java/com/gavin/consumer/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/provider/src/main/java/com/gavin/provider/service/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/provider/src/main/java/com/gavin/provider/service/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo/provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo/provider/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/MybatisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/config/MybatisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/config/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/controller/UsersController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger/src/main/java/com/example/swagger/controller/UsersController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swagger/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../swagger/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="SSM: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="SSM: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RPPc00jlJOKx8P7McQrLyzgATG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gavin.consumer.config" />
+      <recent name="com.gavin.consumer.util" />
+      <recent name="com.gavin.provider.mapper" />
+      <recent name="com.gavin.provider.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper" />
+      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer" />
+      <recent name="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gavin.consumer.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gavin.provider.ProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.ProviderApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.11520999" />
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0451cb2-25b9-419f-abd3-9710fc074b99" name="Default Changelist" comment="" />
+      <created>1569565832789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569565832789</updated>
+      <workItem from="1569565833980" duration="1054000" />
+      <workItem from="1569566995110" duration="12217000" />
+      <workItem from="1569591158001" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="javaMapperPackage" value="com.gavin.provider.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/consumer/src/main/java" />
+        <option name="javaModelPackage" value="com.gavin.provider.dto" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/consumer/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="consumer" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="consumer">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.gavin.provider.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/consumer/src/main/java" />
+                  <option name="javaModelPacakge" value="com.gavin.provider.dto" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/consumer/src/main/java" />
+                  <option name="xmlPackage" value="static" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/consumer/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="SSM:users">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Users" />
+                  <option name="moduleName" value="consumer" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="static" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/consumer/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
