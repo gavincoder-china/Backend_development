@@ -1,7 +1,4 @@
-package com.gavin.token.config;
-
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Configuration;
+package com.gavin.consumer.vo;
 
 /**
  * **********************************************************
@@ -11,11 +8,8 @@ import org.springframework.context.annotation.Configuration;
  * @Mail : xunyegege@gmail.com
  * @Github : https://github.com/xunyegege
  * @ver : version 1.0
- * @Date : 2019-09-26 23:06
+ * @Date : 2019-09-28 11:25
  * @description:
  ************************************************************/
-@Configuration
-@MapperScan("com.gavin.token.mapper")
-public class MybatisConfiguration {
-
+public class UserVo {
 }

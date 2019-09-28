@@ -99,7 +99,7 @@
         #{updateTime,jdbcType=TIMESTAMP},
       </if>
       <if test="loginTimes != null">
-        #{loginTimes,jdbcType=VARCHAR},
+        #{loginTimes,jdbcType=VARCHAR},-
       </if>
       <if test="question != null">
         #{question,jdbcType=LONGVARCHAR},
