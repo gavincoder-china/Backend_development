@@ -43,13 +43,16 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table schema="" tableName="user" domainObjectName="User" enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false"
-               enableSelectByExample="false"
-               selectByExampleQueryId="false">
+        <table schema="" tableName="products" domainObjectName="Products" >
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"-->
+
+
             <property name="useActualColumnNames" value="false"/>
-            <columnOverride column="uid" jdbcType="INTEGER" javaType="java.lang.Integer"></columnOverride>
+            <columnOverride column="pid" jdbcType="INTEGER" javaType="java.lang.Integer"></columnOverride>
         </table>
 
         <!--<table schema="" tableName="store_info" domainObjectName="StoreInfo">-->

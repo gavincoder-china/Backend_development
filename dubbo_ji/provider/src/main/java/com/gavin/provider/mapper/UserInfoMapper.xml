@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gavin.provider.mapper.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.gavin.provider.dto.UserInfo">
+    <!--@mbg.generated-->
+    <!--@Table User_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="user_level" jdbcType="INTEGER" property="userLevel" />
+    <result column="id_delete" jdbcType="INTEGER" property="idDelete" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="update_time" jdbcType="DATE" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_name, `password`, create_time, user_level, id_delete, phone, email, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from User_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from User_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gavin.provider.dto.UserInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into User_info (user_name, `password`, create_time, 
+      user_level, id_delete, phone, 
+      email, update_time)
+    values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{createTime,jdbcType=DATE}, 
+      #{userLevel,jdbcType=INTEGER}, #{idDelete,jdbcType=INTEGER}, #{phone,jdbcType=VARCHAR}, 
+      #{email,jdbcType=VARCHAR}, #{updateTime,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gavin.provider.dto.UserInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into User_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="password != null">
+        `password`,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="userLevel != null">
+        user_level,
+      </if>
+      <if test="idDelete != null">
+        id_delete,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=DATE},
+      </if>
+      <if test="userLevel != null">
+        #{userLevel,jdbcType=INTEGER},
+      </if>
+      <if test="idDelete != null">
+        #{idDelete,jdbcType=INTEGER},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gavin.provider.dto.UserInfo">
+    <!--@mbg.generated-->
+    update User_info
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        `password` = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=DATE},
+      </if>
+      <if test="userLevel != null">
+        user_level = #{userLevel,jdbcType=INTEGER},
+      </if>
+      <if test="idDelete != null">
+        id_delete = #{idDelete,jdbcType=INTEGER},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gavin.provider.dto.UserInfo">
+    <!--@mbg.generated-->
+    update User_info
+    set user_name = #{userName,jdbcType=VARCHAR},
+      `password` = #{password,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=DATE},
+      user_level = #{userLevel,jdbcType=INTEGER},
+      id_delete = #{idDelete,jdbcType=INTEGER},
+      phone = #{phone,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=DATE}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="findByUserName" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info
+    where user_name=#{userName,jdbcType=VARCHAR}
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="findAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info  limit #{start},#{end}
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="findByUserNameLike" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info
+    where user_name like concat('%',#{likeUserName,jdbcType=VARCHAR},'%')
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <update id="updateIdDeleteByUserName">
+    update User_info
+    set id_delete=1
+    where user_name=#{userName,jdbcType=VARCHAR}
+  </update>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="selectByUpdateTimeBetween" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info
+    where update_time <![CDATA[>]]> #{minUpdateTime,jdbcType=DATE} and update_time <![CDATA[<]]>
+    #{maxUpdateTime,jdbcType=DATE}
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="find" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info
+  </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="getAllUser"  parameterType="com.gavin.provider.dto.UserInfo" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from User_info
+    where 1=1
+    <if test="id != null">
+      and id=#{id,jdbcType=BIGINT}
+    </if>
+    <if test="userName != null">
+      and user_name like concat('%',#{userName,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="password != null">
+      and `password`=#{password,jdbcType=VARCHAR}
+    </if>
+    <if test="createTime != null">
+      and create_time=#{createTime,jdbcType=DATE}
+    </if>
+    <if test="userLevel != null">
+      and user_level=#{userLevel,jdbcType=INTEGER}
+    </if>
+    <if test="idDelete != null">
+      and id_delete=#{idDelete,jdbcType=INTEGER}
+    </if>
+    <if test="phone != null">
+      and phone=#{phone,jdbcType=VARCHAR}
+    </if>
+    <if test="email != null">
+      and email=#{email,jdbcType=VARCHAR}
+    </if>
+    <if test="updateTime != null">
+      and update_time=#{updateTime,jdbcType=DATE}
+    </if>
+    limit #{sPage},#{pSize}
+
+  </select>
+
+  <!--auto generated by MybatisCodeHelper on 2019-09-29-->
+  <select id="getAllUserCount"  parameterType="com.gavin.provider.dto.UserInfo" resultType="java.lang.Integer">
+    select
+    count(*)
+    from User_info
+    where 1=1
+    <if test="id != null">
+      and id=#{id,jdbcType=BIGINT}
+    </if>
+    <if test="userName != null">
+      and user_name like concat('%',#{userName,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="password != null">
+      and `password`=#{password,jdbcType=VARCHAR}
+    </if>
+    <if test="createTime != null">
+      and create_time=#{createTime,jdbcType=DATE}
+    </if>
+    <if test="userLevel != null">
+      and user_level=#{userLevel,jdbcType=INTEGER}
+    </if>
+    <if test="idDelete != null">
+      and id_delete=#{idDelete,jdbcType=INTEGER}
+    </if>
+    <if test="phone != null">
+      and phone=#{phone,jdbcType=VARCHAR}
+    </if>
+    <if test="email != null">
+      and email=#{email,jdbcType=VARCHAR}
+    </if>
+    <if test="updateTime != null">
+      and update_time=#{updateTime,jdbcType=DATE}
+    </if>
+
+
+  </select>
+</mapper>

@@ -1,5 +1,8 @@
 package com.gavin.provider.config;
 
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Configuration;
+
 /**
  * **********************************************************
  *
@@ -11,5 +14,7 @@ package com.gavin.provider.config;
  * @Date : 2019-09-27 11:59
  * @description:
  ************************************************************/
+@Configuration
+@MapperScan("com.gavin.provider.mapper")
 public class MybatisConfiguration {
 }

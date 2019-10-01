@@ -17,4 +17,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @MapperScan("gavin.code.mapper")
 public class MybatisConfiguration {
+
 }

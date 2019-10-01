@@ -61,21 +61,24 @@ public class MavenWrapperDownloader {
         // wrapperUrl parameter.
         File mavenWrapperPropertyFile = new File(baseDirectory, MAVEN_WRAPPER_PROPERTIES_PATH);
         String url = DEFAULT_DOWNLOAD_URL;
-        if(mavenWrapperPropertyFile.exists()) {
+        if (mavenWrapperPropertyFile.exists()) {
             FileInputStream mavenWrapperPropertyFileInputStream = null;
             try {
                 mavenWrapperPropertyFileInputStream = new FileInputStream(mavenWrapperPropertyFile);
                 Properties mavenWrapperProperties = new Properties();
                 mavenWrapperProperties.load(mavenWrapperPropertyFileInputStream);
                 url = mavenWrapperProperties.getProperty(PROPERTY_NAME_WRAPPER_URL, url);
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 System.out.println("- ERROR loading '" + MAVEN_WRAPPER_PROPERTIES_PATH + "'");
-            } finally {
+            }
+            finally {
                 try {
-                    if(mavenWrapperPropertyFileInputStream != null) {
+                    if (mavenWrapperPropertyFileInputStream != null) {
                         mavenWrapperPropertyFileInputStream.close();
                     }
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
                     // Ignore ...
                 }
             }
@@ -83,8 +86,8 @@ public class MavenWrapperDownloader {
         System.out.println("- Downloading from: : " + url);
 
         File outputFile = new File(baseDirectory.getAbsolutePath(), MAVEN_WRAPPER_JAR_PATH);
-        if(!outputFile.getParentFile().exists()) {
-            if(!outputFile.getParentFile().mkdirs()) {
+        if (!outputFile.getParentFile().exists()) {
+            if (!outputFile.getParentFile().mkdirs()) {
                 System.out.println(
                         "- ERROR creating output direcrory '" + outputFile.getParentFile().getAbsolutePath() + "'");
             }
@@ -94,7 +97,8 @@ public class MavenWrapperDownloader {
             downloadFileFromURL(url, outputFile);
             System.out.println("Done");
             System.exit(0);
-        } catch (Throwable e) {
+        }
+        catch (Throwable e) {
             System.out.println("- Error downloading");
             e.printStackTrace();
             System.exit(1);

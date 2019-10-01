@@ -1,6 +1,5 @@
 package com.gavin.mybatis_generator.controller;
 
-import com.gavin.mybatis_generator.dto.User;
 import com.gavin.mybatis_generator.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,12 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/v1")
 public class UserController {
-@Autowired
-    private UserService userService;
-@GetMapping(value = "/show")
-public User select(){
 
-    return userService.select();
-}
+    @Autowired
+    private UserService userService;
+
+    @GetMapping(value = "/show")
+    public void select() {
+         userService.select();
+    }
 
 }

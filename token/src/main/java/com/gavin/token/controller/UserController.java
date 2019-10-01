@@ -38,9 +38,10 @@ public class UserController {
 
     @ApiOperation(value = "生成token测试")
     @PostMapping("/login")
-    public String login(@RequestBody User user) {
+    public String login() {
 
-        System.out.println(user);
+        System.out.println("我进来啦");
+
         JwtBuilder jwt = Jwts.builder()
                              .setId("6666")
                              .setSubject("gavin")
@@ -61,4 +62,5 @@ public class UserController {
 
         return ReturnResultUtils.returnSuccess(user);
     }
+
 }

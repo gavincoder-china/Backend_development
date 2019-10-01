@@ -1,10 +1,11 @@
 package com.gavin.provider.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
 
 @Data
-public class User {
+public class User implements Serializable {
     /**
     * id
     */
@@ -59,4 +60,21 @@ public class User {
     * image 头像图片的地址
     */
     private String image;
+
+    @Override
+    public String toString() {
+        return "User{" +
+               "id=" + id +
+               ", username='" + username + '\'' +
+               ", password='" + password + '\'' +
+               ", phone='" + phone + '\'' +
+               ", email='" + email + '\'' +
+               ", registerTime=" + registerTime +
+               ", updateTime=" + updateTime +
+               ", loginTimes='" + loginTimes + '\'' +
+               ", question='" + question + '\'' +
+               ", answer='" + answer + '\'' +
+               ", image='" + image + '\'' +
+               '}';
+    }
 }

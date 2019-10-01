@@ -11,7 +11,7 @@ public class HelloServiceImpl implements HelloService {
     @Override
     public HelloModel sayHello() {
         HelloModel model = new HelloModel();
-        model.setName("hello-dubbo");
+        model.setName("hello-dubbo-1副本");
 
         return model;
     }

@@ -34,21 +34,23 @@ public class UsersController2 {
 
     @ApiOperation("展示一号选手valid")
     @PostMapping(value = "/show")
-    public User select(@Valid User user){
+    public User select(@Valid User user) {
 
         return usersService.select();
     }
+
     @ApiOperation("requestParam")
     @PostMapping(value = "/show2")
-    public User select2(@RequestParam String name){
+    public User select2(@RequestParam String name) {
 
         return usersService.select();
     }
 
     @ApiOperation("apiParam")
     @PostMapping(value = "/show3")
-    public User select3(@ApiParam String name){
+    public User select3(@ApiParam String name) {
 
         return usersService.select();
     }
+
 }

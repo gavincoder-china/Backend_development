@@ -1,4 +1,4 @@
-package com.gavin.provider.model;
+package com.gavin.api.model;
 
 import java.io.Serializable;
 

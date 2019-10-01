@@ -1,8 +1,8 @@
 package com.gavin.mybatis_generator.service;
 
-import com.gavin.mybatis_generator.dto.User;
-import com.gavin.mybatis_generator.dto.UserExample;
-import com.gavin.mybatis_generator.mapper.UserMapper;
+import com.gavin.mybatis_generator.dto.Products;
+import com.gavin.mybatis_generator.dto.ProductsExample;
+import com.gavin.mybatis_generator.mapper.ProductsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,17 +20,24 @@ import java.util.List;
  * @description:
  ************************************************************/
 @Service
-public class UserService {
+public class UserServiceImpl implements UserService {
+
     @Autowired
-    private UserMapper userMapper;
+    private ProductsMapper productsMapper;
 
-    public User select(){
-        String name="gavin";
-        UserExample userExample=new UserExample();
-        userExample.createCriteria().andUserEqualTo(name);
-        List<User> users = userMapper.selectByExample(userExample);
 
-        System.out.println(users);
+    public void select(){
+
+        ProductsExample example = new ProductsExample();
+
+        example.createCriteria().andPidEqualTo(1);
+
+        List<Products> products = productsMapper.selectByExample(example);
+
+        System.out.println(products);
+
+
 
     }
+
 }

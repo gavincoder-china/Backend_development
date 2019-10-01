@@ -14,6 +14,7 @@ import java.io.Serializable;
  * @description:
  ************************************************************/
 public class HelloModel implements Serializable {
+
     private static final long serialVersionUID = 1392165405018286312L;
     private String name;
 

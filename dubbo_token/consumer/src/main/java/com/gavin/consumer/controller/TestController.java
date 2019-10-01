@@ -1,14 +1,13 @@
 package com.gavin.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.gavin.common.model.HelloModel;
-import com.gavin.common.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
+
+
+import com.gavin.provider.model.HelloModel;
+import com.gavin.provider.service.HelloService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * **********************************************************

@@ -12,12 +12,12 @@ import java.util.Date;
 /**
  * Created by Administrator on 2018/4/11.
  */
-@ConfigurationProperties("jwt.config")
+//@ConfigurationProperties(prefix = "jwt.config")
 public class JwtUtil {
 
-    private String key ;
+    private String key="gavin" ;
 
-    private long ttl ;//一个小时
+    private long ttl =3600000;//一个小时
 
     public String getKey() {
         return key;

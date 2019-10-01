@@ -1,4 +1,4 @@
-package com.gavin.token.config;
+package com.gavin.provider.config;
 
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import io.swagger.annotations.ApiOperation;

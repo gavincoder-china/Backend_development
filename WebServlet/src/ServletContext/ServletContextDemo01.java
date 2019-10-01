@@ -10,6 +10,7 @@ import java.io.IOException;
 
 @WebServlet("/servletContextDemo01")
 public class ServletContextDemo01 extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //获取servletContext对象
 
@@ -28,6 +29,7 @@ public class ServletContextDemo01 extends HttpServlet {
 
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
 

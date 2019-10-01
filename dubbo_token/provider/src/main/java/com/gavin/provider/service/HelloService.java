@@ -1,7 +1,7 @@
-package com.gavin.api.service;
+package com.gavin.provider.service;
 
 
-import com.gavin.api.model.HelloModel;
+import com.gavin.provider.model.HelloModel;
 
 /**
  * **********************************************************

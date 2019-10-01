@@ -10,6 +10,7 @@
         <module name="common" />
         <module name="provider" />
         <module name="dubbo" />
+        <module name="provider1" />
       </profile>
     </annotationProcessing>
   </component>
