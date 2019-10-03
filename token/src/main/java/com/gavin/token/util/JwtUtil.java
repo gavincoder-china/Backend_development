@@ -4,20 +4,20 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+
 
 import java.util.Date;
 
-/**
- * Created by Administrator on 2018/4/11.
- */
-//@ConfigurationProperties(prefix = "jwt.config")
+
+
 public class JwtUtil {
 
-    private String key="gavin" ;
+     //加密密码  自己设置
+    private String key ;
 
-    private long ttl =3600000;//一个小时
+    //毫秒  过期时间  自己设置
+
+    private long ttl ;
 
     public String getKey() {
         return key;

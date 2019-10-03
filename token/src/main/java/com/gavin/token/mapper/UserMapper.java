@@ -1,4 +1,6 @@
 package com.gavin.token.mapper;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
 import com.gavin.token.dto.User;
 
@@ -14,4 +16,8 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+    User selectAllByUsername(@Param("username")String username);
+
+
+
 }

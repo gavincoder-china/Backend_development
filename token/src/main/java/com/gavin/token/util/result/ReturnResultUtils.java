@@ -20,7 +20,7 @@ public class ReturnResultUtils{
      */
     public static ReturnResult returnSuccess(){
         ReturnResult returnResult=new ReturnResult();
-        returnResult.setCode(ReturnResultContant.SUCCESS);
+        returnResult.setCode(ReturnResultContants.SUCCESS);
         returnResult.setMessage("success");
         return returnResult;
     }
@@ -30,8 +30,22 @@ public class ReturnResultUtils{
      */
     public static ReturnResult returnSuccess(Object data){
         ReturnResult returnResult=new ReturnResult();
-        returnResult.setCode(ReturnResultContant.SUCCESS);
+        returnResult.setCode(ReturnResultContants.SUCCESS);
         returnResult.setMessage("success");
+        returnResult.setData(data);
+        return returnResult;
+    }
+
+
+    /***
+     * 成功 带数据
+     * @return  返回状态码,状态信息与数据(自定义)
+     */
+    public static ReturnResult returnSuccess(Integer code, String message,Object data){
+        ReturnResult returnResult=new ReturnResult();
+
+        returnResult.setCode(code);
+        returnResult.setMessage(message);
         returnResult.setData(data);
         return returnResult;
     }
