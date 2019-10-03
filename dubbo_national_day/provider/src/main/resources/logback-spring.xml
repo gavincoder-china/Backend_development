@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
-    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
     <!-- 开启后可以通过jmx动态控制日志级别(springboot Admin的功能) -->
     <!--<jmxConfigurator/>-->
 
@@ -14,15 +14,20 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 添加.gz 历史日志会启用压缩 大大缩小日志文件所占空间 -->
             <!--<fileNamePattern>/home/hfw-client/hfw_log/stdout.log.%d{yyyy-MM-dd}.log</fileNamePattern>-->
-            <fileNamePattern>/Users/gavincoder/mycode/github/Backend_development/dubbo_national_day/log/stdout.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>
+                /Users/gavincoder/mycode/github/Backend_development/dubbo_national_day/log/stdout.log.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
             <maxHistory>30</maxHistory><!--  保留30天日志 -->
         </rollingPolicy>
     </appender>
 
-    <logger name="com.gavin.provider.mapper" level="DEBUG" />
+
+    <logger name="com.example.provider.mapper" level="DEBUG"/>
+
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </root>
+
 </configuration>

@@ -1,4 +1,5 @@
 package com.example.consumer.controller;
+import	java.util.Currency;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
@@ -17,6 +18,7 @@ import com.example.provider.service.UserService;
 import com.google.common.collect.Lists;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -38,6 +40,8 @@ import java.util.List;
  * @Date : 2019-10-02 15:59
  * @description:
  ************************************************************/
+
+@Slf4j
 @Api(tags = "用户接口")
 @RestController
 @RequestMapping(value = "/v1")
@@ -55,6 +59,13 @@ public class UserController {
     @PostMapping(value = "/login")
     public ReturnResult login(@Valid UserVo userVo, HttpServletRequest request) {
 
+
+        log.info("测试@Slf4j");
+
+//        if (log.isDebugEnabled()) {
+//            log.debug("Processing trade with id: " + "id" + " and symbol: " + "symbol");
+//        }
+
         //1.验证用户信息
         User user = userService.login(userVo.getUserName(), userVo.getPassword());
 
@@ -63,7 +74,8 @@ public class UserController {
 
             String token = request.getSession().getId();
 
-            String jsonString = JSONObject.toJSONString(user);
+            BeanUtils.copyProperties(user, userVo);
+            String jsonString = JSONObject.toJSONString(userVo);
             boolean set = redisUtils.set(UserContants.LOGIN_NAME_SPACE + token, jsonString, 60);
             if (set) {
 
@@ -124,7 +136,7 @@ public class UserController {
     @LoginRequired
     @ApiOperation(value = "获取用户")
     @GetMapping(value = "/findUser")
-    public ReturnResult findUser(@Valid  UserVo userVo) {
+    public ReturnResult findUser(@Valid UserVo userVo) {
 
         //对象转换
         User user = new User();
@@ -158,7 +170,6 @@ public class UserController {
     }
 
 
-
     @LoginRequired
     @ApiOperation(value = "删除用户")
     @DeleteMapping(value = "/delUser")
@@ -176,6 +187,12 @@ public class UserController {
     }
 
 
+    @LoginRequired
+    @ApiOperation(value = "自定义注解")
+    @GetMapping("/testCustom")
+    public ReturnResult testCustom(@CurrentUser UserVo userVo){
 
+        return ReturnResultUtils.returnSuccess(userVo);
+    }
 
 }

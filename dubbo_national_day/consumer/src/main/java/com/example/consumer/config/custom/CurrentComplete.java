@@ -23,6 +23,7 @@ public class CurrentComplete implements HandlerMethodArgumentResolver {
     public Object resolveArgument(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest webRequest, WebDataBinderFactory webDataBinderFactory) throws Exception {
 
         UserVo userVo = (UserVo) webRequest.getAttribute("userToken", RequestAttributes.SCOPE_REQUEST);
+
         if (userVo != null) {
             return userVo;
         }

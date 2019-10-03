@@ -22,6 +22,7 @@ import java.lang.reflect.Method;
 public class LoginReqComplete implements HandlerInterceptor {
     @Autowired
     private RedisUtils redisUtils;
+
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
@@ -30,28 +31,45 @@ public class LoginReqComplete implements HandlerInterceptor {
         }
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         Method method = handlerMethod.getMethod();
+
+
+
         // 判断方法是否添加了这个注解
         LoginRequired methodAnnotation = method.getAnnotation(LoginRequired.class);
+
+
+
         if (methodAnnotation != null) {
+
             // 从 http 请求头中取出 token
             String token = request.getHeader("token");
 
             if (!StringUtils.isBlank(token)) {
-              String userToken = (String) redisUtils.get(UserContants.LOGIN_NAME_SPACE+token);
 
-                if (StringUtils.isBlank(userToken)) {
+              String jsonStr = (String) redisUtils.get(UserContants.LOGIN_NAME_SPACE+token);
+
+                if (StringUtils.isBlank(jsonStr)) {
                     throw new RuntimeException("login error");
                 } else {
-                    UserVo userVo = JSONObject.parseObject(userToken, UserVo.class);
+
+                    UserVo userVo = JSONObject.parseObject(jsonStr, UserVo.class);
+
                     request.setAttribute("userToken", userVo);
                 }
-            } else {
+            }
+
+
+            else {
                 //throw new BusinessException(BusinessEnum.TOKEN_IS_NULL,"token is blank");
             }
             return true;
         }
         return true;
     }
+
+
+
+
 
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
