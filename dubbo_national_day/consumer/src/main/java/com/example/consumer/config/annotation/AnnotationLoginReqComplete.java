@@ -1,12 +1,10 @@
-package com.example.consumer.config.custom;
+package com.example.consumer.config.annotation;
 
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.fastjson.JSONObject;
 import com.example.consumer.contants.UserContants;
 import com.example.consumer.util.RedisUtils;
-
 import com.example.consumer.vo.UserVo;
-import org.apache.catalina.startup.UserConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -19,7 +17,7 @@ import java.lang.reflect.Method;
 /**
  * Created by boot on 2019/9/29.
  */
-public class LoginReqComplete implements HandlerInterceptor {
+public class AnnotationLoginReqComplete implements HandlerInterceptor {
     @Autowired
     private RedisUtils redisUtils;
 
@@ -35,7 +33,7 @@ public class LoginReqComplete implements HandlerInterceptor {
 
 
         // 判断方法是否添加了这个注解
-        LoginRequired methodAnnotation = method.getAnnotation(LoginRequired.class);
+        AnnotationLoginRequired methodAnnotation = method.getAnnotation(AnnotationLoginRequired.class);
 
 
 

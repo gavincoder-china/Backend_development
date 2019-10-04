@@ -1,70 +1,80 @@
 package com.gavin.token.util;
 
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-
-
+@Data
+@Slf4j
+@Component
+@ConfigurationProperties(prefix = "jwt.config")
 public class JwtUtil {
 
-     //加密密码  自己设置
-    private String key ;
+    /**
+     * 加密秘钥
+     */
+    private String secret;
+    /**
+     * 有效时间 单位是 秒
+     */
+    private long expire;
 
-    //毫秒  过期时间  自己设置
-
-    private long ttl ;
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
-    }
-
-    public long getTtl() {
-        return ttl;
-    }
-
-    public void setTtl(long ttl) {
-        this.ttl = ttl;
-    }
 
     /**
-     * 生成JWT
-     *
-     * @param id
-     * @param subject
      * @return
+     * @throws
+     * @description 生成token
+     * @author Gavin
+     * @date 2019-10-04 10:23
+     * @since
      */
-    public String createJWT(String id, String subject, String roles) {
-        long nowMillis = System.currentTimeMillis();
-        Date now = new Date(nowMillis);
-        JwtBuilder builder = Jwts.builder().setId(id)
-                .setSubject(subject)
-                .setIssuedAt(now)
-                .signWith(SignatureAlgorithm.HS256, key).claim("roles", roles);
-        if (ttl > 0) {
-            builder.setExpiration( new Date( nowMillis + ttl));
+
+    public String createJwt(Integer userId, String userName) {
+
+        //当前时间
+        Date nowDate = new Date();
+
+        //当前时间+过期时长=>过期的时间点  =System.currentTimeMillis()+ expire * 1000
+        Date expireDate = new Date(nowDate.getTime() + expire * 1000);
+
+        return Jwts.builder()
+                   .setHeaderParam("typ", "JWT")
+                   .setId(String.valueOf(userId))
+                   .setSubject(userName)
+                   .setIssuedAt(nowDate)
+                   .setExpiration(expireDate)
+                   .signWith(SignatureAlgorithm.HS512, getSecret())
+                   .compact();
+    }
+
+
+    /**
+     * @return io.jsonwebtoken.Claims
+     * @throws
+     * @description 解析token
+     * @author Gavin
+     * @date 2019-10-04 10:53
+     * @since
+     */
+
+    public Claims parseJWT(String token) {
+        try {
+            return Jwts.parser()
+                       .setSigningKey(secret)
+                       .parseClaimsJws(token)
+                       .getBody();
         }
-        return builder.compact();
+        catch (Exception e) {
+            log.debug("validate is token error ", e);
+            return null;
+        }
     }
 
-    /**
-     * 解析JWT
-     * @param jwtStr
-     * @return
-     */
-    public Claims parseJWT(String jwtStr){
-        return  Jwts.parser()
-                .setSigningKey(key)
-                .parseClaimsJws(jwtStr)
-                .getBody();
-    }
 
 }

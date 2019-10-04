@@ -1,4 +1,4 @@
-package com.example.consumer.config.custom;
+package com.example.consumer.config.annotation;
 
 
 import com.example.consumer.vo.UserVo;
@@ -12,11 +12,11 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 /**
  * Created by boot on 2019/9/29.
  */
-public class CurrentComplete implements HandlerMethodArgumentResolver {
+public class AnnotationCurrentComplete implements HandlerMethodArgumentResolver {
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
         return parameter.getParameterType().isAssignableFrom(UserVo.class)
-                && parameter.hasParameterAnnotation(CurrentUser.class);
+                && parameter.hasParameterAnnotation(AnnotationCurrentUser.class);
     }
 
     @Override
