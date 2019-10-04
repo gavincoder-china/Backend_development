@@ -140,7 +140,7 @@
 
         select * from user_zmx uz
         where user_name=#{userName,jdbcType=VARCHAR}
-        and password=#{password,jdbcType=VARCHAR}
+
     </select>
 
     <update id="delByUserName">

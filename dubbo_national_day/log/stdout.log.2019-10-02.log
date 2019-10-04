@@ -1780,7 +1780,7 @@ java.lang.IllegalArgumentException: Source must not be null
 2019-10-02 21:59:46,118 [INFO] [http-nio-9004-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 508] FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
 2019-10-02 21:59:46,171 [ERROR] [http-nio-9004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 181] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: login error] with root cause
 java.lang.RuntimeException: login error
-	at com.example.consumer.config.custom.LoginReqComplete.preHandle(LoginReqComplete.java:43)
+	at com.example.consumer.config.annotation.AnnotationLoginReqComplete.preHandle(LoginReqComplete.java:43)
 	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:133)
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:962)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)

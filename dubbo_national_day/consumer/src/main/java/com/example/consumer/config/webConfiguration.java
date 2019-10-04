@@ -1,8 +1,8 @@
 package com.example.consumer.config;
 
 
-import com.example.consumer.config.custom.CurrentComplete;
-import com.example.consumer.config.custom.LoginReqComplete;
+import com.example.consumer.config.annotation.AnnotationCurrentComplete;
+import com.example.consumer.config.annotation.AnnotationLoginReqComplete;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
@@ -24,15 +24,15 @@ public class webConfiguration implements WebMvcConfigurer {
 
     //注入容器
     @Bean
-    public LoginReqComplete loginReqComplete() {
+    public AnnotationLoginReqComplete loginReqComplete() {
 
-        return new LoginReqComplete();
+        return new AnnotationLoginReqComplete();
     }
 
     @Bean
-    public CurrentComplete currentComplete() {
+    public AnnotationCurrentComplete currentComplete() {
 
-        return new CurrentComplete();
+        return new AnnotationCurrentComplete();
     }
 
     @Override
@@ -60,10 +60,13 @@ public class webConfiguration implements WebMvcConfigurer {
 
     }
 
-//    拦截器
+    //    拦截器
     @Override
     public void addInterceptors(InterceptorRegistry interceptorRegistry) {
-        interceptorRegistry.addInterceptor(loginReqComplete()).addPathPatterns("/**");
+        interceptorRegistry.addInterceptor(loginReqComplete())
+                           .addPathPatterns("/**")
+                           .excludePathPatterns("/**/login/**")
+                           .excludePathPatterns("/**/register/**");
 
     }
 

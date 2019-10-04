@@ -1,10 +1,9 @@
 package com.example.consumer.controller;
-import	java.util.Currency;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
-import com.example.consumer.config.custom.CurrentUser;
-import com.example.consumer.config.custom.LoginRequired;
+import com.example.consumer.config.annotation.AnnotationCurrentUser;
+import com.example.consumer.config.annotation.AnnotationLoginRequired;
 import com.example.consumer.contants.UserContants;
 import com.example.consumer.util.RedisUtils;
 import com.example.consumer.util.result.ReturnResult;
@@ -54,10 +53,12 @@ public class UserController {
     @Autowired
     private RedisUtils redisUtils;
 
+    @Autowired
+    private  HttpServletRequest request;
 
     @ApiOperation(value = "登录")
     @PostMapping(value = "/login")
-    public ReturnResult login(@Valid UserVo userVo, HttpServletRequest request) {
+    public ReturnResult login(@Valid UserVo userVo) {
 
 
         log.info("测试@Slf4j");
@@ -67,9 +68,11 @@ public class UserController {
 //        }
 
         //1.验证用户信息
+
         User user = userService.login(userVo.getUserName(), userVo.getPassword());
 
         if (null != user) {
+
             //2.生成token,jsonStr set到redis中,并设置60秒过期时间
 
             String token = request.getSession().getId();
@@ -93,9 +96,10 @@ public class UserController {
 
     @ApiOperation(value = "注册")
     @PostMapping(value = "/register")
-    public ReturnResult register(@Valid UserVo userVo, HttpServletRequest request) {
+    public ReturnResult register(@Valid UserVo userVo) {
         //1.判断用户名是否被注册
         Object obj = redisUtils.get(UserContants.REGISTER_NAME_SPACE + userVo.getUserName());
+
         if (null == obj) {
 
             //2.插入数据库
@@ -107,7 +111,6 @@ public class UserController {
             int registerResult = userService.register(user);
 
             if (registerResult == 1) {
-
 
                 //3.插入redis,完善注册库数据
                 redisUtils.set(UserContants.REGISTER_NAME_SPACE + userVo.getUserName(), 1);
@@ -121,6 +124,7 @@ public class UserController {
                 if (set) {
                     return ReturnResultUtils.returnSuccess(token);
                 }
+
             }
         } else {
 
@@ -133,7 +137,7 @@ public class UserController {
     }
 
 
-    @LoginRequired
+    @AnnotationLoginRequired
     @ApiOperation(value = "获取用户")
     @GetMapping(value = "/findUser")
     public ReturnResult findUser(@Valid UserVo userVo) {
@@ -170,10 +174,10 @@ public class UserController {
     }
 
 
-    @LoginRequired
+    @AnnotationLoginRequired
     @ApiOperation(value = "删除用户")
     @DeleteMapping(value = "/delUser")
-    public ReturnResult delUser(@CurrentUser UserVo userVo) {
+    public ReturnResult delUser(@AnnotationCurrentUser UserVo userVo) {
 
 
         int result = userService.delUser(userVo.getUserName());
@@ -187,12 +191,6 @@ public class UserController {
     }
 
 
-    @LoginRequired
-    @ApiOperation(value = "自定义注解")
-    @GetMapping("/testCustom")
-    public ReturnResult testCustom(@CurrentUser UserVo userVo){
 
-        return ReturnResultUtils.returnSuccess(userVo);
-    }
 
 }

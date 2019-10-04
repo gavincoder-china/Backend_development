@@ -4,6 +4,8 @@ import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.fastjson.JSONObject;
 import com.example.consumer.contants.UserContants;
 import com.example.consumer.util.RedisUtils;
+import com.example.consumer.util.result.ReturnResultContants;
+import com.example.consumer.util.result.ReturnResultUtils;
 import com.example.consumer.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
@@ -12,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 import java.lang.reflect.Method;
 
 /**
@@ -31,10 +34,8 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
         Method method = handlerMethod.getMethod();
 
 
-
         // 判断方法是否添加了这个注解
         AnnotationLoginRequired methodAnnotation = method.getAnnotation(AnnotationLoginRequired.class);
-
 
 
         if (methodAnnotation != null) {
@@ -46,9 +47,7 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
 
               String jsonStr = (String) redisUtils.get(UserContants.LOGIN_NAME_SPACE+token);
 
-                if (StringUtils.isBlank(jsonStr)) {
-                    throw new RuntimeException("login error");
-                } else {
+                if (!StringUtils.isBlank(jsonStr)) {
 
                     UserVo userVo = JSONObject.parseObject(jsonStr, UserVo.class);
 
@@ -56,12 +55,20 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
                 }
             }
 
+            response.setCharacterEncoding("UTF-8");
+            PrintWriter pw = response.getWriter();
 
-            else {
-                //throw new BusinessException(BusinessEnum.TOKEN_IS_NULL,"token is blank");
-            }
-            return true;
+            pw.write(JSONObject.toJSONString(
+                    ReturnResultUtils.returnFail(
+                            ReturnResultContants.INTERCPTOR_LOGIN_ERROR,
+                            ReturnResultContants.MSG_INTERCPTOR_LOGIN_ERROR)));
+
+            pw.flush();
+            pw.close();
+            return false;
+
         }
+
         return true;
     }
 

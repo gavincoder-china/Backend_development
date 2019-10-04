@@ -44,13 +44,19 @@ public final class ReturnResultContants {
 
     public static final int REGISTER_WRONG = 290;
     public static final int REGISTER_ALREADY_EXIST = 291;
+    public static final int LOGIN_EXPIRE = 292;
+    public static final int INTERCPTOR_LOGIN_ERROR = 293;
 
     public static final String MSG_WRONG_LOGIN = "登录失败";
 
     public static final String MSG_WRONG_REGISTER = "注册失败";
 
+
     public static final String MSG_REGISTER_ALREADY_EXIST = "该用户名已被注册";
+
     public static final String MSG_DEL_WRONG = "用户注销失败";
+    public static final String MSG_LOGIN_EXPIRE = "登陆过期,需要重新登录";
+    public static final String MSG_INTERCPTOR_LOGIN_ERROR = "未登录,被拦截";
 
 
 }

@@ -63,14 +63,7 @@
         </dependency>
         <!--        swagger依赖结束-->
 
-        <!--        beanutils依赖开始-->
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.9.3</version>
-        </dependency>
 
-        <!--        beanutils依赖结束-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>

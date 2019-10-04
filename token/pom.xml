@@ -100,14 +100,14 @@
         </dependency>
         <!-- token依赖开始 -->
 
-<!--        //解决问题-->
+<!--        解决JDK版本过高的问题-->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
             <version>2.3.0</version>
         </dependency>
 
-<!--        //解决问题-->
+<!--        //解决JDK版本过高的问题-->
     </dependencies>
 
     <build>
