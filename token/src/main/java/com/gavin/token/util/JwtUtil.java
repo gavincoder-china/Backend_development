@@ -35,7 +35,7 @@ public class JwtUtil {
      * @since
      */
 
-    public String createJwt(Integer userId, String userName) {
+    public String createJwt(Long userId, String userName) {
 
         //当前时间
         Date nowDate = new Date();

@@ -2,143 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0451cb2-25b9-419f-abd3-9710fc074b99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_actuator_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_starter_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_druid_1_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_dubbo_2_5_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_github_xiaoymin_swagger_bootstrap_ui_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/RedisConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/SwaggerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/custom/CurrentComplete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/custom/CurrentUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/custom/LoginReqComplete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/custom/LoginRequired.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/consumer/src/main/java/com/example/consumer/config/webConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/dubbo(国庆).iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/log/stdout.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/national_pom.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/java/com/example/provider/ProviderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/java/com/example/provider/config/config/MybatisConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/java/com/example/provider/dto/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/java/com/example/provider/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/java/com/example/provider/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/resources/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dubbo(国庆)/provider/src/test/java/com/example/provider/ProviderApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/dto/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/config/IdWorkerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/JwtUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +49,6 @@
         <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="SSM: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SSM@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="SSM: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="User_info: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -238,12 +105,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer" />
-      <recent name="$PROJECT_DIR$/provider/src/main/resources" />
-      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config" />
-      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/util" />
-      <recent name="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.gavin.provider.service.impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gavin.consumer.config" />
@@ -251,8 +114,12 @@
       <recent name="com.gavin.provider.mapper" />
       <recent name="com.gavin.provider.dto" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.gavin.provider.service.impl" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer" />
+      <recent name="$PROJECT_DIR$/provider/src/main/resources" />
+      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config" />
+      <recent name="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/util" />
+      <recent name="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,6 +198,7 @@
       <workItem from="1570020253587" duration="35000" />
       <workItem from="1570064576968" duration="86000" />
       <workItem from="1570068176369" duration="949000" />
+      <workItem from="1570196424210" duration="509000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ import com.gavin.token.config.myAnnotation.AnnotationCurrentUser;
 import com.gavin.token.config.myAnnotation.AnnotationLoginRequired;
 import com.gavin.token.dto.User;
 import com.gavin.token.mapper.UserMapper;
+import com.gavin.token.util.IdWorker;
 import com.gavin.token.util.JwtUtil;
 import com.gavin.token.util.result.ReturnResult;
 import com.gavin.token.util.result.ReturnResultContants;
@@ -45,6 +46,8 @@ public class UserController {
     @Autowired
     private JwtUtil jwtUtil;
 
+    @Autowired
+    private IdWorker idWorker;
 
     @ApiOperation(value = "登录")
     @PostMapping(value = "/login")
@@ -81,10 +84,13 @@ public class UserController {
 
         String encode = encoder.encode(password);
 
+
+
         User user = new User();
         user.setUsername(userName);
         user.setPassword(encode);
-
+        user.setId(idWorker.nextId());
+       // System.out.println(idWorker.nextId());
 
         int result = userMapper.insertSelective(user);
 

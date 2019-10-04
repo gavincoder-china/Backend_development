@@ -9,6 +9,7 @@
         <option name="javaModelPackage" value="com.gavin.provider.dto" />
         <option name="javaModelPath" value="$PROJECT_DIR$/provider/src/main/java" />
         <option name="lastDatabaseCrudChooseModuleName" value="consumer" />
+        <option name="lombokDataAnnotation" value="true" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
             <entry key="consumer">

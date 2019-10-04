@@ -14,7 +14,7 @@ public class User implements Serializable {
     /**
      * id
      */
-    private Integer id;
+    private Long id;
 
     /**
      * uername
