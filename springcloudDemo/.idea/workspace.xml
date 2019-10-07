@@ -130,7 +130,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@64567cff" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@30ced2d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@71d18a85" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -160,7 +160,7 @@
       <workItem from="1570255210751" duration="7989000" />
       <workItem from="1570330153414" duration="1008000" />
       <workItem from="1570413066264" duration="23000" />
-      <workItem from="1570413105872" duration="2146000" />
+      <workItem from="1570413105872" duration="2487000" />
     </task>
     <servers />
   </component>
