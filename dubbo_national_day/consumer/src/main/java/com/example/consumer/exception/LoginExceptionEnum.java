@@ -1,8 +1,6 @@
 package com.example.consumer.exception;
 
-/**
- * Created by boot on 2019/9/30.
- */
+
 public enum LoginExceptionEnum {
 
     /**

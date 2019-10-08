@@ -23,6 +23,8 @@ public class ResultUserListVo implements Serializable {
     private static final long serialVersionUID = -2477648516891785005L;
 
     private int totalSize;
+    private int nowPage;
+    private int pageSize;
 
     private List<ResultUserVo> list;
 

@@ -3,6 +3,8 @@ package com.example.consumer.config.annotation;
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.fastjson.JSONObject;
 import com.example.consumer.contants.UserContants;
+import com.example.consumer.exception.LoginException;
+import com.example.consumer.exception.LoginExceptionEnum;
 import com.example.consumer.util.RedisUtils;
 import com.example.consumer.util.result.ReturnResultContants;
 import com.example.consumer.util.result.ReturnResultUtils;
@@ -52,10 +54,15 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
                     UserVo userVo = JSONObject.parseObject(jsonStr, UserVo.class);
 
                     request.setAttribute("userToken", userVo);
+
+                    return true;
                 }
+
             }
 
-            response.setCharacterEncoding("UTF-8");
+            throw  new LoginException(LoginExceptionEnum.LOGIN_FAIL_ECPTION,"请先登录");
+
+      /*      response.setCharacterEncoding("UTF-8");
             PrintWriter pw = response.getWriter();
 
             pw.write(JSONObject.toJSONString(
@@ -65,11 +72,12 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
 
             pw.flush();
             pw.close();
-            return false;
+            return false;*/
 
         }
 
         return true;
+
     }
 
 

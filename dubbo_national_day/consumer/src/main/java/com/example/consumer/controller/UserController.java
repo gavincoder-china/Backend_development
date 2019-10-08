@@ -118,7 +118,8 @@ public class UserController {
                 //4.获取token,用1作为value,插入redis,(验证登录用)
                 String token = request.getSession().getId();
 
-                boolean set = redisUtils.set(UserContants.LOGIN_NAME_SPACE + token, JSONObject.toJSONString(userVo), 60);
+                boolean set = redisUtils.set(UserContants.LOGIN_NAME_SPACE + token,
+                                             JSONObject.toJSONString(userVo), 300);
 
                 //5.返回token
                 if (set) {
@@ -168,6 +169,8 @@ public class UserController {
         int totalSize = userService.countToatlSize(user);
 
         resultUserListVo.setTotalSize(totalSize);
+        resultUserListVo.setNowPage(userVo.getStartPage());
+        resultUserListVo.setPageSize(userVo.getPageSize());
 
 
         return ReturnResultUtils.returnSuccess(resultUserListVo);

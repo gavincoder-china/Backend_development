@@ -1,8 +1,8 @@
 package com.example.consumer.exception;
 
-/**
- * Created by boot on 2019/9/30.
- */
+
+
+
 public class LoginException extends RuntimeException {
 
     private String msg;
