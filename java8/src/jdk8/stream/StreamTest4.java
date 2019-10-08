@@ -21,7 +21,7 @@ public class StreamTest4 {
 ////        List<String> list = stream.collect(() -> new ArrayList(), (theList, item) -> theList.add(item),
 ////                (theList1, theList2) -> theList1.addAll(theList2));
 //        List<String> list = stream.collect(LinkedList::new, LinkedList::add, LinkedList::addAll);
-//
+
 //        list.forEach(System.out::println);
 
 //        Stream<String> stream = Stream.of("hello", "world", "helloworld");
@@ -33,6 +33,8 @@ public class StreamTest4 {
 //        System.out.println(set.getClass());
 //
 //        set.forEach(System.out::println);
+
+
 
         Stream<String> stream = Stream.of("hello", "world", "helloworld");
         String str = stream.collect(Collectors.joining()).toString();

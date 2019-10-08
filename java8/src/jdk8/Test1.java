@@ -3,7 +3,7 @@ package jdk8;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
+
 
 public class Test1 {
 
@@ -23,6 +23,8 @@ public class Test1 {
 //        System.out.println("----------");
 
         // method reference
+
+
         list.forEach(System.out::println);
 
 

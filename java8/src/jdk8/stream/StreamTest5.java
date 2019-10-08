@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamTest5 {
+
     public static void main(String[] args) {
         List<String> list = Arrays.asList("hello", "world", "helloworld", "test");
         list.stream().map(String::toUpperCase).collect(Collectors.toList()).forEach(System.out::println);
