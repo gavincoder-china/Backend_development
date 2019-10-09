@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eae77475-c62c-494c-a5b7-abb178866642" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/client/ProClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java8/java8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java8/java8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/client/ProClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/client/ProClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="eae77475-c62c-494c-a5b7-abb178866642" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +152,7 @@
       <workItem from="1570255210751" duration="7989000" />
       <workItem from="1570330153414" duration="1008000" />
       <workItem from="1570413066264" duration="23000" />
-      <workItem from="1570413105872" duration="2487000" />
+      <workItem from="1570413105872" duration="2528000" />
     </task>
     <servers />
   </component>

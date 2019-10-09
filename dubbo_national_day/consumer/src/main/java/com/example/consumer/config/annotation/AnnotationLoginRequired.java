@@ -11,4 +11,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)//代表了这个自定义注解必须要加载方法上
 @Retention(RetentionPolicy.RUNTIME)//运行时候有效
 public @interface AnnotationLoginRequired {
+
 }

@@ -27,17 +27,12 @@ public class LoginException extends RuntimeException {
     }
 
 
-
-    public LoginExceptionEnum getBusinessEnum() {
-
+    public LoginExceptionEnum getLoginExceptionEnum() {
         return loginExceptionEnum;
     }
 
-
-    public void setBusinessEnum(LoginExceptionEnum businessEnum) {
-
-        this.loginExceptionEnum = businessEnum;
+    public void setLoginExceptionEnum(LoginExceptionEnum loginExceptionEnum) {
+        this.loginExceptionEnum = loginExceptionEnum;
     }
-
 
 }

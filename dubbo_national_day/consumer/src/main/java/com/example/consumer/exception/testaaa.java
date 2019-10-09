@@ -12,4 +12,20 @@ package com.example.consumer.exception;
  * @description:
  ************************************************************/
 public class testaaa {
+    public static void main(String[] args) {
+
+        try {
+            throw new LoginException(LoginExceptionEnum.LOGIN_FAIL_ECPTION);
+        }
+        catch (LoginException e) {
+
+            LoginExceptionEnum enums = e.getLoginExceptionEnum();
+            System.out.println("{'code':" + enums.getCode() + ",'message':'  " +
+                               "   " + enums.getMsg() + "'}");
+
+
+        }
+
+
+    }
 }

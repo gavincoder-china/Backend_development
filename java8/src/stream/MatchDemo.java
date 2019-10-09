@@ -29,9 +29,9 @@ public class MatchDemo {
 
 
         //   有一个满足      anyMatch：Stream 中任意一个元素符合传入的 predicate，返回 true
-        Boolean anyMatch = students.stream().anyMatch(s -> "湖北".equals(s.getAddress()));
-        if (anyMatch) {
-            System.out.println("有湖北人");
+        Boolean anyMatch = students.stream().anyMatch(s -> "南京".equals(s.getAddress()));
+        if (!anyMatch) {
+            System.out.println("没有南京人");
         }
 
         //    全部满足       allMatch：Stream 中全部元素符合传入的 predicate，返回 true

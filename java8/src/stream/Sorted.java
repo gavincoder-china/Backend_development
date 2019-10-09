@@ -34,6 +34,7 @@ public class Sorted {
 
 
         //排序规则  双重规则 后面的规则权重高!!!!
+        //从小到大排序
         List<Student> lists = students.stream()
                                       .sorted(Comparator.comparingInt(Student::getAge))
                                       .sorted(Comparator.comparingLong(Student::getId))
@@ -42,5 +43,14 @@ public class Sorted {
         lists.stream().forEach(list -> {
             System.out.println(list);
         });
+
+
+        System.out.println("----------");
+        //从大到小排序
+        List<Student> lists2 = students.stream().sorted((stu1, stu2) -> Integer.compare(stu2.getAge(), stu1.getAge())).collect(Collectors.toList());
+        lists2.stream().forEach(list -> {
+            System.out.println(list);
+        });
+
     }
 }

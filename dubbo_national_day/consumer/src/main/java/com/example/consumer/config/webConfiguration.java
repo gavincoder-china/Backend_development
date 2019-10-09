@@ -16,9 +16,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by boot on 2019/9/29.
- */
+
 @Configuration
 public class webConfiguration implements WebMvcConfigurer {
 
@@ -64,9 +62,9 @@ public class webConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry interceptorRegistry) {
         interceptorRegistry.addInterceptor(loginReqComplete())
-                           .addPathPatterns("/**")
                            .excludePathPatterns("/**/login/**")
-                           .excludePathPatterns("/**/register/**");
+                           .excludePathPatterns("/**/register/**")
+                           .excludePathPatterns("/**/wx/**");
 
     }
 

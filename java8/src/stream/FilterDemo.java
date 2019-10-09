@@ -17,9 +17,6 @@ import java.util.stream.Collectors;
  ************************************************************/
 public class FilterDemo {
 
-
-
-
     public static void main(String[] args) {
 
 

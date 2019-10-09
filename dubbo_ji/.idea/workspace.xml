@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0451cb2-25b9-419f-abd3-9710fc074b99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/dto/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/gavin/provider/mapper/UsersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/config/IdWorkerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/IdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../token/src/main/java/com/gavin/token/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config/custom/LoginReqComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/gavin/consumer/config/custom/LoginReqComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8/src/jdk8/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java8/src/jdk8/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8/src/jdk8/stream/StreamTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java8/src/jdk8/stream/StreamTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java8/src/jdk8/stream/StreamTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java8/src/jdk8/stream/StreamTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloudDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloudDemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,6 +194,8 @@
       <workItem from="1570064576968" duration="86000" />
       <workItem from="1570068176369" duration="949000" />
       <workItem from="1570196424210" duration="509000" />
+      <workItem from="1570500266916" duration="527000" />
+      <workItem from="1570500817921" duration="1298000" />
     </task>
     <servers />
   </component>

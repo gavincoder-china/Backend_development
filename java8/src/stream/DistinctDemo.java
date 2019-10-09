@@ -23,6 +23,7 @@ public class DistinctDemo {
         Student s3 = new Student(3L, "王五", 17, "北京");
         Student s4 = new Student(4L, "田七", 17, "浙江");
         Student s5 = new Student(4L, "田七", 17, "浙江");
+
         List<Student> students = new ArrayList<>();
         students.add(s1);
         students.add(s2);

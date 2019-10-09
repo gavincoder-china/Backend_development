@@ -32,7 +32,7 @@ public class SkipDemo {
         students.add(s5);
 
 
-        //  集合skip，删除前n个元素
+        //  skip，删除前n个元素
         List<Student> lists = students.stream().skip(2).collect(Collectors.toList());
 
         lists.stream().forEach(list->{

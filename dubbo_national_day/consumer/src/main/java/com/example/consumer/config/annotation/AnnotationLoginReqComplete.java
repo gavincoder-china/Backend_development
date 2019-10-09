@@ -60,9 +60,9 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
 
             }
 
-            throw  new LoginException(LoginExceptionEnum.LOGIN_FAIL_ECPTION,"请先登录");
+         //   throw  new LoginException(LoginExceptionEnum.LOGIN_FAIL_ECPTION);
 
-      /*      response.setCharacterEncoding("UTF-8");
+           response.setCharacterEncoding("UTF-8");
             PrintWriter pw = response.getWriter();
 
             pw.write(JSONObject.toJSONString(
@@ -72,9 +72,10 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
 
             pw.flush();
             pw.close();
-            return false;*/
+            return false;
 
         }
+
 
         return true;
 

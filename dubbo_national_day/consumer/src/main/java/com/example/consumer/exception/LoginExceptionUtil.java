@@ -1,5 +1,8 @@
 package com.example.consumer.exception;
 
+import lombok.Data;
+import org.springframework.stereotype.Component;
+
 /**
  * **********************************************************
  *
@@ -11,5 +14,25 @@ package com.example.consumer.exception;
  * @Date : 2019-10-08 11:08
  * @description:
  ************************************************************/
+
+
 public class LoginExceptionUtil {
+
+    private LoginException loginException;
+
+    public LoginException getLoginException() {
+        return loginException;
+    }
+
+    public void setLoginException(LoginException loginException) {
+        this.loginException = loginException;
+    }
+
+    private String buildExceptionJSON(LoginException le){
+
+        LoginExceptionEnum enums = le.getLoginExceptionEnum();
+        return  "{'code':"+ enums.getCode()+",'message':'     "+enums.getMsg()+"'}";
+    }
+
+
 }
