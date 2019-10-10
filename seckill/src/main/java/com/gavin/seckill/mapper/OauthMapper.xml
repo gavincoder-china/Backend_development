@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gavin.seckill.mapper.OauthMapper">
+    <resultMap id="BaseResultMap" type="com.gavin.seckill.dto.Oauth">
+        <!--@mbg.generated-->
+        <!--@Table oauth-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="oauth_name" jdbcType="VARCHAR" property="oauthName"/>
+        <result column="openid" jdbcType="VARCHAR" property="openid"/>
+        <result column="nickname" jdbcType="VARCHAR" property="nickname"/>
+        <result column="gender" jdbcType="TINYINT" property="gender"/>
+        <result column="head_img_url" jdbcType="VARCHAR" property="headImgUrl"/>
+        <result column="country" jdbcType="VARCHAR" property="country"/>
+        <result column="province" jdbcType="VARCHAR" property="province"/>
+        <result column="city" jdbcType="VARCHAR" property="city"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, oauth_name, openid, nickname, gender, head_img_url, country, province, city,
+        create_time
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from oauth
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        <!--@mbg.generated-->
+        delete from oauth
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="com.gavin.seckill.dto.Oauth">
+        <!--@mbg.generated-->
+        insert into oauth (id, oauth_name, openid,
+        nickname, gender, head_img_url,
+        country, province, city,
+        create_time)
+        values (#{id,jdbcType=BIGINT}, #{oauthName,jdbcType=VARCHAR}, #{openid,jdbcType=VARCHAR},
+        #{nickname,jdbcType=VARCHAR}, #{gender,jdbcType=TINYINT}, #{headImgUrl,jdbcType=VARCHAR},
+        #{country,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR},
+        #{createTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" parameterType="com.gavin.seckill.dto.Oauth">
+        <!--@mbg.generated-->
+        insert into oauth
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="oauthName != null">
+                oauth_name,
+            </if>
+            <if test="openid != null">
+                openid,
+            </if>
+            <if test="nickname != null">
+                nickname,
+            </if>
+            <if test="gender != null">
+                gender,
+            </if>
+            <if test="headImgUrl != null">
+                head_img_url,
+            </if>
+            <if test="country != null">
+                country,
+            </if>
+            <if test="province != null">
+                province,
+            </if>
+            <if test="city != null">
+                city,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="oauthName != null">
+                #{oauthName,jdbcType=VARCHAR},
+            </if>
+            <if test="openid != null">
+                #{openid,jdbcType=VARCHAR},
+            </if>
+            <if test="nickname != null">
+                #{nickname,jdbcType=VARCHAR},
+            </if>
+            <if test="gender != null">
+                #{gender,jdbcType=TINYINT},
+            </if>
+            <if test="headImgUrl != null">
+                #{headImgUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="country != null">
+                #{country,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                #{province,jdbcType=VARCHAR},
+            </if>
+            <if test="city != null">
+                #{city,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.gavin.seckill.dto.Oauth">
+        <!--@mbg.generated-->
+        update oauth
+        <set>
+            <if test="oauthName != null">
+                oauth_name = #{oauthName,jdbcType=VARCHAR},
+            </if>
+            <if test="openid != null">
+                openid = #{openid,jdbcType=VARCHAR},
+            </if>
+            <if test="nickname != null">
+                nickname = #{nickname,jdbcType=VARCHAR},
+            </if>
+            <if test="gender != null">
+                gender = #{gender,jdbcType=TINYINT},
+            </if>
+            <if test="headImgUrl != null">
+                head_img_url = #{headImgUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="country != null">
+                country = #{country,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                province = #{province,jdbcType=VARCHAR},
+            </if>
+            <if test="city != null">
+                city = #{city,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.gavin.seckill.dto.Oauth">
+        <!--@mbg.generated-->
+        update oauth
+        set oauth_name = #{oauthName,jdbcType=VARCHAR},
+        openid = #{openid,jdbcType=VARCHAR},
+        nickname = #{nickname,jdbcType=VARCHAR},
+        gender = #{gender,jdbcType=TINYINT},
+        head_img_url = #{headImgUrl,jdbcType=VARCHAR},
+        country = #{country,jdbcType=VARCHAR},
+        province = #{province,jdbcType=VARCHAR},
+        city = #{city,jdbcType=VARCHAR},
+        create_time = #{createTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+
+    <!--auto generated by MybatisCodeHelper on 2019-10-10-->
+    <select id="selectAllByOpenid" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from oauth
+        where openid=#{openid,jdbcType=VARCHAR}
+        limit 1
+    </select>
+
+<!--auto generated by MybatisCodeHelper on 2019-10-10-->
+    <select id="selectByGender" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from oauth
+        where gender=#{gender,jdbcType=TINYINT}
+        order by oauth.city
+    </select>
+
+</mapper>
