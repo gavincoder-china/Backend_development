@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gavin.seckill.mapper.SecSucessMapper">
+  <resultMap id="BaseResultMap" type="com.gavin.seckill.dto.SecSucess">
+    <!--@mbg.generated-->
+    <!--@Table sec_sucess-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="pro_id" jdbcType="BIGINT" property="proId" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+    <result column="pay" jdbcType="DECIMAL" property="pay" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="pay_platform" jdbcType="VARCHAR" property="payPlatform" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, pro_id, `state`, pay, create_time, pay_platform
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from sec_sucess
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from sec_sucess
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gavin.seckill.dto.SecSucess" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into sec_sucess (user_id, pro_id, `state`, 
+      pay, create_time, pay_platform
+      )
+    values (#{userId,jdbcType=BIGINT}, #{proId,jdbcType=BIGINT}, #{state,jdbcType=TINYINT}, 
+      #{pay,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, #{payPlatform,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gavin.seckill.dto.SecSucess" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into sec_sucess
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="proId != null">
+        pro_id,
+      </if>
+      <if test="state != null">
+        `state`,
+      </if>
+      <if test="pay != null">
+        pay,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="payPlatform != null">
+        pay_platform,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="proId != null">
+        #{proId,jdbcType=BIGINT},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=TINYINT},
+      </if>
+      <if test="pay != null">
+        #{pay,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payPlatform != null">
+        #{payPlatform,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gavin.seckill.dto.SecSucess">
+    <!--@mbg.generated-->
+    update sec_sucess
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="proId != null">
+        pro_id = #{proId,jdbcType=BIGINT},
+      </if>
+      <if test="state != null">
+        `state` = #{state,jdbcType=TINYINT},
+      </if>
+      <if test="pay != null">
+        pay = #{pay,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payPlatform != null">
+        pay_platform = #{payPlatform,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gavin.seckill.dto.SecSucess">
+    <!--@mbg.generated-->
+    update sec_sucess
+    set user_id = #{userId,jdbcType=BIGINT},
+      pro_id = #{proId,jdbcType=BIGINT},
+      `state` = #{state,jdbcType=TINYINT},
+      pay = #{pay,jdbcType=DECIMAL},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      pay_platform = #{payPlatform,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

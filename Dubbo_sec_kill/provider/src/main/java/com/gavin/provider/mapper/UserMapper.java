@@ -1,6 +1,6 @@
-package com.gavin.seckill.mapper;
+package com.gavin.provider.mapper;
 
-import com.gavin.seckill.dto.User;
+import com.gavin.provider.dto.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Long id);

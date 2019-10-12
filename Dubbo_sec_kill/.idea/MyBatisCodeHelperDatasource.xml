@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="javaMapperPackage" value="com.gavin.provider.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/provider/src/main/java" />
+        <option name="javaModelPackage" value="com.gavin.provider.dto" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/provider/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="provider" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="provider">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.gavin.provider.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/provider/src/main/java" />
+                  <option name="javaModelPacakge" value="com.gavin.provider.dto" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/provider/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/provider/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="seckill:oauth">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Oauth" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:product">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Product" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:sec_pro">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SecPro" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:sec_sucess">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SecSucess" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:seckill_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SeckillInfo" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="seckill:user_oauth">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="UserOauth" />
+                  <option name="moduleName" value="provider" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/provider/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

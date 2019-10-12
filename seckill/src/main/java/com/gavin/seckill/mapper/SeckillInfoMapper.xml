@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gavin.seckill.mapper.SeckillInfoMapper">
+  <resultMap id="BaseResultMap" type="com.gavin.seckill.dto.SeckillInfo">
+    <!--@mbg.generated-->
+    <!--@Table seckill_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="discount_ratio" jdbcType="DOUBLE" property="discountRatio" />
+    <result column="discount" jdbcType="DECIMAL" property="discount" />
+    <result column="sales" jdbcType="BIGINT" property="sales" />
+    <result column="inventory" jdbcType="BIGINT" property="inventory" />
+    <result column="original_price" jdbcType="DECIMAL" property="originalPrice" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, title, discount_ratio, discount, sales, inventory, original_price, start_time, 
+    end_time, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from seckill_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from seckill_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gavin.seckill.dto.SeckillInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into seckill_info (title, discount_ratio, discount, 
+      sales, inventory, original_price, 
+      start_time, end_time, create_time
+      )
+    values (#{title,jdbcType=VARCHAR}, #{discountRatio,jdbcType=DOUBLE}, #{discount,jdbcType=DECIMAL}, 
+      #{sales,jdbcType=BIGINT}, #{inventory,jdbcType=BIGINT}, #{originalPrice,jdbcType=DECIMAL}, 
+      #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gavin.seckill.dto.SeckillInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into seckill_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="discountRatio != null">
+        discount_ratio,
+      </if>
+      <if test="discount != null">
+        discount,
+      </if>
+      <if test="sales != null">
+        sales,
+      </if>
+      <if test="inventory != null">
+        inventory,
+      </if>
+      <if test="originalPrice != null">
+        original_price,
+      </if>
+      <if test="startTime != null">
+        start_time,
+      </if>
+      <if test="endTime != null">
+        end_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="discountRatio != null">
+        #{discountRatio,jdbcType=DOUBLE},
+      </if>
+      <if test="discount != null">
+        #{discount,jdbcType=DECIMAL},
+      </if>
+      <if test="sales != null">
+        #{sales,jdbcType=BIGINT},
+      </if>
+      <if test="inventory != null">
+        #{inventory,jdbcType=BIGINT},
+      </if>
+      <if test="originalPrice != null">
+        #{originalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="startTime != null">
+        #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null">
+        #{endTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gavin.seckill.dto.SeckillInfo">
+    <!--@mbg.generated-->
+    update seckill_info
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="discountRatio != null">
+        discount_ratio = #{discountRatio,jdbcType=DOUBLE},
+      </if>
+      <if test="discount != null">
+        discount = #{discount,jdbcType=DECIMAL},
+      </if>
+      <if test="sales != null">
+        sales = #{sales,jdbcType=BIGINT},
+      </if>
+      <if test="inventory != null">
+        inventory = #{inventory,jdbcType=BIGINT},
+      </if>
+      <if test="originalPrice != null">
+        original_price = #{originalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="startTime != null">
+        start_time = #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null">
+        end_time = #{endTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gavin.seckill.dto.SeckillInfo">
+    <!--@mbg.generated-->
+    update seckill_info
+    set title = #{title,jdbcType=VARCHAR},
+      discount_ratio = #{discountRatio,jdbcType=DOUBLE},
+      discount = #{discount,jdbcType=DECIMAL},
+      sales = #{sales,jdbcType=BIGINT},
+      inventory = #{inventory,jdbcType=BIGINT},
+      original_price = #{originalPrice,jdbcType=DECIMAL},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,6 +1,6 @@
-package com.gavin.seckill.mapper;
+package com.gavin.provider.mapper;
 
-import com.gavin.seckill.dto.UserOauth;
+import com.gavin.provider.dto.UserOauth;
 
 public interface UserOauthMapper {
     int deleteByPrimaryKey(Long id);

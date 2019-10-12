@@ -1,8 +1,9 @@
-package com.gavin.seckill.mapper;
-import org.apache.ibatis.annotations.Param;
-import java.util.List;
+package com.gavin.provider.mapper;
 
-import com.gavin.seckill.dto.Oauth;
+import com.gavin.provider.dto.Oauth;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface OauthMapper {
     int deleteByPrimaryKey(Long id);
@@ -17,10 +18,9 @@ public interface OauthMapper {
 
     int updateByPrimaryKey(Oauth record);
 
-    Oauth selectAllByOpenid(@Param("openid")String openid);
+    Oauth selectAllByOpenid(@Param("openid") String openid);
 
     List<Oauth> selectByGender(@Param("gender") Byte gender);
-
 
 
 
