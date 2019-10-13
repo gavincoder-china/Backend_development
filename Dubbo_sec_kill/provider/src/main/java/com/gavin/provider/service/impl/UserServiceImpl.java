@@ -95,10 +95,10 @@ public class UserServiceImpl implements UserService {
         Oauth oauth = oauthMapper.selectAllByOpenid(openid);
         String oauthJsonStr = JSONObject.toJSONString(oauth);
 
-        //存入登录redis,并设置过期时间5分钟
+        //存入登录redis,并设置过期时间10分钟
         redisUtils.set(RedisUserContants.LOGIN_NAME_SPACE + accessToken,
                        oauthJsonStr,
-                       300);
+                       600);
 
         return accessToken;
 

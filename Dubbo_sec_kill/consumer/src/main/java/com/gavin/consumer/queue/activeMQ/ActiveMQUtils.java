@@ -1,4 +1,4 @@
-package com.gavin.consumer.util;
+package com.gavin.consumer.queue.activeMQ;
 
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,7 @@ import javax.jms.Destination;
 /***
  * ActiveMQ 工具类
  */
+
 @Component
 public class ActiveMQUtils {
 
@@ -17,7 +18,7 @@ public class ActiveMQUtils {
     private JmsMessagingTemplate jmsMessagingTemplate;
 
     /***
-     * 发送队列消息
+     * 发送队列消息  destination是发送到的队列，message是待发送的消息
      * @param name
      * @param message
      */

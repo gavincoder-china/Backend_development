@@ -1,12 +1,16 @@
 package com.gavin.consumer.config.annotationCustom;
 
 
+
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
 import com.gavin.consumer.result.ReturnResultContants;
 import com.gavin.consumer.result.ReturnResultUtils;
+import com.gavin.consumer.util.RedisUtil;
 import com.gavin.provider.contants.RedisUserContants;
 import com.gavin.provider.dto.Oauth;
 import com.gavin.provider.util.RedisUtils;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -23,8 +27,9 @@ import java.lang.reflect.Method;
  * Created by boot on 2019/9/29.
  */
 public class AnnotationLoginReqComplete implements HandlerInterceptor {
-    @Autowired
-    private RedisUtils redisUtils;
+
+   @Autowired
+   private RedisUtil redisUtils;
 
     @Override
     public boolean preHandle(HttpServletRequest request,

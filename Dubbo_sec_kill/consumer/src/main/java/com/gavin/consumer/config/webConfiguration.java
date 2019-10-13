@@ -3,6 +3,7 @@ package com.gavin.consumer.config;
 import com.gavin.consumer.config.annotationCustom.AnnotationCurrentComplete;
 import com.gavin.consumer.config.annotationCustom.AnnotationLoginReqComplete;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.validation.MessageCodesResolver;
@@ -26,6 +27,7 @@ import java.util.List;
  * @Date : 2019-10-12 11:04
  * @description:
  ************************************************************/
+@Configuration
 public class webConfiguration implements WebMvcConfigurer {
 
   //注入容器
@@ -70,9 +72,7 @@ public class webConfiguration implements WebMvcConfigurer {
   @Override
   public void addInterceptors(InterceptorRegistry interceptorRegistry) {
     interceptorRegistry.addInterceptor(loginReqComplete())
-                       .excludePathPatterns("/**/login/**")
-                       .excludePathPatterns("/**/register/**")
-                       .excludePathPatterns("/**/wx/**");
+                       .excludePathPatterns("/wx/**");
 
   }
 

@@ -1,5 +1,7 @@
 package com.gavin.consumer.vo;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -15,6 +17,7 @@ import java.util.Date;
  * @Date : 2019-10-12 13:21
  * @description:
  ************************************************************/
+@Data
 public class GoodsVo implements Serializable {
     private static final long serialVersionUID = -8418090912655988571L;
 

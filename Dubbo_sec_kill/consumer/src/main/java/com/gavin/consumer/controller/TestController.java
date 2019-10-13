@@ -1,7 +1,7 @@
 package com.gavin.consumer.controller;
 
 
-import com.gavin.consumer.util.ActiveMQUtils;
+import com.gavin.consumer.queue.activeMQ.ActiveMQUtils;
 import com.gavin.consumer.vo.TestVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

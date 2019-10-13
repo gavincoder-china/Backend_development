@@ -101,7 +101,7 @@ public class SecKillServiceImpl implements SecKillService {
             seckillInfoMapper.updateInventoryById(pID);
 
             //Todo  用redis做库存热点数据缓存
-            redisUtils.set(RedisUserContants.SECKILL_IS + pID + uID, 1);
+            redisUtils.set(RedisUserContants.SECKILL_IS + pID + uID, 1,300);
 
             return SecKillContants.PAY_SUCCESS;
         }

@@ -5,7 +5,7 @@ import com.gavin.consumer.config.annotationCustom.AnnotationCurrentUser;
 import com.gavin.consumer.config.annotationCustom.AnnotationLoginRequired;
 import com.gavin.consumer.result.ReturnResult;
 import com.gavin.consumer.result.ReturnResultUtils;
-import com.gavin.consumer.util.ActiveMQUtils;
+import com.gavin.consumer.queue.activeMQ.ActiveMQUtils;
 import com.gavin.consumer.vo.GoodsVo;
 import com.gavin.consumer.vo.PageVo;
 import com.gavin.consumer.vo.ResultSecGoodsVo;
@@ -63,7 +63,7 @@ public class SecKillController {
         List<SeckillInfo> lists = secKillService.selectAll(pageVo.getStart(), pageVo.getPageSize());
 
         ArrayList<GoodsVo> listTemp = new ArrayList<>();
-        lists.stream().forEach(list -> {
+        lists.forEach(list -> {
             GoodsVo goodsVo = new GoodsVo();
             BeanUtils.copyProperties(list, goodsVo);
             listTemp.add(goodsVo);
@@ -164,22 +164,46 @@ public class SecKillController {
     }
 
 
+
+
+
+
+
     /**
      * @return
      * @throws
-     * @description 通过用户id查订单(需要登录)
+     * @description 通过商品id购买, 从redis中拿取用户的id(需要登录)  这边做消息队列操作,返回数据给支付逻辑
      * @author Gavin
-     * @date 2019-10-11 14:39
+     * @date 2019-10-11 14:28
      * @since
      */
 
+    @AnnotationLoginRequired
+    @ApiOperation(value = "消息队列完成支付操作")
+    @GetMapping("/buyProductByQueue")
+    public ReturnResult buyProductByQueue(@ApiParam(value = "商品id", required = true)
+                                   @RequestParam(value = "pID") Long pID, @AnnotationCurrentUser Oauth oauth) {
 
-    @ApiOperation(value = "测试静态代码块")
-    @GetMapping(value = "/test")
-    public int test() {
+        String result = secKillService.buyProduct(pID, oauth.getId());
 
-        return 0;
+        if (null == result) {
+            //返回无信息,直接返回,抢购失败,请重新尝试
+            return ReturnResultUtils.returnFail(SecKillContants.MSG_SEC_FAIL, SecKillContants.SEC_FAIL);
+        }else {
+            //使用消息队列传消息
 
+            activeMQUtils.sendQueueMesage("seckill", oauth.getId());
+
+        }
+
+
+
+        return ReturnResultUtils.returnSuccess();
     }
+
+
+
+
+
 
 }
