@@ -1,4 +1,5 @@
 package com.gavin.provider.mapper;
+import java.util.List;
 
 import com.gavin.provider.dto.SecSucess;
 import org.apache.ibatis.annotations.Param;
@@ -26,6 +27,10 @@ public interface SecSucessMapper {
 
 
    Long selectProIdById(@Param("id") Long id);
+
+
+
+
 
 
 

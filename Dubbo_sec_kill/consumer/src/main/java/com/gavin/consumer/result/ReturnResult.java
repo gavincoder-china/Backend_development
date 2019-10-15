@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * **********************************************************
  *
- * @Project:   和前端接口交互的统一格式  返回结果集类
+ * @Project: 和前端接口交互的统一格式  返回结果集类
  * @Author : Gavincoder
  * @Mail : xunyegege@gmail.com
  * @Github : https://github.com/xunyegege
@@ -14,7 +14,7 @@ import java.io.Serializable;
  * @Date : 2019-09-28 22:03
  * @description:
  ************************************************************/
-public class ReturnResult<T> implements Serializable{
+public class ReturnResult<T> implements Serializable {
 
 
     //状态码

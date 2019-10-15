@@ -28,8 +28,9 @@ public final class RedisUserContants {
     */
     public static final String SECKILL_IS = "SECKILL_IS:";
 
+    public static final String HOT_CACHE= "HOT_CACHE:";
 
-
+    public static final String HOT_LOCK= "HOT_LOCK:";
 
 
 

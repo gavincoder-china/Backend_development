@@ -3,13 +3,14 @@ package com.gavin.consumer.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.gavin.consumer.config.annotationCustom.AnnotationCurrentUser;
 import com.gavin.consumer.config.annotationCustom.AnnotationLoginRequired;
+import com.gavin.consumer.contants.ReturnResultContants;
+import com.gavin.consumer.queue.activeMQ.ActiveMQUtils;
 import com.gavin.consumer.result.ReturnResult;
 import com.gavin.consumer.result.ReturnResultUtils;
-import com.gavin.consumer.queue.activeMQ.ActiveMQUtils;
+import com.gavin.consumer.util.RedisUtil;
 import com.gavin.consumer.vo.GoodsVo;
 import com.gavin.consumer.vo.PageVo;
 import com.gavin.consumer.vo.ResultSecGoodsVo;
-import com.gavin.consumer.vo.TestVo;
 import com.gavin.provider.contants.SecKillContants;
 import com.gavin.provider.dto.Oauth;
 import com.gavin.provider.dto.SeckillInfo;
@@ -47,6 +48,9 @@ public class SecKillController {
     private SecKillService secKillService;
     @Autowired
     private ActiveMQUtils activeMQUtils;
+
+    @Autowired
+    private RedisUtil redisUtil;
 
     /**
      * @return
@@ -101,26 +105,6 @@ public class SecKillController {
 
 
     /**
-     * @description  测试消息队列
-     * @author Gavin
-     * @date 2019-10-12 17:13
-
-     * @return
-     * @throws
-     * @since
-    */
-
-    @ApiOperation(value = "消息队列")
-    @GetMapping(value = "/activeMq")
-    public void activeMq() {
-        TestVo testVo = new TestVo();
-        testVo.setAge(18);
-        testVo.setName("cengy");
-
-        activeMQUtils.sendQueueMesage("test", testVo);
-    }
-
-    /**
      * @return
      * @throws
      * @description 通过商品id购买, 从redis中拿取用户的id(需要登录)
@@ -164,11 +148,6 @@ public class SecKillController {
     }
 
 
-
-
-
-
-
     /**
      * @return
      * @throws
@@ -179,31 +158,40 @@ public class SecKillController {
      */
 
     @AnnotationLoginRequired
-    @ApiOperation(value = "消息队列完成支付操作")
+    @ApiOperation(value = "选择商品,使用消息队列完成订单生成操作")
     @GetMapping("/buyProductByQueue")
     public ReturnResult buyProductByQueue(@ApiParam(value = "商品id", required = true)
-                                   @RequestParam(value = "pID") Long pID, @AnnotationCurrentUser Oauth oauth) {
+                                          @RequestParam(value = "pID") Long pID, @AnnotationCurrentUser Oauth oauth) {
+        //加锁,检验锁
 
-        String result = secKillService.buyProduct(pID, oauth.getId());
+        boolean lockResult = redisUtil.lock(ReturnResultContants.HOT_LOCK + pID, 1, 600);
 
-        if (null == result) {
-            //返回无信息,直接返回,抢购失败,请重新尝试
-            return ReturnResultUtils.returnFail(SecKillContants.MSG_SEC_FAIL, SecKillContants.SEC_FAIL);
-        }else {
-            //使用消息队列传消息
+        while (lockResult) {
+            //查用户是否购买过?
+            boolean haveBuy = secKillService.haveBuy(pID, oauth.getId());
 
-            activeMQUtils.sendQueueMesage("seckill", oauth.getId());
+            if (!haveBuy) {
+
+                //查该商品库存
+                Long inventory = secKillService.goodsInventory(pID);
+
+                if (inventory >= 1) {
+
+                    //发送信息到消息队列,让生成订单的方法消费
+                    activeMQUtils.sendQueueMesage("seckill", pID + "@" + oauth.getId());
+
+                    return ReturnResultUtils.returnSuccess(ReturnResultContants.CODE_SECKILL_CREATE_ORDER, ReturnResultContants.MSG_SECKILL_CREATE_ORDER);
+
+                }
+            }
+            //如果进来后不满足需求,则解锁
+            redisUtil.delLock(ReturnResultContants.HOT_LOCK + pID);
 
         }
 
+        return ReturnResultUtils.returnFail(SecKillContants.MSG_SEC_FAIL, SecKillContants.SEC_FAIL);
 
-
-        return ReturnResultUtils.returnSuccess();
     }
-
-
-
-
 
 
 }

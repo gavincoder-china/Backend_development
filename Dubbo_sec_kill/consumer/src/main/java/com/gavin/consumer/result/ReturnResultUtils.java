@@ -1,6 +1,8 @@
 package com.gavin.consumer.result;
 
 
+import com.gavin.consumer.contants.ReturnResultContants;
+
 /**
  * **********************************************************
  *
@@ -36,6 +38,18 @@ public class ReturnResultUtils{
         return returnResult;
     }
 
+
+    /***
+     * 成功 带数据
+     * @return  返回状态码,状态信息与数据
+     */
+    public static ReturnResult returnSuccess(Integer code, String message){
+        ReturnResult returnResult=new ReturnResult();
+        returnResult.setCode(code);
+        returnResult.setMessage(message);
+
+        return returnResult;
+    }
 
     /***
      * 成功 带数据

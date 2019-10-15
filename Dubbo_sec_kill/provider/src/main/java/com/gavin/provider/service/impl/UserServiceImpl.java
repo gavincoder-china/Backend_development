@@ -98,7 +98,7 @@ public class UserServiceImpl implements UserService {
         //存入登录redis,并设置过期时间10分钟
         redisUtils.set(RedisUserContants.LOGIN_NAME_SPACE + accessToken,
                        oauthJsonStr,
-                       600);
+                       1000);
 
         return accessToken;
 

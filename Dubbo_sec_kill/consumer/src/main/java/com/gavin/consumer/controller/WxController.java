@@ -5,7 +5,7 @@ package com.gavin.consumer.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.gavin.consumer.config.annotationCustom.AnnotationLoginRequired;
 import com.gavin.consumer.result.ReturnResult;
-import com.gavin.consumer.result.ReturnResultContants;
+import com.gavin.consumer.contants.ReturnResultContants;
 import com.gavin.consumer.result.ReturnResultUtils;
 import com.gavin.provider.dto.Oauth;
 import com.gavin.provider.service.UserService;
@@ -97,5 +97,19 @@ public class WxController {
     public ReturnResult getWxToken(){
         return ReturnResultUtils.returnSuccess(this.wxToken);
     }
+
+
+    /**
+     * @description   判断用户是否登录
+     * @author Gavin
+     * @date 2019-10-14 08:49
+
+     * @return
+     * @throws
+     * @since
+    */
+
+
+
 
 }

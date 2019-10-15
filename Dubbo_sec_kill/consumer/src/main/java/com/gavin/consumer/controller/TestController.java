@@ -30,21 +30,6 @@ public class TestController {
     @Autowired
     private ActiveMQUtils activeMQUtils;
 
-    @ApiOperation(value = "测试activeMq")
-    @GetMapping(value = "/activeMq")
-    public void activeMq() {
-        TestVo testVo = new TestVo();
-        testVo.setAge(18);
-        testVo.setName("cengy");
-        activeMQUtils.sendQueueMesage("test", testVo);
-
-    }
-
-
-    @JmsListener(destination = "test")
-    public void listener(TestVo testVo) {
-        int i = 1;
-    }
 
 
 }

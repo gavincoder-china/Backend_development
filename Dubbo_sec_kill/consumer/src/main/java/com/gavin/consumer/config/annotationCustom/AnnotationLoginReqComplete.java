@@ -1,17 +1,12 @@
 package com.gavin.consumer.config.annotationCustom;
 
 
-
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
-import com.gavin.consumer.result.ReturnResultContants;
+import com.gavin.consumer.contants.ReturnResultContants;
 import com.gavin.consumer.result.ReturnResultUtils;
 import com.gavin.consumer.util.RedisUtil;
 import com.gavin.provider.contants.RedisUserContants;
 import com.gavin.provider.dto.Oauth;
-import com.gavin.provider.util.RedisUtils;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.method.HandlerMethod;
@@ -28,8 +23,8 @@ import java.lang.reflect.Method;
  */
 public class AnnotationLoginReqComplete implements HandlerInterceptor {
 
-   @Autowired
-   private RedisUtil redisUtils;
+    @Autowired
+    private RedisUtil redisUtils;
 
     @Override
     public boolean preHandle(HttpServletRequest request,
@@ -52,7 +47,6 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
             String userToken = request.getHeader("userToken");
             // 从 http 请求头中取出 token
             String wxToken = request.getHeader("wxToken");
-
 
 
             if (!StringUtils.isEmpty(userToken) || !StringUtils.isEmpty(wxToken)) {
@@ -86,9 +80,7 @@ public class AnnotationLoginReqComplete implements HandlerInterceptor {
             pw.flush();
             pw.close();
             return false;
-
         }
-
 
         return true;
 

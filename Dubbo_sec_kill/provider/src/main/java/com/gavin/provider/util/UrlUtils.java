@@ -2,6 +2,17 @@ package com.gavin.provider.util;
 
 
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.util.EntityUtils;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -60,45 +71,45 @@ public class UrlUtils {
         return result.toString();
     }
 
-//    public static String doPost(String url, String data, int timeout) {
-//        CloseableHttpResponse response = null;
-//        CloseableHttpClient httpClient = HttpClientBuilder.create().build();//创建CloseableHttpClient
-//        HttpPost httpPost = new HttpPost(url);//实现HttpPost
-//        RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(timeout).setConnectTimeout(timeout).build();
-//        httpPost.setConfig(requestConfig); //设置httpPost的状态参数
-//        httpPost.addHeader("Content-Type", "application/json");//设置httpPost的请求头中的MIME类型为json
-//        StringEntity requestEntity = new StringEntity(data, "utf-8");
-//        httpPost.setEntity(requestEntity);//设置请求体
-//        try {
-//            response = httpClient.execute(httpPost, new BasicHttpContext());//执行请求返回结果
-//            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
-//                return null;
-//            }
-//            HttpEntity entity = response.getEntity();
-//            if (entity != null) {
-//                String resultStr = EntityUtils.toString(entity, "utf-8");
-//                return resultStr;
-//            } else {
-//                return null;
-//            }
-//        } catch (Exception e) {
-//
-//            return null;
-//        } finally {
-//            if (response != null) {
-//                try {
-//                    response.close();//最后关闭response
-//                } catch (IOException e) {
-//                }
-//            }
-//            if (httpClient != null) {
-//                try {
-//                    httpClient.close();
-//                } catch (IOException e) {
-//                }
-//            }
-//        }
-//    }
+    public static String doPost(String url, String data, int timeout) {
+        CloseableHttpResponse response = null;
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();//创建CloseableHttpClient
+        HttpPost httpPost = new HttpPost(url);//实现HttpPost
+        RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(timeout).setConnectTimeout(timeout).build();
+        httpPost.setConfig(requestConfig); //设置httpPost的状态参数
+        httpPost.addHeader("Content-Type", "application/json");//设置httpPost的请求头中的MIME类型为json
+        StringEntity requestEntity = new StringEntity(data, "utf-8");
+        httpPost.setEntity(requestEntity);//设置请求体
+        try {
+            response = httpClient.execute(httpPost, new BasicHttpContext());//执行请求返回结果
+            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
+                return null;
+            }
+            HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                String resultStr = EntityUtils.toString(entity, "utf-8");
+                return resultStr;
+            } else {
+                return null;
+            }
+        } catch (Exception e) {
+
+            return null;
+        } finally {
+            if (response != null) {
+                try {
+                    response.close();//最后关闭response
+                } catch (IOException e) {
+                }
+            }
+            if (httpClient != null) {
+                try {
+                    httpClient.close();
+                } catch (IOException e) {
+                }
+            }
+        }
+    }
 
 
 }

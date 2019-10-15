@@ -22,9 +22,9 @@ public class ActiveMQUtils {
      * @param name
      * @param message
      */
-    public void sendQueueMesage(String name,Object message){
-        Destination destination=new ActiveMQQueue(name);
-        jmsMessagingTemplate.convertAndSend(destination,message);
+    public void sendQueueMesage(String name, String message) {
+        Destination destination = new ActiveMQQueue(name);
+        jmsMessagingTemplate.convertAndSend(destination, message);
     }
 
 }

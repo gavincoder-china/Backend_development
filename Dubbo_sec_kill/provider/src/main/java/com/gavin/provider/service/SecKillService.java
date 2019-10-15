@@ -1,6 +1,7 @@
 package com.gavin.provider.service;
 
 
+import com.gavin.provider.dto.SecSucess;
 import com.gavin.provider.dto.SeckillInfo;
 
 import java.util.List;
@@ -64,4 +65,50 @@ public interface SecKillService {
      * @since
     */
     Long countAll();
+
+    /**
+     * @description  判断用户是否购买过
+     * @author Gavin
+     * @date 2019-10-14 08:58
+
+     * @return
+     * @throws
+     * @since
+    */
+
+    boolean haveBuy(Long pID,Long uID);
+
+    /**
+     * @description  查库存
+     * @author Gavin
+     * @date 2019-10-14 09:03
+
+     * @return
+     * @throws
+     * @since
+    */
+
+    Long goodsInventory(Long pID);
+
+    /**
+     * @description  创建订单
+     * @author Gavin
+     * @date 2019-10-14 09:04
+
+     * @return
+     * @throws
+     * @since
+    */
+    boolean createOrder(Long pID,Long uID);
+
+    /**
+     * @description  获取所有商品信息,不带分页,是为了做缓存操作
+     * @author Gavin
+     * @date 2019-10-14 11:29
+
+     * @return
+     * @throws
+     * @since
+    */
+    List<SeckillInfo> selectAll();
 }

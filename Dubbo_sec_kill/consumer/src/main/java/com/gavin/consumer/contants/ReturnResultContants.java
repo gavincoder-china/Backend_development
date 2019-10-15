@@ -1,4 +1,4 @@
-package com.gavin.consumer.result;
+package com.gavin.consumer.contants;
 
 /**
  * **********************************************************
@@ -59,6 +59,17 @@ public final class ReturnResultContants {
     public static final String MSG_LOGIN_EXPIRE = "登陆过期,需要重新登录";
 
     public static final String MSG_INTERCPTOR_LOGIN_ERROR = "未登录,请先登录";
+
+    public static final String MSG_SECKILL_CREATE_ORDER = "恭喜您抢购成功,订单正在生成中";
+
+    public static final int CODE_SECKILL_CREATE_ORDER = 999;
+
+    public static final String HOT_CACHE= "HOT_CACHE:";
+
+    public static final String HOT_LOCK= "HOT_LOCK:";
+
+
+
 
 
 }

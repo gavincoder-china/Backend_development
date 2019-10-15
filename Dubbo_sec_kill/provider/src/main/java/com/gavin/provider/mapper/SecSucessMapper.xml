@@ -41,6 +41,9 @@
     <!--@mbg.generated-->
     insert into sec_sucess
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
       <if test="userId != null">
         user_id,
       </if>
@@ -61,6 +64,9 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
       <if test="userId != null">
         #{userId,jdbcType=BIGINT},
       </if>
@@ -141,4 +147,6 @@
     from sec_sucess
     where id=#{id,jdbcType=BIGINT}
   </select>
+
+
 </mapper>

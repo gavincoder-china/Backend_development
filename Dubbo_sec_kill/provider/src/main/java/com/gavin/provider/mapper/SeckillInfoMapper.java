@@ -20,16 +20,24 @@ public interface SeckillInfoMapper {
 
     List<SeckillInfo> selectAll(@Param("start") int start, @Param("offset") int offset);
 
+    //查询所有信息,给redis做缓存处理
+    List<SeckillInfo> selectAllForCache();
+
     SeckillInfo selectById(@Param("id") Long id);
 
 
     Long selectInventoryById(@Param("id") Long id);
 
     //减库存
-    int updateInventoryById(@Param("id") Long id);
+
+    int subInventoryById(@Param("id") Long id);
+
+    //加库存
+
+    int addInventoryById(@Param("id") Long id);
+
 
     Long countAll();
-
 
 
 
