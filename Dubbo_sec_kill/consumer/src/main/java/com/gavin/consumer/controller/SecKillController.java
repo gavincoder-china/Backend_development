@@ -162,8 +162,8 @@ public class SecKillController {
     @GetMapping("/buyProductByQueue")
     public ReturnResult buyProductByQueue(@ApiParam(value = "商品id", required = true)
                                           @RequestParam(value = "pID") Long pID, @AnnotationCurrentUser Oauth oauth) {
-        //加锁,检验锁
 
+        //加锁,检验锁
         boolean lockResult = redisUtil.lock(ReturnResultContants.HOT_LOCK + pID, 1, 600);
 
         while (lockResult) {
@@ -186,7 +186,6 @@ public class SecKillController {
             }
             //如果进来后不满足需求,则解锁
             redisUtil.delLock(ReturnResultContants.HOT_LOCK + pID);
-
         }
 
         return ReturnResultUtils.returnFail(SecKillContants.MSG_SEC_FAIL, SecKillContants.SEC_FAIL);

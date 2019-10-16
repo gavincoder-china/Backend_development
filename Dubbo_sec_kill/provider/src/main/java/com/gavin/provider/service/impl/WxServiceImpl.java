@@ -7,6 +7,7 @@ import com.gavin.provider.util.CommonUtil;
 import com.gavin.provider.util.UrlUtils;
 import com.gavin.provider.util.wx.WXPayUtil;
 import com.gavin.provider.wxUtil.WxPayModel;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;
@@ -67,5 +68,29 @@ public class WxServiceImpl implements WxService {
             return resultMap.get("code_url");
         }
         return null;
+    }
+
+    @Override
+    public boolean wxPayNotify(Map<String, String> resultMap){
+
+
+        if ("SUCCESS".equals(resultMap.get("return_code"))) {
+
+            //验证签名与金额
+            boolean isCheckSign = false;
+            try {
+                isCheckSign = WXPayUtil.checkSign(resultMap, wxPayModel.getKey());
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (isCheckSign) {
+                //todo  修改订单状态
+                //xxxx();
+              return true;
+            }
+        }
+
+        return false;
     }
 }
