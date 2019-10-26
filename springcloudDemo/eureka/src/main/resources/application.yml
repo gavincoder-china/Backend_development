@@ -1,0 +1,5 @@
+server.port=6868
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+eureka.client.service-url.defaultZone=http://127.0.0.1:${server.port}/eureka/
+eureka.instance.prefer-ip-address=true
